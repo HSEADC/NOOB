@@ -61,9 +61,9 @@ module.exports = {
       },
       {
         test: /\.(ttf|otf|woff|woff2)$/i,
-        loader: 'file-loader',
-        options: {
-          name: 'fonts/[name].[ext]'
+        type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[hash][ext][query]'
         }
       }
     ]
@@ -74,12 +74,68 @@ module.exports = {
       chunkFilename: '[id].css'
     }),
 
-    // Landing page
+    // Главная "Index"
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './index.html'
     }),
 
+    // Архив "Archive"
+    new HtmlWebpackPlugin({
+      template: './src/archive.html',
+      filename: './archive.html'
+    }),
+
+    // Статьи "Articles"
+    new HtmlWebpackPlugin({
+      template: './src/articles.html',
+      filename: './articles.html'
+    }),
+
+    // Мини-гайды "Mini-guides"
+    new HtmlWebpackPlugin({
+      template: './src/mini-guides.html',
+      filename: './mini-guides.html'
+    }),
+
+     // Словарик "Dictionary"
+     new HtmlWebpackPlugin({
+      template: './src/dictionary.html',
+      filename: './dictionary.html'
+    }),
+
+  //ПРИМЕРЫ СТАТЕЙ
+    // Публикации в разделе статьи "articles"
+    new HtmlWebpackPlugin({
+      template: './src/articles/article1.html',
+      filename: './articles/article1.html'
+    }),
+
+    // Публикации в разделе архив "archive"
+    new HtmlWebpackPlugin({
+      template: './src/archive/archive1.html',
+      filename: './archive/archive1.html'
+    }),
+
+    // Публикации в разделе словарик "dictionary"
+    new HtmlWebpackPlugin({
+      template: './src/dictionary/word1.html',
+      filename: './dictionary/word1.html'
+    }),
+
+     // Публикации в разделе МИНИ-ГАЙДЫ "Mini-guides"
+     new HtmlWebpackPlugin({
+      template: './src/mini-guides/guide1.html',
+      filename: './mini-guides/guide1.html'
+    }),
+
+    // Публикации в разделе главная "index"
+    new HtmlWebpackPlugin({
+      template: './src/index/about.html',
+      filename: './index/about.html'
+    }),
+
+    
     // Internal pages
     // new HtmlWebpackPlugin({
     //   hash: true,

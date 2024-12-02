@@ -1,11 +1,585 @@
-body.index {
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #F4F4F4;
+}
+body{
+  font-family: 'Forma DJR Cyrillic Micro', 'FormaDJRCyrillicBanner';
+  font-weight: 400;
+  font-family: 'SFT-Schrifted-Serif-T', italic;
+
+}
+
+p{
+  font-family: "Forma DJR Cyrillic Micro";
+}
+h1{
+  font-family: "Forma DJR Cyrillic Banner";
+}
+h2{
+  font-family: 'SFT-Schrifted-Serif-T';
+  
+  font-style: italic;
+}
+
+.header{
+  z-index: 1;
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70vw;
+  height: 3vw;
+  border-radius: 2vw;
+  background-color: white;
+  border: 0.09vw solid #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6vw;
+  .logo{
+    display: flex;
+    background: #000;
+    width: 8vw;
+    height: 2vw;
+    border-radius: 2vw;
+    justify-content: center;
+    align-items: center;
+    .logoimg{width: 5vw;}
+  }
+  .logo2{
+      display: flex;
+      border-radius: 2vw;
+      width: 11vw;
+      justify-content: space-between;
+      .about{
+        text-decoration: none;
+        background-color: black;
+        color: white;
+        width: 6vw;
+        height: 2vw;
+        text-align: center;
+        font-family: "Forma DJR Cyrillic Micro";
+        font-size: 0.9vw;
+        border-radius: 2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
+      .about:hover{background-color: white;
+        color: black;
+        border: 0.1vw solid #000;}
+      .vk{
+        background-color: black;
+        width: 2vw;
+        height: 2vw;
+        .vkphoto{width: 1.5vw;}
+        border-radius: 2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .tg{
+        background-color: black;
+        width: 2vw;
+        height: 2vw;
+        .tgphoto{width: 1.5vw;}
+        border-radius: 2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+  }
+}
+
+
+.block1{
+  width: 100%;
+  height: 46vw;
+  background-color: #FF5C39;
+  border-bottom-left-radius: 3vw; 
+  border-bottom-right-radius: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+
+  .title1{
+    display: flex;
+    width: 100%;
+    height: 30vw;
+    justify-content: center;
+      align-items: center;
+    .noob{
+      width: 36vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .star{
+      width: 3vw;
+      margin-bottom: 10vw;
+    }
+  }
+
+
+  .title{
+    height: 5vw;
+    font-family: "Forma DJR Cyrillic Banner";
+    font-size: 5vw;
+    color: white;
+    text-align: center;
+    margin-top: -7vw;
+  }
+
+  .title2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+    height: 10vw;
+    margin-left: 5vw;
+    margin-top: auto;
+    .star{
+      width: 3vw;
+      margin-bottom: 2vw;
+      
+    }
+    .slang{
+      font-family: "Forma DJR Cyrillic Micro";
+      font-size: 1vw;
+      color: white;
+      margin-bottom: 3vw;
+      margin-left: 1vw;
+    }
+  }
+}
+
+.block2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw;
+  .my-form-text{
+    text-align: center;
+    font-family: 'SFT-Schrifted-Serif-T', sans-serif;
+    font-size: 2vw;
+  }
+  form{
+    margin-top: 0.6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1vw;
+    width: 31vw;
+    height: 4.5vw;
+    border-radius: 5vw;
+    border: 0.09vw solid #000;
+    background-color: #FF5C39;
+    text-decoration: none;
+    input{
+      border-radius: 2vw;
+      width: 18vw;
+      height: 3vw;
+      font-family: "Forma DJR Cyrillic Micro";
+      font-size: 1vw;
+      text-align: center;
+      border: 0.1vw solid #000;
+    }
+    button{
+      border-radius: 2vw;
+      width: 10vw;
+      height: 3vw;
+      background-color: black;
+      color: white;
+      font-family: "Forma DJR Cyrillic Micro";
+      font-size: 1vw;
+      border: 0.1vw solid #000;
+    }
+    
+  }
+}
+
+.frame1{
+  width: 100%;
+  height: 60vw;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+
+  .hi{
+    margin-left: 5vw;
+    margin-top: -5vw;
+    
+    
+    .head{
+      font-size: 5vw;
+      line-height: 0.9;
+      padding: 2 3vw;
+      margin-top: 10vw;
+  
+    }
+    .text{
+      color: var(--GRAY, #787878);
+      font-family: "Forma DJR Cyrillic Micro";
+        font-size: 1.2vw;
+        margin-top: 2vw;
+    }
+  }
+  .us{
+    width: 52vw;
+    margin-right: 3vw;
+  }
+  .gotostatia{
+    margin-top: 10vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1vw;
+      width: 26vw;
+      height: 4.5vw;
+      border-radius: 5vw;
+      border: 0.09vw solid #000;
+      background-color: #FF5C39;
+    .goto{
+      text-decoration: none;
+      background-color: #ffff;
+      color: #000;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-family: "Forma DJR Cyrillic Banner";
+      font-size: 1.5vw;
+      letter-spacing: 0.05em;
+
+      border-radius: 2vw;
+        width: 18vw;
+        height: 3vw;
+        border: 0.09vw solid #000;
+    }
+    .arrow{
+      width: 2vw;
+      border-radius: 2vw;
+        width: 3vw;
+        height: 3vw;
+        background-color: white;
+        color: white;
+        font-family: "Forma DJR Cyrillic Micro";
+        font-size: 1vw;
+        
+    }
+    
+  }
+}
+.skobkiheader{
+  font-size: 2vw;
+  text-align: center;
+}
+
+.frame2{
+  height: 60vw;
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+
+  .inside{
+    display: flex;
+    margin-top: 5vw;
+
+  }
+  
+ .cards{
+  
+  width: 100%;
+  height: 45vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2vw;
 
-  & > div,
-  & > a {
-    margin: 10px 0;
+  .backgroup{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 2vw;
+    position: relative;
+    .about1,.about2,.about4,.about5{
+      .minicard{
+        height: auto; 
+        width: 44vw;
+      }
+      .she{
+        width: 50vw;
+        position: absolute;
+        padding: 2vw 16vw;
+        .head1{
+          font-size: 2.5vw;
+          line-height: 0.9;
+          }
+        .txt1{
+          color: var(--GRAY, #787878);
+          font-family: "Forma DJR Cyrillic Micro";
+            font-size: 1.2vw;
+            margin-top: 1vw;
+        }
+      }
+    }
+  }
+  .middle{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    
+    .about3{
+      position: relative;
+      width: 90vw;
+      .bigcard{
+        height: auto; 
+        width: 90vw;
+      }
+      .she2{
+        position: absolute;
+        padding: 2vw 2vw;
+        .head1{
+          font-size: 2.5vw;
+          line-height: 0.9;
+          }
+        .txt1{
+          color: var(--GRAY, #787878);
+          font-family: "Forma DJR Cyrillic Micro";
+            font-size: 1.2vw;
+            margin-top: 1vw;
+        }
+      }
+    }
+  }
+ }
+}
+
+.frame3{
+  height: 40vw;
+  gap: 3vw;
+  .whoback{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+    
+    .who{
+      width: 20vw;
+      
+    }
+    margin-top: 2vw;
+    height: 30vw;
+    background-color: #FF5C39;
+    border-radius: 5vw;
+    border: 0.09vw solid #000;
+
+  }
+  
+}
+
+.frame4{
+  width: 100%;
+  height: 40vw;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  .image{
+    width: 90vw;
+    margin-top: 2vw;
+    display: flex;
+      justify-content: center;
+  }
+}
+
+
+
+
+
+.statiatitle{
+  width: 100%;
+  height: 30vw;
+  background-color: #FF5C39;
+  border-bottom-left-radius: 3vw; 
+  border-bottom-right-radius: 3vw;
+  .statiatitletxt{
+    padding: 12vw 5vw;
+    font-size: 5vw;
+      line-height: 0.9;
+      color: white;
+  }
+}
+.statiamain{
+  margin: 5vw 20vw;
+  display: flex;
+  flex-direction: column;
+  gap: 4vw;
+  
+  .statiahead{
+    font-family: "Forma DJR Cyrillic Banner";
+      font-size: 2vw;
+      letter-spacing: 0.05em;
+  }
+  .statiatxt{
+    color: var(--GRAY, #787878);
+      font-family: "Forma DJR Cyrillic Micro";
+        font-size: 1.5vw;
+        margin-top: 1vw;
+
+  }
+}
+.button{
+  margin-top: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1vw;
+    width: 26vw;
+    height: 4.5vw;
+    border-radius: 5vw;
+    border: 0.09vw solid #000;
+    background-color: #000000;
+    .buttontxt{
+      text-decoration: none;
+      background-color: #ffff;
+      color: #000;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-family: "Forma DJR Cyrillic Banner";
+      font-size: 1.5vw;
+      letter-spacing: 0.05em;
+      border-radius: 2vw;
+        width: 18vw;
+        height: 3vw;
+        border: 0.09vw solid #000;
+    }
+    .arrow{
+      width: 2vw;
+      border-radius: 2vw;
+        width: 3vw;
+        height: 3vw;
+        background-color: white;
+        color: white;
+        font-family: "Forma DJR Cyrillic Micro";
+        font-size: 1vw;
+    }
+}
+.button:hover{
+  background-color: #FF5C39;
+}
+
+.statiaitog{
+  margin: 0vw 5vw;
+  display: flex;
+  flex-direction: column;
+  height: 30vw;
+  gap: 2vw;
+
+  .statiaheaditog{
+    font-family: "Forma DJR Cyrillic Banner";
+    font-size: 2vw;
+    letter-spacing: 0.05em;
+    margin: 2vw 15vw;
+    position: relative;
+    line-height: 3.5vw;
+    }
+  
+  .itog{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .itogback{
+    width: 70vw;
+    position: absolute;
+    }
+  }
+}
+.statiainterest{
+  margin: 4vw 5vw -5vw;
+  display: flex;
+  flex-direction: column;
+  height: 40vw;
+  width: 100%;
+  gap: 2vw;
+  .interest{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1vw;
+    .rectangle{
+      width: 29vw;
+      display: flex;
+    }
+  }
+}
+
+.footer{
+  width: 100%;
+    height: 15vw;
+    background-color: #FF5C39;
+    border-top-left-radius: 3vw; 
+    border-top-right-radius: 3vw;
+  .emailtxt{
+    padding: 4vw 4vw;
+    font-size: 2vw;
+    line-height: 0.9;
+    color: white;
+  }
+  form{
+    margin: -2vw 4vw 0vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1vw;
+    width: 31vw;
+    height: 4.5vw;
+    border-radius: 5vw;
+    border: 0.09vw solid #000;
+    background-color: #ffffff;
+    text-decoration: none;
+    input{
+      border-radius: 2vw;
+      width: 18vw;
+      height: 3vw;
+      font-family: "Forma DJR Cyrillic Micro";
+      font-size: 1vw;
+      text-align: center;
+      background-color: #DEDEDE;
+      border: 0.09vw solid #000;
+    }
+    button{
+      border-radius: 2vw;
+      width: 10vw;
+      height: 3vw;
+      background-color: black;
+      color: white;
+      font-family: "Forma DJR Cyrillic Micro";
+      font-size: 1vw;
+      border: 0.1vw solid #000;
+    }
   }
 }
