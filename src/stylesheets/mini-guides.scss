@@ -4,7 +4,8 @@
     justify-content: center;
     flex-wrap: wrap;
     background-color: #F0EFEF;
-    padding: 40px;
+    padding: 60px 0;
+    border-radius: 30px;
 
 .card-check {
   background-color: #ffffff;
@@ -17,6 +18,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-radius: 20px;
 
 
   &:hover {
@@ -37,12 +39,12 @@
       height: 30px;
     }
 
-    h5 {
+   h5 {
       font-size: 22px;
       font-weight: bold;
       margin: 0;
       color: black;
-      font-family: 'Forma DJR Cyrillic Banner', sans-serif;
+      font-family: 'Forma DJR Cyrillic Display', sans-serif;
       line-height: normal;
     }
   }
@@ -50,7 +52,10 @@
   .checklist {
     list-style: none;
     padding: 0;
-    margin: 0 0 20px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
 
     li {
       display: flex;
@@ -118,17 +123,16 @@
 }
 
 .card {
-  width: 688px;
+  width: 610px;
   height: 220px;
   border: 2px solid #000;
-  border-radius: 10px;
+  border-radius: 30px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  font-family: 'Arial', sans-serif;
+  font-family: 'Forma DJR Cyrillic Micro', sans-serif;
   background-color: #fff;
+  height: 20vh;
 
   .card-content {
     max-width: 70%;
@@ -153,4 +157,15 @@
     }
   }
 }
+.text-title{
+    padding: 60px 60px;
+    h3{
+        font-size: 2rem
+    }
+        p{
+        padding: 10px 0;
+
+    }
+    }
+
 

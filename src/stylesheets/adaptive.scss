@@ -5,32 +5,80 @@
     .color{
         height: 150px !important;
     }
+    .head2{
+        height: 4.5vw;
+        width: 55vw;
+        border-radius: 3vw;
+        padding: 1vw;
+        .about{
+        font-size: 1.2vw;
+        display: flex;
+        align-items: center;
+        .about{
+            width: 20vw;
+            height: 5vh;
+        }
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
     .mininoob2block {
-        gap: 5px !important; 
-        /* Значение для маленьких экранов */
- 
-}
-.place_setka{
-    width: 100%!important;
+        gap: 5px !important;
+    }
+
+    .place_setka {
+        width: 100% !important;
+    }
+
+    .head2 {
+        height: 6vw;
+        width: 60vw;
+        border-radius: 4vw;
+        padding: 1.5vw;
+            .about {
+                font-size: 1.6vw;
+                width: 30vw;
+                height: 3vh;
+                border-radius:30vw;
+            }
+    }
+    .title {
+    font-size: large !important;
+    transform: translateY(-500%)!important;
+    font-size: 1.5vw;
+
+    }
 }
 
 
 @media screen and (max-width: 480px) {
     .mininoob2block {
-        gap: 2px !important; /* Минимальное значение для очень маленьких экранов */
+        gap: 2px !important;
     }
+
+    .place_photo1,
+    .place_photo2,
+    .place_photo3 {
+        width: 80% !important;
 }
-.place_photo1{
-    width: 80%!important;
+    .head2{
+        height: 10vw;
+        width: 90vw;
+        border-radius: 6vw;
+        padding: 2vw;
+            .about{
+                font-size: 2.5vw!important;
+                 border-radius:30vw;
+            }
+    }
+
+    .title {
+    font-size: large !important;
+    transform: translateY(-1100%)!important;
+    }
+.mockup{
+width: 90vw!important;
 }
-.place_photo2{
-    width: 80%!important;
-}   
-.place_photo3{
-    width: 80%!important;
 }
 
-}
