@@ -12,4 +12,4 @@ yarn-error.log
 /dev_build/*.svg
 /dev_build/*/*.*
 .idea
-/docs
+#/docs
