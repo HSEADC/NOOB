@@ -1,0 +1,36 @@
+@media screen and (max-width: 1024px) {
+    .mininoob2block {
+        gap: 10px !important; /* Значение для средних экранов */
+    }
+    .color{
+        height: 150px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mininoob2block {
+        gap: 5px !important; 
+        /* Значение для маленьких экранов */
+ 
+}
+.place_setka{
+    width: 100%!important;
+}
+
+
+@media screen and (max-width: 480px) {
+    .mininoob2block {
+        gap: 2px !important; /* Минимальное значение для очень маленьких экранов */
+    }
+}
+.place_photo1{
+    width: 80%!important;
+}
+.place_photo2{
+    width: 80%!important;
+}   
+.place_photo3{
+    width: 80%!important;
+}
+
+}

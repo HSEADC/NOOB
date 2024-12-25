@@ -1,0 +1,71 @@
+
+
+.all-quizlet{
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.quizlet{
+    background-color: white;
+    border: 1.5px solid black;
+    box-shadow: 0px 7px 0px 0px #000;
+    border-radius: 22px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 22vw;
+    height: 194px;
+    min-width: 300px;
+
+    &::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -10px;
+    border: 1.5px solid #000;
+    border-radius: 25px;
+    z-index: -1;
+    transition: border-color 0.3s ease;
+  }
+    &:hover {
+    transform: translateY(-5px);
+    border-color: #FF5C39;
+    box-shadow: 0px 7px 0px 0px #FF5C39;
+
+    &::after {
+      border-color: #FF5C39;
+    }
+  }
+
+    .front-card{
+    display: flex;
+    width: 255px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+    h4{
+      color: #000000;
+      font-family: 'SFT-Schrifted-Serif-T';
+      font-size: 32px;
+      font-style: italic;
+      font-weight: 500;
+      line-height: 38px;
+  }
+
+
+
+}

@@ -11,3 +11,5 @@ yarn-error.log
 /dev_build/*.gif
 /dev_build/*.svg
 /dev_build/*/*.*
+.idea
+/docs

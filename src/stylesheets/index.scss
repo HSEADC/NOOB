@@ -4,11 +4,10 @@
 
 html,
 body {
-  height: 100%;
-  background-color: #F4F4F4;
+  background-color: #FFFFFF;
 }
 body{
-  font-family: 'Forma DJR Cyrillic Micro', 'FormaDJRCyrillicBanner';
+  font-family: 'Forma DJR Cyrillic Micro', 'Forma DJR Cyrillic Banner';
   font-weight: 400;
   font-family: 'SFT-Schrifted-Serif-T', italic;
 
@@ -22,7 +21,6 @@ h1{
 }
 h2{
   font-family: 'SFT-Schrifted-Serif-T';
-  
   font-style: italic;
 }
 
@@ -98,7 +96,7 @@ h2{
   }
 }
 .head2{
-  z-index: 3;
+  z-index: 2;
   position: fixed;
   top: 5%;
   left: 50%;

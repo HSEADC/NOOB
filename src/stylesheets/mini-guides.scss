@@ -1,0 +1,156 @@
+.all-card-check{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #F0EFEF;
+    padding: 40px;
+
+.card-check {
+  background-color: #ffffff;
+  border: 1.5px solid #000000;
+  border-radius: 15px;
+  padding: 30px;
+  width: 400px;
+  height: 520px;
+  font-family: 'Forma DJR Cyrillic Micro', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+  &:hover {
+      transform: translateY(-5px);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      border-color: #FF5C39;
+    }
+
+  .card-header-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    .card-icon {
+      width: 30px;
+      height: 30px;
+    }
+
+    h5 {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 0;
+      color: black;
+      font-family: 'Forma DJR Cyrillic Banner', sans-serif;
+      line-height: normal;
+    }
+  }
+
+  .checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+
+      input[type='checkbox'] {
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #000000;
+        border-radius: 4px;
+        margin-right: 10px;
+        cursor: pointer;
+        transition: 0.2s;
+
+        &:checked {
+          background-color: #FF5C39;
+          border-color: #FF5C39;
+          position: relative;
+        }
+
+        &:checked::after {
+          content: '';
+          position: absolute;
+          width: 6px;
+          height: 10px;
+          border: solid #fff;
+          border-width: 0 2px 2px 0;
+          top: 2px;
+          left: 5px;
+          transform: rotate(45deg);
+        }
+      }
+
+      label {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .check-button {
+    display: block;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+    font-size: 14px;
+
+    &:hover {
+      background-color: #FF5C39;
+    }
+  }
+}
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  width: 688px;
+  height: 220px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+
+  .card-content {
+    max-width: 70%;
+    h3 {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #555;
+    }
+  }
+
+  .card-image {
+    max-width: 25%;
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+  }
+}
+
