@@ -1,83 +1,171 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 640:
+/***/ 795:
 /***/ (() => {
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   var eyes = document.querySelectorAll(".eyes-container .eye");
 
-//   if (eyes.length === 0) {
-//     console.error("No elements with class '.eye' found in the DOM.");
-//     return;
-//   }
+;// ./src/tests/forAllTests.js
+var currentStage = 0;
+var resultCount = 0;
+var checkboxes = document.querySelectorAll("input[type=checkbox]");
+function initTest(stages) {
+  var numberOfQuestions = document.querySelector(".A_NumberOfQuestions");
+  var question = document.querySelector(".A_Question");
+  var answers = document.querySelectorAll(".Q_AnswerQuestion");
 
-//   document.addEventListener("mousemove", function (event) {
-//     eyes.forEach(function (eye) {
-//       // Проверка, что элемент видим и доступен
-//       if (!eye) return;
+  //номер вопроса
+  numberOfQuestions.innerHTML = "\u0432\u043E\u043F\u0440\u043E\u0441 \u2116".concat(currentStage + 1, "/").concat(stages.length);
 
-//       var x = eye.offsetLeft + eye.offsetWidth / 2;
-//       var y = eye.offsetTop + eye.offsetHeight / 2;
-//       var rad = Math.atan2(event.pageX - x, event.pageY - y);
-//       var rot = rad * (180 / Math.PI) * -1 + 180;
-//       eye.style.transform = "rotate(" + rot + "deg)";
-//     });
-//   });
-// });
+  //выводим текст вопроса
+  question.innerHTML = stages[currentStage].question;
 
-document.addEventListener("DOMContentLoaded", function () {
-  // Select the move-area and ensure it exists
-  var moveArea = document.querySelector(".move-area");
-  if (!moveArea) {
-    console.error("Element '.move-area' not found in the DOM.");
-    return; // Exit if move-area is not found
+  //проверяем колва тегов для ответов и выводим
+  for (var i = 0; i < answers.length; i++) {
+    answers[i].innerHTML = stages[currentStage].answers[i].text;
   }
 
-  // Select all eye elements within the move-area
-  var eyes = document.querySelectorAll(".eye");
-  if (eyes.length === 0) {
-    console.error("No elements with class '.eye' found in the DOM.");
-    return; // Exit if no eye elements are found
+  //проверяем колва чекбоксов и добавляем атрибут с колвом баллов
+  for (var _i = 0; _i < checkboxes.length; _i++) {
+    checkboxes[_i].dataset.count = stages[currentStage].answers[_i].count;
   }
-
-  // Add mousemove event listener to the move-area
-  moveArea.addEventListener("mousemove", function (event) {
-    eyes.forEach(function (eye) {
-      var x = eye.offsetLeft + eye.offsetWidth / 2;
-      var y = eye.offsetTop + eye.offsetHeight / 2;
-      var rad = Math.atan2(event.pageX - x, event.pageY - y);
-      var rot = rad * (180 / Math.PI) * -1 + 180;
-      eye.style.transform = "rotate(" + rot + "deg)";
+}
+function chooseAnswer(stages, resultTable) {
+  checkboxes.forEach(function (checkbox) {
+    checkbox.addEventListener("change", function () {
+      if (checkbox.checked) {
+        resultCount += Number(checkbox.dataset.count);
+        updateStage(stages, resultTable); // меняем вопрос и ответы на новые
+        checkbox.checked = false;
+      }
     });
   });
+}
+function updateStage(stages, resultTable) {
+  if (currentStage + 1 < stages.length) {
+    currentStage++;
+    initTest(stages);
+  } else {
+    showResult(resultTable);
+  }
+}
+function showResult(resultTable) {
+  var testMessages = document.querySelector(".S_Test");
+  testMessages.remove();
+  var testResult = document.createElement("div");
+  testResult.classList.add("S_TestResult");
+  var finalCount = document.createElement("div");
+  finalCount.classList.add("A_FinalCount");
+  finalCount.innerHTML = "\u0418\u0442\u043E\u0433\u043E \u0431\u0430\u043B\u043B\u043E\u0432: ".concat(resultCount);
+  var resultHeader = document.createElement("div");
+  resultHeader.classList.add("A_ResultHeader");
+  var resultText = document.createElement("div");
+  resultText.classList.add("A_ResultText");
+  testResult.appendChild(finalCount);
+  testResult.appendChild(resultHeader);
+  testResult.appendChild(resultText);
+  document.querySelector("body").appendChild(testResult);
+  if (resultCount == 0 || resultCount == 1) {
+    resultHeader.innerHTML = resultTable[0].header;
+    resultText.innerHTML = resultTable[0].paragraph;
+  } else if (resultCount == 2 || resultTable == 3) {
+    resultHeader.innerHTML = resultTable[1].header;
+    resultText.innerHTML = resultTable[1].paragraph;
+  } else {
+    resultHeader.innerHTML = resultTable[2].header;
+    resultText.innerHTML = resultTable[2].paragraph;
+  }
+}
+
+
+;// ./src/tests/test1.js
+
+//база данных вопросы и ответы
+var stages = [
+//этап 1
+{
+  question: ["Начнём с простого. Что можно делать с дайсами?"],
+  //каждый ответ содержит текст и колво баллов
+  answers: [{
+    text: "кидать",
+    count: 1
+  }, {
+    text: "коптить",
+    count: 0
+  }, {
+    text: "курить",
+    count: 0
+  }, {
+    text: "колоть",
+    count: 0
+  }]
+},
+//этап 2
+{
+  question: ["Что такое казуалка?"],
+  answers: [{
+    text: "стиль",
+    count: 0
+  }, {
+    text: "настолка",
+    count: 0
+  }, {
+    text: "пальцы",
+    count: 0
+  }, {
+    text: "мурка",
+    count: 1
+  }]
+},
+//этап 3
+{
+  question: ["А что такое америтеш?"],
+  answers: [{
+    text: "треш",
+    count: 1
+  }, {
+    text: "гог",
+    count: 0
+  }, {
+    text: "мяу",
+    count: 1
+  }, {
+    text: "гавгав",
+    count: 0
+  }]
+},
+//этап 4
+{
+  question: ["Кто круче всех?"],
+  answers: [{
+    text: "я",
+    count: 1
+  }, {
+    text: "ты",
+    count: 0
+  }, {
+    text: "барсик",
+    count: 1
+  }, {
+    text: "никто",
+    count: 0
+  }]
+}];
+var resultTable = [{
+  header: "Кажется, ты лузер",
+  paragraph: "Учи лучше. Жопа"
+}, {
+  header: "Кажется, ты крутой",
+  paragraph: "Учи лучше. Жопа"
+}, {
+  header: "Кажется, ты нормис",
+  paragraph: "Учи лучше. Жопа"
+}];
+document.addEventListener("DOMContentLoaded", function () {
+  initTest(stages);
+  chooseAnswer(stages, resultTable);
 });
-
-// document.addEventListener("DOMContentLoaded", function() {
-//   var moveArea = document.querySelector(".move-area");
-//   var eye = document.querySelector(".eye");
-
-//   moveArea.addEventListener("mousemove", function(event) {
-//     var x = eye.offsetLeft + (eye.offsetWidth / 2);
-//     var y = eye.offsetTop + (eye.offsetHeight / 2);
-//     var rad = Math.atan2(event.pageX - x, event.pageY - y);
-//     var rot = (rad * (180 / Math.PI) * -1) + 180;
-//     eye.style.transform = 'rotate(' + rot + 'deg)';
-//   });
-// });
-
-// $(document).ready(function(){
-//   $(".move-area").mousemove(function(event) {
-//     let eye = $(".eye");
-//     let x = (eye.offset().left) + (eye.width() /2);
-//     let y = (eye.offset().top) + (eye.height() /2);
-//     let rad = Math.atan2(event.pageX - x, event.pageY - y);
-//     let rot = (rad * (180/Math.PI) * -1) + 180;
-//     eye.css({
-//      "transform": "rotate(" + rot + "deg)",
-//     });
-//   });
-// });
 
 /***/ })
 
@@ -146,7 +234,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /******/ 	
 /******/ 	/* webpack/runtime/get update manifest filename */
 /******/ 	(() => {
-/******/ 		__webpack_require__.hmrF = () => ("eyes." + __webpack_require__.h() + ".hot-update.json");
+/******/ 		__webpack_require__.hmrF = () => ("tests." + __webpack_require__.h() + ".hot-update.json");
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
@@ -740,7 +828,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = __webpack_require__.hmrS_jsonp = __webpack_require__.hmrS_jsonp || {
-/******/ 			161: 0
+/******/ 			582: 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -1249,7 +1337,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__(640);
+/******/ 	var __webpack_exports__ = __webpack_require__(795);
 /******/ 	
 /******/ })()
 ;
