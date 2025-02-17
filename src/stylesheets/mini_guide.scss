@@ -32,7 +32,7 @@ a {
   cursor: default;
 }
 
-.all_archive_cards {
+.C_MiniGuide {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -49,11 +49,11 @@ a {
     background-color: #f9f9f9;
   }
 
-  .card-arc {
+  .O_CardGuide {
     position: relative;
     padding: 22px;
-    width: 250px;
-    height: 350px;
+    height: 310px;
+    width: 310px;
     background-color: #fff;
     border-radius: 20px;
     border: 1.5px solid #000;
@@ -92,7 +92,6 @@ a {
       line-height: normal;
       font-weight: bold;
       margin-bottom: 10px;
-      text-decoration: underline;
     }
 
     p {
@@ -105,7 +104,6 @@ a {
     img {
       width: 100%;
       height: auto;
-      border-radius: 10px;
     }
   }
 
