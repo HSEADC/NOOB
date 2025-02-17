@@ -4,27 +4,26 @@
 
 html,
 body {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
-body{
-  font-family: 'Forma DJR Cyrillic Micro', 'Forma DJR Cyrillic Display';
+body {
+  font-family: "Forma DJR Cyrillic Micro", "Forma DJR Cyrillic Display";
   font-weight: 400;
-  font-family: 'SFT-Schrifted-Serif-T', italic;
-
+  font-family: "SFT-Schrifted-Serif-T", italic;
 }
 
-p{
+p {
   font-family: "Forma DJR Cyrillic Micro";
 }
-h1{
+h1 {
   font-family: "Forma DJR Cyrillic Micro";
 }
-h2{
-  font-family: 'SFT-Schrifted-Serif-T';
+h2 {
+  font-family: "SFT-Schrifted-Serif-T";
   font-style: italic;
 }
 
-.header{
+.header {
   z-index: 1;
   position: fixed;
   top: 5%;
@@ -40,7 +39,7 @@ h2{
   justify-content: space-between;
   align-items: center;
   padding: 0.6vw;
-  .logo{
+  .logo {
     display: flex;
     background: #000;
     width: 8vw;
@@ -48,54 +47,61 @@ h2{
     border-radius: 2vw;
     justify-content: center;
     align-items: center;
-    .logoimg{width: 5vw;}
+    .logoimg {
+      width: 5vw;
+    }
   }
-  .logo2{
-      display: flex;
+  .logo2 {
+    display: flex;
+    border-radius: 2vw;
+    width: 11vw;
+    justify-content: space-between;
+    .about {
+      text-decoration: none;
+      background-color: black;
+      color: white;
+      width: 6vw;
+      height: 2vw;
+      text-align: center;
+      font-family: "Forma DJR Cyrillic Micro";
+      font-size: 0.9vw;
       border-radius: 2vw;
-      width: 11vw;
-      justify-content: space-between;
-      .about{
-        text-decoration: none;
-        background-color: black;
-        color: white;
-        width: 6vw;
-        height: 2vw;
-        text-align: center;
-        font-family: "Forma DJR Cyrillic Micro";
-        font-size: 0.9vw;
-        border-radius: 2vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .about:hover {
+      background-color: white;
+      color: black;
+      border: 0.1vw solid #000;
+    }
+    .vk {
+      background-color: black;
+      width: 2vw;
+      height: 2vw;
+      .vkphoto {
+        width: 1.5vw;
       }
-      .about:hover{background-color: white;
-        color: black;
-        border: 0.1vw solid #000;}
-      .vk{
-        background-color: black;
-        width: 2vw;
-        height: 2vw;
-        .vkphoto{width: 1.5vw;}
-        border-radius: 2vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      border-radius: 2vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .tg {
+      background-color: black;
+      width: 2vw;
+      height: 2vw;
+      .tgphoto {
+        width: 1.5vw;
       }
-      .tg{
-        background-color: black;
-        width: 2vw;
-        height: 2vw;
-        .tgphoto{width: 1.5vw;}
-        border-radius: 2vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+      border-radius: 2vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
-.head2{
+.head2 {
   z-index: 2;
   position: fixed;
   top: 5%;
@@ -109,9 +115,9 @@ h2{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  
+
   padding: 0.6vw;
-  .logo{
+  .logo {
     display: flex;
     background: #ffffff;
     width: 7vw;
@@ -119,12 +125,15 @@ h2{
     border-radius: 2vw;
     justify-content: center;
     align-items: center;
-    .logoimg{width: 5vw;}
-    .logo:hover{
-      background-color: #FF5C39;
-      border: 0.1vw solid #000;}
+    .logoimg {
+      width: 5vw;
+    }
+    .logo:hover {
+      background-color: #ff5c39;
+      border: 0.1vw solid #000;
+    }
   }
-  .about{
+  .about {
     text-decoration: none;
     background-color: rgb(255, 255, 255);
     color: black;
@@ -137,25 +146,25 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    }
-    .about:hover{
-    font-family: 'SFT-Schrifted-Serif-T', italic;
-    background-color: #FF5C39;
+  }
+  .about:hover {
+    font-family: "SFT-Schrifted-Serif-T", italic;
+    background-color: #ff5c39;
     color: white;
-    border: 0.1vw solid #000;}
+    border: 0.1vw solid #000;
+  }
 }
 
-
-.block1{
+.block1 {
   width: 100%;
   height: 100vh;
-  background-color: #FF5C39;
+  background-color: #ff5c39;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 
-  .title1{
+  .title1 {
     position: relative;
     display: flex;
     width: 100%;
@@ -164,36 +173,33 @@ h2{
     z-index: 0;
     height: 100vh;
 
-
-
-    .noob{
+    .noob {
       width: 60vw;
       display: flex;
       justify-content: center;
       align-items: center;
     }
     .circle {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: white;
-        border-radius: 30vw;
-        width: 100%;
-        height: 100%;
-        margin: auto;
-        z-index: -1;
-        border: 1.5px solid black;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: white;
+      border-radius: 30vw;
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      z-index: -1;
+      border: 1.5px solid black;
     }
-    .star{
+    .star {
       width: 3vw;
       margin-bottom: 14vw;
     }
   }
 
-
-  .title{
+  .title {
     height: 5vw;
     font-family: "Forma DJR Cyrillic Micro";
     font-size: 1.5vw;
@@ -201,10 +207,10 @@ h2{
     text-align: center;
     margin-top: -3vw;
     z-index: 2;
-   transform: translateY(-100%);
+    transform: translateY(-100%);
   }
 
-  .title2{
+  .title2 {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
@@ -212,12 +218,11 @@ h2{
     height: 10vw;
     margin-left: 5vw;
     margin-top: auto;
-    .star{
+    .star {
       width: 3vw;
       margin-bottom: 2vw;
-      
     }
-    .slang{
+    .slang {
       font-family: "Forma DJR Cyrillic Micro";
       font-size: 1vw;
       color: black;
@@ -227,56 +232,52 @@ h2{
   }
 
   /* ГЛАЗА */
-.move-area{
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
- 
-}
-.container{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4vw;
-  width: 50vw;
- 
-}
-.eye{
-  position: relative;
-  display: inline-block;
-  border-radius: 50%;
-  height: 11vw;
-  width: 11vw;
-}
-.eye:after{
-  position: absolute;
-  bottom: 5vw;
-  right: 1vw;
-  height: 5vw;
-  width: 5vw;
-  background-color: black;
-  border-radius: 50%;
-  content: "";
-}
+  .move-area {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+    width: 50vw;
+  }
+  .eye {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    height: 11vw;
+    width: 11vw;
+  }
+  .eye:after {
+    position: absolute;
+    bottom: 5vw;
+    right: 1vw;
+    height: 5vw;
+    width: 5vw;
+    background-color: black;
+    border-radius: 50%;
+    content: "";
+  }
 }
 
-
-
-.block2{
+.block2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding: 1vw;
-  .my-form-text{
+  .my-form-text {
     text-align: center;
-    font-family: 'SFT-Schrifted-Serif-T', sans-serif;
+    font-family: "SFT-Schrifted-Serif-T", sans-serif;
     font-size: 2vw;
   }
-  form{
+  form {
     margin-top: 0.6vw;
     display: flex;
     justify-content: space-between;
@@ -288,15 +289,15 @@ h2{
     border: 0.09vw solid #000;
     background-color: #ffffff;
     text-decoration: none;
-        #my-form {
-        width: 50%;
-        margin: 0 auto;
-        padding: 1rem;
-        border: 1px solid #000;
-        border-radius: 5px;
-        background-color: #fff;
-        }
-    input{
+    #my-form {
+      width: 50%;
+      margin: 0 auto;
+      padding: 1rem;
+      border: 1px solid #000;
+      border-radius: 5px;
+      background-color: #fff;
+    }
+    input {
       border-radius: 2vw;
       width: 18vw;
       height: 3vw;
@@ -304,9 +305,9 @@ h2{
       font-size: 1vw;
       text-align: center;
       border: 0.1vw solid #000;
-      background-color: #F0EFEF;
+      background-color: #f0efef;
     }
-    button{
+    button {
       border-radius: 2vw;
       width: 10vw;
       height: 3vw;
@@ -316,54 +317,50 @@ h2{
       font-size: 1vw;
       border: 0.1vw solid #000;
     }
-    
   }
 }
 
-.frame1{
+.frame1 {
   width: 100%;
   height: 60vw;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 
-  .hi{
+  .hi {
     margin-left: 5vw;
     margin-top: -5vw;
-    
-    
-    .head{
+
+    .head {
       font-size: 5vw;
       line-height: 0.9;
       padding: 2 3vw;
       margin-top: 10vw;
-  
     }
-    .text{
+    .text {
       color: var(--GRAY, #787878);
       font-family: "Forma DJR Cyrillic Micro";
-        font-size: 1.2vw;
-        margin-top: 2vw;
+      font-size: 1.2vw;
+      margin-top: 2vw;
     }
   }
-  .us{
+  .us {
     width: 52vw;
     margin-right: 3vw;
   }
-  .gotostatia{
+  .gotostatia {
     margin-top: 10vw;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 1vw;
-      width: 26vw;
-      height: 4.5vw;
-      border-radius: 5vw;
-      border: 0.09vw solid #000;
-      background-color: #FF5C39;
-    .goto{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1vw;
+    width: 26vw;
+    height: 4.5vw;
+    border-radius: 5vw;
+    border: 0.09vw solid #000;
+    background-color: #ff5c39;
+    .goto {
       text-decoration: none;
       background-color: #ffff;
       color: #000;
@@ -377,30 +374,28 @@ h2{
       letter-spacing: 0.05em;
 
       border-radius: 2vw;
-        width: 18vw;
-        height: 3vw;
-        border: 0.09vw solid #000;
+      width: 18vw;
+      height: 3vw;
+      border: 0.09vw solid #000;
     }
-    .arrow{
+    .arrow {
       width: 2vw;
       border-radius: 2vw;
-        width: 3vw;
-        height: 3vw;
-        background-color: white;
-        color: white;
-        font-family: "Forma DJR Cyrillic Micro";
-        font-size: 1vw;
-        
+      width: 3vw;
+      height: 3vw;
+      background-color: white;
+      color: white;
+      font-family: "Forma DJR Cyrillic Micro";
+      font-size: 1vw;
     }
-    
   }
 }
-.skobkiheader{
+.skobkiheader {
   font-size: 2vw;
   text-align: center;
 }
 
-.frame2{
+.frame2 {
   height: 60vw;
   width: 100%;
   display: flex;
@@ -410,263 +405,256 @@ h2{
   align-items: center;
   gap: 2vw;
 
-  .inside{
+  .inside {
     display: flex;
     margin-top: 5vw;
-
   }
-  
- .cards{
-  
-  width: 100%;
-  height: 45vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2vw;
 
-  .backgroup{
+  .cards {
+    width: 100%;
+    height: 45vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-direction: row;
     align-items: center;
     gap: 2vw;
-    position: relative;
-    .about1,.about2,.about4,.about5{
-      .minicard{
-        height: auto; 
-        width: 44vw;
-      }
-      .she{
-        width: 50vw;
-        position: absolute;
-        padding: 2vw 16vw;
-        .head1{
-          font-size: 2.5vw;
-          line-height: 0.9;
-          text-decoration: none;
-          color: var(--black, #000000);
-          }
-        .txt1{
-          color: var(--GRAY, #787878);
-          font-family: "Forma DJR Cyrillic Micro";
-            font-size: 1.2vw;
-            margin-top: 1vw;
-        }
-      }
-    }
-  }
-  .middle{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    
-    .about3{
+
+    .backgroup {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+      gap: 2vw;
       position: relative;
-      width: 90vw;
-      .bigcard{
-        height: auto; 
-        width: 90vw;
-      }
-      .she2{
-        position: absolute;
-        padding: 2vw 2vw;
-        .head1{
-          font-size: 2.5vw;
-          line-height: 0.9;
-          text-decoration: none;
-          color: var(--black, #000000);
+      .about1,
+      .about2,
+      .about4,
+      .about5 {
+        .minicard {
+          height: auto;
+          width: 44vw;
+        }
+        .she {
+          width: 50vw;
+          position: absolute;
+          padding: 2vw 16vw;
+          .head1 {
+            font-size: 2.5vw;
+            line-height: 0.9;
+            text-decoration: none;
+            color: var(--black, #000000);
           }
-        .txt1{
-          color: var(--GRAY, #787878);
-          font-family: "Forma DJR Cyrillic Micro";
+          .txt1 {
+            color: var(--GRAY, #787878);
+            font-family: "Forma DJR Cyrillic Micro";
             font-size: 1.2vw;
             margin-top: 1vw;
+          }
+        }
+      }
+    }
+    .middle {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+
+      .about3 {
+        position: relative;
+        width: 90vw;
+        .bigcard {
+          height: auto;
+          width: 90vw;
+        }
+        .she2 {
+          position: absolute;
+          padding: 2vw 2vw;
+          .head1 {
+            font-size: 2.5vw;
+            line-height: 0.9;
+            text-decoration: none;
+            color: var(--black, #000000);
+          }
+          .txt1 {
+            color: var(--GRAY, #787878);
+            font-family: "Forma DJR Cyrillic Micro";
+            font-size: 1.2vw;
+            margin-top: 1vw;
+          }
         }
       }
     }
   }
- }
 }
 
-.frame3{
+.frame3 {
   height: 40vw;
   gap: 3vw;
-  .whoback{
+  .whoback {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 3vw;
-    
-    .who{
+
+    .who {
       width: 20vw;
-      
     }
     margin-top: 2vw;
     height: 30vw;
-    background-color: #FF5C39;
+    background-color: #ff5c39;
     border-radius: 5vw;
     border: 0.09vw solid #000;
-
   }
-  
 }
 
-.frame4{
+.frame4 {
   width: 100%;
   height: 40vw;
   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  .image{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .image {
     width: 90vw;
     margin-top: 2vw;
     display: flex;
-      justify-content: center;
+    justify-content: center;
   }
 }
 
-
-
-
-
-.statiatitle{
+.statiatitle {
   width: 100%;
   height: 30vw;
-  background-color: #FF5C39;
-  border-bottom-left-radius: 3vw; 
+  background-color: #ff5c39;
+  border-bottom-left-radius: 3vw;
   border-bottom-right-radius: 3vw;
-  .statiatitletxt{
+  .statiatitletxt {
     padding: 12vw 5vw;
     font-size: 5vw;
-      line-height: 0.9;
-      color: white;
+    line-height: 0.9;
+    color: white;
   }
 }
-.statiamain{
+.statiamain {
   margin: 5vw 20vw;
   display: flex;
   flex-direction: column;
   gap: 4vw;
-  
-  .statiahead{
+
+  .statiahead {
     font-family: "Forma DJR Cyrillic Display";
-      font-size: 2vw;
-      letter-spacing: 0.05em;
+    font-size: 2vw;
+    letter-spacing: 0.05em;
   }
-  .statiatxt{
+  .statiatxt {
     color: var(--GRAY, #787878);
-      font-family: "Forma DJR Cyrillic Micro";
-        font-size: 1.5vw;
-        margin-top: 1vw;
-
+    font-family: "Forma DJR Cyrillic Micro";
+    font-size: 1.5vw;
+    margin-top: 1vw;
   }
 }
-.button{
+.button {
   margin-top: 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1vw;
+  width: 26vw;
+  height: 4.5vw;
+  border-radius: 5vw;
+  border: 0.09vw solid #000;
+  background-color: #000000;
+  .buttontxt {
+    text-decoration: none;
+    background-color: #ffff;
+    color: #000;
+    text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0 1vw;
-    width: 26vw;
-    height: 4.5vw;
-    border-radius: 5vw;
+
+    font-family: "Forma DJR Cyrillic Display";
+    font-size: 1.5vw;
+    letter-spacing: 0.05em;
+    border-radius: 2vw;
+    width: 18vw;
+    height: 3vw;
     border: 0.09vw solid #000;
-    background-color: #000000;
-    .buttontxt{
-      text-decoration: none;
-      background-color: #ffff;
-      color: #000;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      font-family: "Forma DJR Cyrillic Display";
-      font-size: 1.5vw;
-      letter-spacing: 0.05em;
-      border-radius: 2vw;
-        width: 18vw;
-        height: 3vw;
-        border: 0.09vw solid #000;
-    }
-    .arrow{
-      width: 2vw;
-      border-radius: 2vw;
-        width: 3vw;
-        height: 3vw;
-        background-color: white;
-        color: white;
-        font-family: "Forma DJR Cyrillic Micro";
-        font-size: 1vw;
-    }
+  }
+  .arrow {
+    width: 2vw;
+    border-radius: 2vw;
+    width: 3vw;
+    height: 3vw;
+    background-color: white;
+    color: white;
+    font-family: "Forma DJR Cyrillic Micro";
+    font-size: 1vw;
+  }
 }
-.button:hover{
-  background-color: #FF5C39;
+.button:hover {
+  background-color: #ff5c39;
 }
 
-.statiaitog{
+.statiaitog {
   margin: 0vw 5vw;
   display: flex;
   flex-direction: column;
   height: 30vw;
   gap: 2vw;
 
-  .statiaheaditog{
+  .statiaheaditog {
     font-family: "Forma DJR Cyrillic Display";
     font-size: 2vw;
     letter-spacing: 0.05em;
     margin: 2vw 15vw;
     position: relative;
     line-height: 3.5vw;
-    }
-  
-  .itog{
+  }
+
+  .itog {
     width: 100%;
     display: flex;
     justify-content: center;
-    .itogback{
-    width: 70vw;
-    position: absolute;
+    .itogback {
+      width: 70vw;
+      position: absolute;
     }
   }
 }
-.statiainterest{
+.statiainterest {
   margin: 4vw 5vw -5vw;
   display: flex;
   flex-direction: column;
   height: 40vw;
   width: 100%;
   gap: 2vw;
-  .interest{
+  .interest {
     display: flex;
     flex-direction: row;
     width: 100%;
     gap: 1vw;
-    .rectangle{
+    .rectangle {
       width: 29vw;
       display: flex;
     }
   }
 }
 
-.footer{
+.footer {
   width: 100%;
-    height: 15vw;
-    background-color: #FF5C39;
-    border-top-left-radius: 3vw; 
-    border-top-right-radius: 3vw;
-  .emailtxt{
+  height: 15vw;
+  background-color: #ff5c39;
+  border-top-left-radius: 3vw;
+  border-top-right-radius: 3vw;
+  .emailtxt {
     padding: 4vw 4vw;
     font-size: 2vw;
     line-height: 0.9;
     color: white;
   }
-  form{
+  form {
     margin: -2vw 4vw 0vw;
     display: flex;
     justify-content: space-between;
@@ -678,17 +666,17 @@ h2{
     border: 0.09vw solid #000;
     background-color: #ffffff;
     text-decoration: none;
-    input{
+    input {
       border-radius: 2vw;
       width: 18vw;
       height: 3vw;
       font-family: "Forma DJR Cyrillic Micro";
       font-size: 1vw;
       text-align: center;
-      background-color: #DEDEDE;
+      background-color: #dedede;
       border: 0.09vw solid #000;
     }
-    button{
+    button {
       border-radius: 2vw;
       width: 10vw;
       height: 3vw;
@@ -699,8 +687,8 @@ h2{
       border: 0.1vw solid #000;
     }
   }
-  }
-.description_block {
+}
+.M_DescriptionBlock {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -711,7 +699,7 @@ h2{
   line-height: 1;
 
   &::after {
-    content: '';
+    content: "";
     display: block;
     width: 100%;
     height: 2px;
@@ -726,7 +714,7 @@ h2{
     gap: 5px;
 
     .highlight {
-      font-family: 'SFT-Schrifted-Serif-T', italic;
+      font-family: "SFT-Schrifted-Serif-T", italic;
     }
 
     .icon {
@@ -734,100 +722,86 @@ h2{
       height: 40px;
     }
   }
-  }
+}
 
-
-.title-main{
-      font-size: 3rem;
-      padding: 0 0 15px;
-      line-height: normal;
-    }
-.subtitle{
-    font-family: 'Forma DJR Cyrillic Micro', sans-serif;
-    font-size: 1.2rem;
-    line-height: normal;
+.title-main {
+  font-size: 3rem;
+  padding: 0 0 15px;
+  line-height: normal;
+}
+.subtitle {
+  font-family: "Forma DJR Cyrillic Micro", sans-serif;
+  font-size: 1.2rem;
+  line-height: normal;
 }
 
 .all_articles {
-      font-family: 'Forma DJR Cyrillic Micro', sans-serif;
-      font-size: 14px;
-      color: #ffffff;
-      text-decoration: none;
-      padding: 8px 16px;
-      border: 1px solid #000;
-      border-radius: 30px;
-      background-color: black;
-      cursor: pointer;
-      transition: all 0.3s ease;
+  font-family: "Forma DJR Cyrillic Micro", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid #000;
+  border-radius: 30px;
+  background-color: black;
+  cursor: pointer;
+  transition: all 0.3s ease;
 
-      &:hover {
-        background-color: #FF5C39;
-        color: #fff;
-      }
+  &:hover {
+    background-color: #ff5c39;
+    color: #fff;
+  }
 
-      &:active {
-        transform: scale(0.95);
-      }
+  &:active {
+    transform: scale(0.95);
+  }
 }
-.header-main-all{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 60px 60px 60px;
-
+.header-main-all {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 60px 60px 60px;
 }
-.articles-main-block{
-padding: 40px 0 0;
-    .articles{
-        gap: 15px;
-        padding: 0;
-    }
+.articles-main-block {
+  padding: 40px 0 0;
+  .articles {
+    gap: 15px;
+    padding: 0;
+  }
 }
-.dictionary_for_noob{
-    .quizlet-main{
-        width: 100vw;
-        border-radius: 30px;
-        background-color: #FF5C39;
-        padding: 60px 0;
-}
-}
-.checklist-main{
+.S_Dictionary {
+  .O_CardDictionariMain {
     width: 100vw;
     border-radius: 30px;
-    }
-.minigaid-main{
-    width: 100vw;
-    border-radius: 30px;
-    background-color: #FF5C39;
+    background-color: #ff5c39;
     padding: 60px 0;
+  }
 }
-.forma-section{
-    width:100vw;
-    height: 70vh;
-    background-color: #F0EFEF;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
-    .my-form-text {
-        font-size: 2rem;
+.forma-section {
+  width: 100vw;
+  height: 70vh;
+  background-color: #f0efef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-    }
+  .my-form-text {
+    font-size: 2rem;
+  }
 
-
-    .my-form-text-p{
+  .my-form-text-p {
     font-size: 1rem;
+  }
 
-    }
-
-    .forma-png{
-    width:80vw;
-    position:absolute;
+  .forma-png {
+    width: 80vw;
+    position: absolute;
     margin-top: -7vw;
-    }
+  }
 }
 footer {
   background-color: #000;
@@ -852,7 +826,6 @@ footer {
       display: flex;
       gap: 60px;
       padding: 60px;
-
 
       a {
         display: flex;
@@ -919,6 +892,3 @@ footer {
     }
   }
 }
-
-
-

@@ -85,10 +85,10 @@ module.exports = {
       chunks: ["index", "eyes"],
     }),
 
-    // Архив "Archive"
+    // Архив "Mini_guide"
     new HtmlWebpackPlugin({
-      template: "./src/archive.html",
-      filename: "./archive.html",
+      template: "./src/mini_guide.html",
+      filename: "mini_guide.html",
       chunks: ["index"],
     }),
 
@@ -96,13 +96,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/articles.html",
       filename: "./articles.html",
-      chunks: ["index"],
-    }),
-
-    // Мини-гайды "Mini-guides"
-    new HtmlWebpackPlugin({
-      template: "./src/mini-guides.html",
-      filename: "./mini-guides.html",
       chunks: ["index"],
     }),
 
@@ -142,10 +135,10 @@ module.exports = {
       chunks: ["index"],
     }),
 
-    // Публикации в разделе архив "archive"
+    // Публикации в разделе архив "Mini_guide"
     new HtmlWebpackPlugin({
-      template: "./src/archive/archive1.html",
-      filename: "./archive/archive1.html",
+      template: "./src/mini_guide/mini_guide1.html",
+      filename: "./mini_guide/mini_guide1.html",
       chunks: ["index"],
     }),
 
@@ -153,13 +146,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/dictionary/word1.html",
       filename: "./dictionary/word1.html",
-      chunks: ["index"],
-    }),
-
-    // Публикации в разделе МИНИ-ГАЙДЫ "Mini-guides"
-    new HtmlWebpackPlugin({
-      template: "./src/mini-guides/guide1.html",
-      filename: "./mini-guides/guide1.html",
       chunks: ["index"],
     }),
 
