@@ -137,7 +137,7 @@ module.exports = {
 
     // Публикации в разделе архив "Mini_guide"
     new HtmlWebpackPlugin({
-      template: "./src/mini_guide.html/mini_guide1.html",
+      template: "./src/mini_guide/mini_guide1.html",
       filename: "./mini_guide/mini_guide1.html",
       chunks: ["index"],
     }),
