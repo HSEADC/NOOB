@@ -12,11 +12,11 @@ module.exports = merge(common, {
                 { from: /./, to: './http-codes/404.html' }, // Перенаправляем все неизвестные маршруты на 404.html
             ],
         },
-        port:3000,
+        // port:3000,
   },
   output: {
     filename: '[name].[contenthash].js',
     path: path.resolve(__dirname, 'dev_build'),
-    clean: true
+    // clean: true
   }
 })
