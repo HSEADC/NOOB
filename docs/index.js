@@ -2,171 +2,342 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ 795:
-/***/ (() => {
+/***/ 954:
+/***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(146);
 
-;// ./src/tests/forAllTests.js
-var currentStage = 0;
-var resultCount = 0;
-var checkboxes = document.querySelectorAll("input[type=checkbox]");
-function initTest(stages) {
-  var numberOfQuestions = document.querySelector(".A_NumberOfQuestions");
-  var question = document.querySelector(".A_Question");
-  var answers = document.querySelectorAll(".Q_AnswerQuestion");
-
-  //номер вопроса
-  numberOfQuestions.innerHTML = "\u0432\u043E\u043F\u0440\u043E\u0441 \u2116".concat(currentStage + 1, "/").concat(stages.length);
-
-  //выводим текст вопроса
-  question.innerHTML = stages[currentStage].question;
-
-  //проверяем колва тегов для ответов и выводим
-  for (var i = 0; i < answers.length; i++) {
-    answers[i].innerHTML = stages[currentStage].answers[i].text;
-  }
-
-  //проверяем колва чекбоксов и добавляем атрибут с колвом баллов
-  for (var _i = 0; _i < checkboxes.length; _i++) {
-    checkboxes[_i].dataset.count = stages[currentStage].answers[_i].count;
-  }
-}
-function chooseAnswer(stages, resultTable) {
-  checkboxes.forEach(function (checkbox) {
-    checkbox.addEventListener("change", function () {
-      if (checkbox.checked) {
-        resultCount += Number(checkbox.dataset.count);
-        updateStage(stages, resultTable); // меняем вопрос и ответы на новые
-        checkbox.checked = false;
-      }
+document.addEventListener("DOMContentLoaded", function () {
+  initModal();
+});
+function initModal() {
+  var cards = document.querySelectorAll(".A_PopUp");
+  var popup = document.querySelector(".O_PopUpContainer");
+  cards.forEach(function (card) {
+    card.addEventListener("click", function () {
+      popup.classList.add("visible");
     });
   });
+  popup.addEventListener("click", function () {
+    popup.classList.remove("visible");
+  });
 }
-function updateStage(stages, resultTable) {
-  if (currentStage + 1 < stages.length) {
-    currentStage++;
-    initTest(stages);
+
+/***/ }),
+
+/***/ 140:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
+
+/* eslint-env browser */
+/*
+  eslint-disable
+  no-console,
+  func-names
+*/
+
+/** @typedef {any} TODO */
+
+var normalizeUrl = __webpack_require__(918);
+var srcByModuleId = Object.create(null);
+var noDocument = typeof document === "undefined";
+var forEach = Array.prototype.forEach;
+
+/**
+ * @param {function} fn
+ * @param {number} time
+ * @returns {(function(): void)|*}
+ */
+function debounce(fn, time) {
+  var timeout = 0;
+  return function () {
+    // @ts-ignore
+    var self = this;
+    // eslint-disable-next-line prefer-rest-params
+    var args = arguments;
+    var functionCall = function functionCall() {
+      return fn.apply(self, args);
+    };
+    clearTimeout(timeout);
+
+    // @ts-ignore
+    timeout = setTimeout(functionCall, time);
+  };
+}
+function noop() {}
+
+/**
+ * @param {TODO} moduleId
+ * @returns {TODO}
+ */
+function getCurrentScriptUrl(moduleId) {
+  var src = srcByModuleId[moduleId];
+  if (!src) {
+    if (document.currentScript) {
+      src = ( /** @type {HTMLScriptElement} */document.currentScript).src;
+    } else {
+      var scripts = document.getElementsByTagName("script");
+      var lastScriptTag = scripts[scripts.length - 1];
+      if (lastScriptTag) {
+        src = lastScriptTag.src;
+      }
+    }
+    srcByModuleId[moduleId] = src;
+  }
+
+  /**
+   * @param {string} fileMap
+   * @returns {null | string[]}
+   */
+  return function (fileMap) {
+    if (!src) {
+      return null;
+    }
+    var splitResult = src.split(/([^\\/]+)\.js$/);
+    var filename = splitResult && splitResult[1];
+    if (!filename) {
+      return [src.replace(".js", ".css")];
+    }
+    if (!fileMap) {
+      return [src.replace(".js", ".css")];
+    }
+    return fileMap.split(",").map(function (mapRule) {
+      var reg = new RegExp("".concat(filename, "\\.js$"), "g");
+      return normalizeUrl(src.replace(reg, "".concat(mapRule.replace(/{fileName}/g, filename), ".css")));
+    });
+  };
+}
+
+/**
+ * @param {TODO} el
+ * @param {string} [url]
+ */
+function updateCss(el, url) {
+  if (!url) {
+    if (!el.href) {
+      return;
+    }
+
+    // eslint-disable-next-line
+    url = el.href.split("?")[0];
+  }
+  if (!isUrlRequest( /** @type {string} */url)) {
+    return;
+  }
+  if (el.isLoaded === false) {
+    // We seem to be about to replace a css link that hasn't loaded yet.
+    // We're probably changing the same file more than once.
+    return;
+  }
+  if (!url || !(url.indexOf(".css") > -1)) {
+    return;
+  }
+
+  // eslint-disable-next-line no-param-reassign
+  el.visited = true;
+  var newEl = el.cloneNode();
+  newEl.isLoaded = false;
+  newEl.addEventListener("load", function () {
+    if (newEl.isLoaded) {
+      return;
+    }
+    newEl.isLoaded = true;
+    el.parentNode.removeChild(el);
+  });
+  newEl.addEventListener("error", function () {
+    if (newEl.isLoaded) {
+      return;
+    }
+    newEl.isLoaded = true;
+    el.parentNode.removeChild(el);
+  });
+  newEl.href = "".concat(url, "?").concat(Date.now());
+  if (el.nextSibling) {
+    el.parentNode.insertBefore(newEl, el.nextSibling);
   } else {
-    showResult(resultTable);
+    el.parentNode.appendChild(newEl);
   }
 }
-function showResult(resultTable) {
-  var testMessages = document.querySelector(".S_Test");
-  testMessages.remove();
-  var testResult = document.createElement("div");
-  testResult.classList.add("S_TestResult");
-  var finalCount = document.createElement("div");
-  finalCount.classList.add("A_FinalCount");
-  finalCount.innerHTML = "\u0418\u0442\u043E\u0433\u043E \u0431\u0430\u043B\u043B\u043E\u0432: ".concat(resultCount);
-  var resultHeader = document.createElement("div");
-  resultHeader.classList.add("A_ResultHeader");
-  var resultText = document.createElement("div");
-  resultText.classList.add("A_ResultText");
-  testResult.appendChild(finalCount);
-  testResult.appendChild(resultHeader);
-  testResult.appendChild(resultText);
-  document.querySelector("body").appendChild(testResult);
-  if (resultCount == 0 || resultCount == 1) {
-    resultHeader.innerHTML = resultTable[0].header;
-    resultText.innerHTML = resultTable[0].paragraph;
-  } else if (resultCount == 2 || resultTable == 3) {
-    resultHeader.innerHTML = resultTable[1].header;
-    resultText.innerHTML = resultTable[1].paragraph;
-  } else {
-    resultHeader.innerHTML = resultTable[2].header;
-    resultText.innerHTML = resultTable[2].paragraph;
-  }
+
+/**
+ * @param {string} href
+ * @param {TODO} src
+ * @returns {TODO}
+ */
+function getReloadUrl(href, src) {
+  var ret;
+
+  // eslint-disable-next-line no-param-reassign
+  href = normalizeUrl(href);
+  src.some(
+  /**
+   * @param {string} url
+   */
+  // eslint-disable-next-line array-callback-return
+  function (url) {
+    if (href.indexOf(src) > -1) {
+      ret = url;
+    }
+  });
+  return ret;
 }
 
+/**
+ * @param {string} [src]
+ * @returns {boolean}
+ */
+function reloadStyle(src) {
+  if (!src) {
+    return false;
+  }
+  var elements = document.querySelectorAll("link");
+  var loaded = false;
+  forEach.call(elements, function (el) {
+    if (!el.href) {
+      return;
+    }
+    var url = getReloadUrl(el.href, src);
+    if (!isUrlRequest(url)) {
+      return;
+    }
+    if (el.visited === true) {
+      return;
+    }
+    if (url) {
+      updateCss(el, url);
+      loaded = true;
+    }
+  });
+  return loaded;
+}
+function reloadAll() {
+  var elements = document.querySelectorAll("link");
+  forEach.call(elements, function (el) {
+    if (el.visited === true) {
+      return;
+    }
+    updateCss(el);
+  });
+}
 
-console.clear();
-;// ./src/tests/test1.js
+/**
+ * @param {string} url
+ * @returns {boolean}
+ */
+function isUrlRequest(url) {
+  // An URL is not an request if
 
-//база данных вопросы и ответы
-var stages = [
-//этап 1
-{
-  question: ["Начнём с простого. Что можно делать с дайсами?"],
-  //каждый ответ содержит текст и колво баллов
-  answers: [{
-    text: "кидать",
-    count: 1
-  }, {
-    text: "коптить",
-    count: 0
-  }, {
-    text: "курить",
-    count: 0
-  }, {
-    text: "колоть",
-    count: 0
-  }]
-},
-//этап 2
-{
-  question: ["Что такое казуалка?"],
-  answers: [{
-    text: "стиль",
-    count: 0
-  }, {
-    text: "настолка",
-    count: 0
-  }, {
-    text: "пальцы",
-    count: 0
-  }, {
-    text: "мурка",
-    count: 1
-  }]
-},
-//этап 3
-{
-  question: ["А что такое америтеш?"],
-  answers: [{
-    text: "треш",
-    count: 1
-  }, {
-    text: "гог",
-    count: 0
-  }, {
-    text: "мяу",
-    count: 1
-  }, {
-    text: "гавгав",
-    count: 0
-  }]
-},
-//этап 4
-{
-  question: ["Кто круче всех?"],
-  answers: [{
-    text: "я",
-    count: 1
-  }, {
-    text: "ты",
-    count: 0
-  }, {
-    text: "барсик",
-    count: 1
-  }, {
-    text: "никто",
-    count: 0
-  }]
-}];
-var resultTable = [{
-  header: "Кажется, ты лузер",
-  paragraph: "Учи лучше. Жопа"
-}, {
-  header: "Кажется, ты крутой",
-  paragraph: "Учи лучше. Жопа"
-}, {
-  header: "Кажется, ты нормис",
-  paragraph: "Учи лучше. Жопа"
-}];
-document.addEventListener("DOMContentLoaded", function () {
-  initTest(stages);
-  chooseAnswer(stages, resultTable);
-});
+  // It is not http or https
+  if (!/^[a-zA-Z][a-zA-Z\d+\-.]*:/.test(url)) {
+    return false;
+  }
+  return true;
+}
+
+/**
+ * @param {TODO} moduleId
+ * @param {TODO} options
+ * @returns {TODO}
+ */
+module.exports = function (moduleId, options) {
+  if (noDocument) {
+    console.log("no window.document found, will not HMR CSS");
+    return noop;
+  }
+  var getScriptSrc = getCurrentScriptUrl(moduleId);
+  function update() {
+    var src = getScriptSrc(options.filename);
+    var reloaded = reloadStyle(src);
+    if (options.locals) {
+      console.log("[HMR] Detected local css modules. Reload all css");
+      reloadAll();
+      return;
+    }
+    if (reloaded) {
+      console.log("[HMR] css reload %s", src.join(" "));
+    } else {
+      console.log("[HMR] Reload all css");
+      reloadAll();
+    }
+  }
+  return debounce(update, 50);
+};
+
+/***/ }),
+
+/***/ 918:
+/***/ ((module) => {
+
+
+
+/* eslint-disable */
+
+/**
+ * @param {string[]} pathComponents
+ * @returns {string}
+ */
+function normalizeUrl(pathComponents) {
+  return pathComponents.reduce(function (accumulator, item) {
+    switch (item) {
+      case "..":
+        accumulator.pop();
+        break;
+      case ".":
+        break;
+      default:
+        accumulator.push(item);
+    }
+    return accumulator;
+  }, /** @type {string[]} */[]).join("/");
+}
+
+/**
+ * @param {string} urlString
+ * @returns {string}
+ */
+module.exports = function (urlString) {
+  urlString = urlString.trim();
+  if (/^data:/i.test(urlString)) {
+    return urlString;
+  }
+  var protocol = urlString.indexOf("//") !== -1 ? urlString.split("//")[0] + "//" : "";
+  var components = urlString.replace(new RegExp(protocol, "i"), "").split("/");
+  var host = components[0].toLowerCase().replace(/\.$/, "");
+  components[0] = "";
+  var path = normalizeUrl(components);
+  return protocol + host + path;
+};
+
+/***/ }),
+
+/***/ 146:
+/***/ ((module, __unused_webpack___webpack_exports__, __webpack_require__) => {
+
+// extracted by mini-css-extract-plugin
+
+    if(true) {
+      (function() {
+        var localsJsonString = undefined;
+        // 1740474787797
+        var cssReload = __webpack_require__(140)(module.id, {});
+        // only invalidate when locals change
+        if (
+          module.hot.data &&
+          module.hot.data.value &&
+          module.hot.data.value !== localsJsonString
+        ) {
+          module.hot.invalidate();
+        } else {
+          module.hot.accept();
+        }
+        module.hot.dispose(function(data) {
+          data.value = localsJsonString;
+          cssReload();
+        });
+      })();
+    }
+  
 
 /***/ })
 
@@ -185,7 +356,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
+/******/ 			id: moduleId,
 /******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
@@ -235,7 +406,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /******/ 	
 /******/ 	/* webpack/runtime/get update manifest filename */
 /******/ 	(() => {
-/******/ 		__webpack_require__.hmrF = () => ("tests." + __webpack_require__.h() + ".hot-update.json");
+/******/ 		__webpack_require__.hmrF = () => ("index." + __webpack_require__.h() + ".hot-update.json");
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
@@ -829,7 +1000,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = __webpack_require__.hmrS_jsonp = __webpack_require__.hmrS_jsonp || {
-/******/ 			582: 0
+/******/ 			57: 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -1338,7 +1509,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__(795);
+/******/ 	var __webpack_exports__ = __webpack_require__(954);
 /******/ 	
 /******/ })()
 ;
