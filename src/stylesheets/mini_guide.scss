@@ -1,4 +1,4 @@
-.header-background-archive {
+.M_SectionHeader {
   text-align: center;
   padding: 60px 20px;
   background: #ff5c39;
@@ -15,11 +15,11 @@
     font-family: "SFT-Schrifted-Serif-T";
     -webkit-text-stroke: 2px;
     -webkit-font-smoothing: antialiased;
-    line-height: normal;
+    line-height: 90%;
     color: white;
   }
 }
-.p-box_mini {
+.Q_SectionMinitext {
   font-family: "Forma DJR Cyrillic Micro", sans-serif;
   font-size: 1rem;
   color: #ffffff;
@@ -36,10 +36,8 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
   gap: 20px;
   padding: 60px;
-  justify-content: flex-start;
 
   .cards-container {
     display: grid;

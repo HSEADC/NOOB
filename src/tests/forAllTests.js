@@ -82,3 +82,5 @@ function showResult(resultTable) {
 
 export { initTest };
 export { chooseAnswer };
+
+console.clear();

@@ -181,7 +181,7 @@ h2 {
   transform: translate(-50%, -50%);
   width: 70vw;
   z-index: 1;
-  .logo {
+  .A_Logo {
     align-items: center;
     background: #000;
     border-radius: 2vw;
@@ -198,7 +198,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     width: 11vw;
-    .about {
+    .A_HeaderText {
       align-items: center;
       background-color: #000;
       border-radius: 2vw;
@@ -212,7 +212,7 @@ h2 {
       text-decoration: none;
       width: 6vw;
     }
-    .about:hover {
+    .A_HeaderText:hover {
       background-color: #fff;
       border: 0.1vw solid #000;
       color: #000;
@@ -243,10 +243,10 @@ h2 {
     }
   }
 }
-.head2 {
+.O_Header {
   align-items: center;
   z-index: 2;
-  .logo {
+  .A_Logo {
     align-items: center;
     background: #fff;
     border-radius: 2vw;
@@ -257,12 +257,12 @@ h2 {
     .logoimg {
       width: 5vw;
     }
-    .logo:hover {
+    .A_Logo:hover {
       background-color: #ff5c39;
       border: 0.1vw solid #000;
     }
   }
-  .about {
+  .A_HeaderText {
     align-items: center;
     background-color: #fff;
     border-radius: 2vw;
@@ -276,7 +276,7 @@ h2 {
     text-decoration: none;
     width: 7vw;
   }
-  .about:hover {
+  .A_HeaderText:hover {
     background-color: #ff5c39;
     border: 0.1vw solid #000;
     color: #fff;
@@ -1221,7 +1221,7 @@ body {
     line-height: normal;
   }
 }
-.p-box {
+.A_SectionMinitext {
   width: 200px;
 }
 .categories {
@@ -1314,7 +1314,7 @@ body {
     }
   }
 }
-.header-background-archive {
+.M_SectionHeader {
   align-items: center;
   background: #ff5c39;
   border-radius: 0 0 30px 30px;
@@ -1334,7 +1334,7 @@ body {
     line-height: normal;
   }
 }
-.p-box_mini {
+.Q_SectionMinitext {
   color: #fff;
   font-family: Forma DJR Cyrillic Micro, sans-serif;
   font-size: 1rem;
@@ -1418,7 +1418,7 @@ a {
     padding: 20px;
   }
 }
-.head2 {
+.O_Header {
   background-color: #fff;
   border: 0.09vw solid #000;
   border-radius: 2vw;
@@ -1433,7 +1433,7 @@ a {
   transform: translate(-50%, -50%);
   width: 50vw;
   z-index: 3;
-  .logo {
+  .A_Logo {
     align-items: center;
     background: #fff;
     border-radius: 2vw;
@@ -1444,12 +1444,12 @@ a {
     .logoimg {
       width: 5vw;
     }
-    .logo:hover {
+    .A_Logo:hover {
       background-color: #ff5c39;
       border: 0.1vw solid #000;
     }
   }
-  .about {
+  .A_HeaderText {
     align-items: center;
     background-color: #fff;
     border-radius: 2vw;
@@ -1463,7 +1463,7 @@ a {
     text-decoration: none;
     width: 7vw;
   }
-  .about:hover {
+  .A_HeaderText:hover {
     background-color: #ff5c39;
     border: 0.1vw solid #000;
     color: #fff;
@@ -1499,7 +1499,7 @@ header {
   padding: 30vw 10vw;
   position: relative;
   text-align: center;
-  .logo {
+  .A_Logo {
     font-family: "SFT-Schrifted-Serif-T", italic;
     font-weight: 700;
     width: 100%;
@@ -1804,16 +1804,16 @@ nav {
   .color {
     height: 150px !important;
   }
-  .head2 {
+  .O_Header {
     border-radius: 3vw;
     height: 4.5vw;
     padding: 1vw;
     width: 55vw;
-    .about {
+    .A_HeaderText {
       align-items: center;
       display: flex;
       font-size: 1.2vw;
-      .about {
+      .A_HeaderText {
         height: 5vh;
         width: 20vw;
       }
@@ -1827,12 +1827,12 @@ nav {
   .place_setka {
     width: 100% !important;
   }
-  .head2 {
+  .O_Header {
     border-radius: 4vw;
     height: 6vw;
     padding: 1.5vw;
     width: 60vw;
-    .about {
+    .A_HeaderText {
       border-radius: 30vw;
       font-size: 1.6vw;
       height: 3vh;
@@ -1854,12 +1854,12 @@ nav {
   .place_photo3 {
     width: 80% !important;
   }
-  .head2 {
+  .O_Header {
     border-radius: 6vw;
     height: 10vw;
     padding: 2vw;
     width: 90vw;
-    .about {
+    .A_HeaderText {
       border-radius: 30vw;
       font-size: 2.5vw !important;
     }

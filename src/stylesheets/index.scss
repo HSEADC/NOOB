@@ -39,7 +39,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   padding: 0.6vw;
-  .logo {
+  .A_Logo {
     display: flex;
     background: #000;
     width: 8vw;
@@ -56,7 +56,7 @@ h2 {
     border-radius: 2vw;
     width: 11vw;
     justify-content: space-between;
-    .about {
+    .A_HeaderText {
       text-decoration: none;
       background-color: black;
       color: white;
@@ -70,7 +70,7 @@ h2 {
       justify-content: center;
       align-items: center;
     }
-    .about:hover {
+    .A_HeaderText:hover {
       background-color: white;
       color: black;
       border: 0.1vw solid #000;
@@ -101,7 +101,7 @@ h2 {
     }
   }
 }
-.head2 {
+.O_Header {
   z-index: 2;
   position: fixed;
   top: 5%;
@@ -117,7 +117,7 @@ h2 {
   align-items: center;
 
   padding: 0.6vw;
-  .logo {
+  .A_Logo {
     display: flex;
     background: #ffffff;
     width: 7vw;
@@ -128,12 +128,12 @@ h2 {
     .logoimg {
       width: 5vw;
     }
-    .logo:hover {
+    .A_Logo:hover {
       background-color: #ff5c39;
       border: 0.1vw solid #000;
     }
   }
-  .about {
+  .A_HeaderText {
     text-decoration: none;
     background-color: rgb(255, 255, 255);
     color: black;
@@ -147,7 +147,7 @@ h2 {
     justify-content: center;
     align-items: center;
   }
-  .about:hover {
+  .A_HeaderText:hover {
     font-family: "SFT-Schrifted-Serif-T", italic;
     background-color: #ff5c39;
     color: white;
@@ -812,12 +812,12 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
 
-  .socials {
+  .M_SocialsFooter {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
 
-    .text {
+    .A_FuterHeader {
       font-size: 18px;
       margin-right: 10px;
     }
@@ -848,12 +848,12 @@ footer {
     }
   }
 
-  .info {
+  .M_InformationFooter {
     display: flex;
     gap: 50px;
 
-    .creators,
-    .sections {
+    .M_Creators,
+    .M_Sections {
       text-align: left;
       font-size: 16px;
 

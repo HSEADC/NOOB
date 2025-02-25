@@ -61,3 +61,44 @@
     line-height: 38px;
   }
 }
+
+.A_PopUpTitle {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+.PopUpText {
+  text-align: center;
+}
+.A_PopUpImage {
+  width: 100%;
+}
+.W_PopUp {
+  width: 50vw;
+  height: 40vw;
+  background-color: #dbdbdb;
+  border-radius: 3vw;
+  padding: 1rem;
+}
+
+.O_PopUpContainer {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  background-color: rgba(39, 39, 39, 0.7);
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  overflow: hidden;
+
+  &.visible {
+    display: flex;
+  }
+}
+.O_CardDictionari {
+  transition: all 0.8s;
+  transform-style: preserve-3d;
+}
