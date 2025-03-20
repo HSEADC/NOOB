@@ -11,6 +11,7 @@ module.exports = {
     index: "./src/index.js",
     eyes: "./src/js/eyes.js",
     tests: "./src/tests/test1.js",
+    filterTags: "./src/js/articleTags.js",
   },
   output: {
     filename: "[name].js",
@@ -95,7 +96,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/articles.html",
       filename: "./articles.html",
-      chunks: ["index"],
+      chunks: ["filterTags"],
     }),
 
     // Словарик "Dictionary"
@@ -123,6 +124,13 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/styleguide.html",
       filename: "./styleguide.html",
+      chunks: ["index"],
+    }),
+
+    // "Tests"
+    new HtmlWebpackPlugin({
+      template: "./src/select.html",
+      filename: "./select.html",
       chunks: ["index"],
     }),
 
