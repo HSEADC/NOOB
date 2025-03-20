@@ -11,10 +11,9 @@ body {
   color: #000000;
 }
 
-.header-background {
+.S_SectionHeaders {
   text-align: center;
-  padding: 60px 20px;
-  background: #f2f8fd;
+  padding: 120px 60px 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -143,4 +142,14 @@ body {
   &.active {
     background-color: #ff5c39;
   }
+}
+.O_CardArticles.hidden {
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.HeaderArticles {
+  background: #f2f8fd;
 }

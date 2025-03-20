@@ -42,48 +42,42 @@ function initFilter() {
 
 function filterAll() {
   const cards = document.querySelectorAll(".O_CardArticles");
-
   cards.forEach((card) => {
-    card.style.opacity = "0"; // Исчезновение
-    setTimeout(() => {
-      card.style.display = "block";
-      card.style.opacity = "1";
-    }, 200);
+    card.classList.remove("hidden");
   });
 }
 
 function filterByTag() {
   const cards = document.querySelectorAll(".O_CardArticles");
-  const activeTags = document.querySelectorAll(".active");
-  let tagList = [];
+  const activeTags = Array.from(document.querySelectorAll(".active"));
+  const isAllActive = activeTags.some((tag) => tag.classList.contains("all"));
+  const tagList = new Set();
 
-  // Сначала скрываем все карточки с плавностью
-  cards.forEach((card) => {
-    card.style.opacity = "0";
-    setTimeout(() => {
-      card.style.display = "none";
-    }, 200);
-  });
-
-  // Получаем список активных тегов
-  activeTags.forEach((tag) => {
-    const classList = [...tag.classList].filter(
-      (c) => c !== "active" && c !== "all"
-    );
-    tagList.push(...classList);
-  });
-
-  // Показываем карточки, которые соответствуют активным тегам
-  setTimeout(() => {
-    tagList.forEach((tagName) => {
-      cards.forEach((card) => {
-        if (card.classList.contains(tagName)) {
-          card.style.display = "block";
-          setTimeout(() => {
-            card.style.opacity = "1";
-          }, 50);
-        }
-      });
+  if (isAllActive || activeTags.length === 0) {
+    // Показать все карточки
+    cards.forEach((card) => {
+      card.classList.remove("hidden");
     });
-  }, 200);
+    return;
+  }
+
+  // Сбор всех тегов из активных элементов
+  activeTags.forEach((tag) => {
+    tag.classList.forEach((cls) => {
+      if (cls !== "active") {
+        tagList.add(cls);
+      }
+    });
+  });
+
+  // Фильтрация карточек на основе тегов
+  cards.forEach((card) => {
+    const cardTags = Array.from(card.classList);
+    const hasMatchingTag = cardTags.some((tag) => tagList.has(tag));
+    if (hasMatchingTag) {
+      card.classList.remove("hidden");
+    } else {
+      card.classList.add("hidden");
+    }
+  });
 }
