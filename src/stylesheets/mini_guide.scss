@@ -16,7 +16,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 20px 60px;
+  padding: 20px 60px 120px 60px;
   justify-content: center;
 
   .cards-container {
@@ -80,9 +80,26 @@ a {
     }
 
     img {
-      width: 100%;
-      height: auto;
+      margin-top: auto;
+      max-width: 100%;
     }
+  }
+
+  .O_CardGuide div {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .M_GuideCardText {
+    flex-grow: 1;
+  }
+
+  .O_CardGuide img {
+    margin-top: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 
   .cards-container {
