@@ -12,6 +12,7 @@ module.exports = {
     eyes: "./src/js/eyes.js",
     tests: "./src/tests/test1.js",
     filterTags: "./src/js/articleTags.js",
+    filterTagsMini: "./src/js/miniguidTags.js",
   },
   output: {
     filename: "[name].js",
@@ -85,11 +86,11 @@ module.exports = {
       chunks: ["index", "eyes"],
     }),
 
-    // Архив "Mini_guide"
+    // "Mini_guide"
     new HtmlWebpackPlugin({
       template: "./src/mini_guide.html",
       filename: "mini_guide.html",
-      chunks: ["index"],
+      chunks: ["filterTagsMini", "index"],
     }),
 
     // Статьи "Articles"

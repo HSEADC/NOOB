@@ -16,7 +16,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 60px;
+  padding: 20px 60px;
   justify-content: center;
 
   .cards-container {
@@ -101,4 +101,11 @@ a {
   p {
     color: #f9f9f9;
   }
+}
+
+.O_CardGuide.hidden {
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
 }
