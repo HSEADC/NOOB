@@ -138,8 +138,8 @@ module.exports = {
     //ПРИМЕРЫ СТАТЕЙ
     // Публикации в разделе статьи "articles"
     new HtmlWebpackPlugin({
-      template: "./src/articles/article1.html",
-      filename: "./articles/article1.html",
+      template: "./src/articles/networking.html",
+      filename: "./articles/networking.html",
       chunks: ["index"],
     }),
 
