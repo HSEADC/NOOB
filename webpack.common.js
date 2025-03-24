@@ -114,13 +114,6 @@ module.exports = {
       chunks: ["index"], // Финальная версия файла
     }),
 
-    // "Styleguide"
-    new HtmlWebpackPlugin({
-      template: "./src/tests/test1.html",
-      filename: "./tests/test1.html",
-      chunks: ["tests"],
-    }),
-
     // "Tests"
     new HtmlWebpackPlugin({
       template: "./src/styleguide.html",
@@ -140,6 +133,52 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/articles/networking.html",
       filename: "./articles/networking.html",
+      chunks: ["index"],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/articles/design_case.html",
+      filename: "./articles/design_case.html",
+      chunks: ["index"],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/articles/social_media.html",
+      filename: "./articles/social_media.html",
+      chunks: ["index"],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/articles/how_not_to_get_tired.html",
+      filename: "./articles/how_not_to_get_tired.html",
+      chunks: ["index", "tests"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/articles/success_story.html",
+      filename: "./articles/success_story.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/articles/competitions.html",
+      filename: "./articles/competitions.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/articles/internship.html",
+      filename: "./articles/internship.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/articles/freelance_place.html",
+      filename: "./articles/freelance_place.html",
+      chunks: ["index"],
+    }),
+
+    // Публикации в разделе архив "Mini_guide"
+    new HtmlWebpackPlugin({
+      template: "./src/mini_guide/mini_guide1.html",
+      filename: "./mini_guide/mini_guide1.html",
       chunks: ["index"],
     }),
 

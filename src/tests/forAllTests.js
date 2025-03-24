@@ -7,18 +7,18 @@ function initTest(stages) {
   const question = document.querySelector(".A_Question");
   const answers = document.querySelectorAll(".Q_AnswerQuestion");
 
-  //номер вопроса
+  // номер вопроса
   numberOfQuestions.innerHTML = `вопрос №${currentStage + 1}/${stages.length}`;
 
-  //выводим текст вопроса
+  // выводим текст вопроса
   question.innerHTML = stages[currentStage].question;
 
-  //проверяем колва тегов для ответов и выводим
+  // проверяем количество тегов для ответов и выводим
   for (let i = 0; i < answers.length; i++) {
     answers[i].innerHTML = stages[currentStage].answers[i].text;
   }
 
-  //проверяем колва чекбоксов и добавляем атрибут с колвом баллов
+  // проверяем количество чекбоксов и добавляем атрибут с количеством баллов
   for (let i = 0; i < checkboxes.length; i++) {
     checkboxes[i].dataset.count = stages[currentStage].answers[i].count;
   }
@@ -47,31 +47,26 @@ function updateStage(stages, resultTable) {
 
 function showResult(resultTable) {
   const testMessages = document.querySelector(".S_Test");
-  testMessages.remove();
-
-  const testResult = document.createElement("div");
-  testResult.classList.add("S_TestResult");
+  testMessages.innerHTML = ""; // Очищаем содержимое теста, но НЕ удаляем его
 
   const finalCount = document.createElement("div");
   finalCount.classList.add("A_FinalCount");
   finalCount.innerHTML = `Итого баллов: ${resultCount}`;
 
-  const resultHeader = document.createElement("div");
+  const resultHeader = document.createElement("h2");
   resultHeader.classList.add("A_ResultHeader");
 
-  const resultText = document.createElement("div");
+  const resultText = document.createElement("p");
   resultText.classList.add("A_ResultText");
 
-  testResult.appendChild(finalCount);
-  testResult.appendChild(resultHeader);
-  testResult.appendChild(resultText);
-
-  document.querySelector("body").appendChild(testResult);
+  testMessages.appendChild(finalCount);
+  testMessages.appendChild(resultHeader);
+  testMessages.appendChild(resultText);
 
   if (resultCount == 0 || resultCount == 1) {
     resultHeader.innerHTML = resultTable[0].header;
     resultText.innerHTML = resultTable[0].paragraph;
-  } else if (resultCount == 2 || resultTable == 3) {
+  } else if (resultCount == 2 || resultCount == 3) {
     resultHeader.innerHTML = resultTable[1].header;
     resultText.innerHTML = resultTable[1].paragraph;
   } else {

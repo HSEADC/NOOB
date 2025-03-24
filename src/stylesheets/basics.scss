@@ -24,11 +24,30 @@ h2 {
 .A_Cover {
   width: 100%;
   height: 20vw;
-  background: #ff5c39;
   position: absolute;
   top: 0;
   left: 0;
   border-radius: 0 0 2vw 2vw;
+}
+
+.A_Cover img {
+  width: 100%;
+}
+
+.orange {
+  background: #ff5c39;
+}
+
+.black {
+  background: #1a1a1d;
+}
+
+.pink {
+  background: #fccaca;
+}
+
+.blue {
+  background: #f2f8fd;
 }
 
 .A_Icon {
@@ -96,7 +115,7 @@ h2 {
 }
 
 .A_Tag:first-child {
-  background: #3d1d0e;
+  background: #1a1a1d;
   color: white;
 }
 
@@ -134,7 +153,7 @@ h2 {
   justify-content: normal;
   width: 86vw;
   background: white;
-  border-radius: 16px;
+  border-radius: 30px;
   border: 1px solid black;
   padding: 16px;
   box-shadow: 0px 6px 0px black;
@@ -194,6 +213,7 @@ h2 {
   align-items: center;
   gap: 20px;
   padding: 0px 0px 45px 0px;
+  font-family: "Forma DJR Cyrillic Display";
 }
 
 .M_HeaderArticle h2 {
@@ -359,4 +379,179 @@ h2 {
   background-color: #f2f8fd;
   padding: 4% 0 10%;
   margin-top: 6%;
+}
+
+.S_Test {
+  background: white;
+  margin: 6%;
+  padding: 20px;
+  flex-direction: column;
+  border-radius: 30px;
+  text-align: center;
+  width: 86vw;
+  margin-left: 6%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: normal;
+  border: 1px solid black;
+  box-shadow: 0px 6px 0px black;
+  gap: 1.5vw;
+}
+.A_HeaderTest {
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: "Forma DJR Cyrillic Display";
+}
+.C_AnswerMessages {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: start;
+}
+.A_AnswerMessage {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+label {
+  font-size: 1.2rem;
+  font-family: "Forma DJR Cyrillic Micro", sans-serif;
+}
+
+.A_AnswerMessage {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.A_AnswerMessage input[type="checkbox"] {
+  appearance: none;
+  width: 26px;
+  height: 26px;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.A_AnswerMessage input[type="checkbox"]:checked::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #ff5c39;
+  border-radius: 50%;
+  position: absolute;
+}
+.A_Button {
+  margin-top: 12px;
+  padding: 12px;
+  background: #1a1a1d;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 6vw;
+}
+.A_Button:hover {
+  background: #ff5c39;
+}
+.A_NumberOfQuestions {
+  font-size: 18px;
+  color: gray;
+}
+
+.A_RestartButton {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px; /* Делаем края закругленными */
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Эффект глянцевого блика */
+.A_RestartButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transition: left 0.4s ease-in-out;
+}
+
+.A_RestartButton:hover::before {
+  left: 100%;
+}
+
+.A_RestartButton:hover {
+  background-color: black; /* Черный цвет не меняется */
+  transform: scale(1.05); /* Легкое увеличение */
+}
+
+.A_RestartButton:active {
+  transform: scale(0.95); /* Эффект нажатия */
+}
+
+.S_TestResult {
+  display: flex;
+}
+
+.A_FinalCount {
+  font-family: "Forma DJR Cyrillic Display";
+  font-size: 1.2rem;
+}
+
+.A_ResultHeader {
+  font-size: 3rem;
+}
+
+.A_ResultText {
+  font-size: 1.2rem;
+}
+.A_Question {
+  font-family: "Forma DJR Cyrillic Display";
+  font-size: 2rem;
+}
+
+.W_TestText {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  align-items: flex-start;
+}
+
+.O_Download {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f2f8fd;
+  border-radius: 30px;
+  text-decoration: none;
+  color: black;
+  font-size: 32px;
+  font-style: italic;
+  font-family: "SFT-Schrifted-Serif-T";
+  line-height: normal;
+  margin: 45px;
+  width: 86vw;
+  margin-left: 6%;
+  padding: 16px 24px;
+  border: 1px solid black;
+
+  gap: 12px;
 }
