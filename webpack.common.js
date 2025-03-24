@@ -11,6 +11,8 @@ module.exports = {
     index: "./src/index.js",
     eyes: "./src/js/eyes.js",
     tests: "./src/tests/test1.js",
+    tests_typography: "./src/tests/test_typography.js",
+    tests_freelance: "./src/tests/test_freelance.js",
     filterTags: "./src/js/articleTags.js",
     filterTagsMini: "./src/js/miniguidTags.js",
   },
@@ -172,6 +174,50 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/articles/freelance_place.html",
       filename: "./articles/freelance_place.html",
+      chunks: ["index"],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/articles/typography.html",
+      filename: "./articles/typography.html",
+      chunks: ["index", "tests_typography"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/articles/study_and_work.html",
+      filename: "./articles/study_and_work.html",
+      chunks: ["index", "tests_freelance"],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/articles/books.html",
+      filename: "./articles/books.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/articles/trends.html",
+      filename: "./articles/trends.html",
+      chunks: ["index"],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/articles/advise.html",
+      filename: "./articles/advise.html",
+      chunks: ["index", "tests_typography"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/articles/mentor.html",
+      filename: "./articles/mentor.html",
+      chunks: ["index", "tests_freelance"],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/articles/criticism.html",
+      filename: "./articles/criticism.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/articles/time_control.html",
+      filename: "./articles/time_control.html",
       chunks: ["index"],
     }),
 
