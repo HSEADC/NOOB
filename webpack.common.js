@@ -223,15 +223,33 @@ module.exports = {
 
     // Публикации в разделе архив "Mini_guide"
     new HtmlWebpackPlugin({
-      template: "./src/mini_guide/mini_guide1.html",
-      filename: "./mini_guide/mini_guide1.html",
+      template: "./src/mini_guide/plagin1.html",
+      filename: "./mini_guide/plagin1.html",
       chunks: ["index"],
     }),
-
-    // Публикации в разделе архив "Mini_guide"
     new HtmlWebpackPlugin({
-      template: "./src/mini_guide/mini_guide1.html",
-      filename: "./mini_guide/mini_guide1.html",
+      template: "./src/mini_guide/plagin2.html",
+      filename: "./mini_guide/plagin2.html",
+      chunks: ["index"],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/mini_guide/plagin3.html",
+      filename: "./mini_guide/plagin3.html",
+      chunks: ["index"],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/mini_guide/neuros.html",
+      filename: "./mini_guide/neuros.html",
+      chunks: ["index"],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/mini_guide/mockups.html",
+      filename: "./mini_guide/mockups.html",
+      chunks: ["index"],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/mini_guide/fonts.html",
+      filename: "./mini_guide/fonts.html",
       chunks: ["index"],
     }),
 
