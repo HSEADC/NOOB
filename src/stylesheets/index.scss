@@ -1,322 +1,78 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 html,
 body {
   background-color: #ffffff;
+  width: 100%;
+  height: 100%;
 }
 body {
   font-family: "Forma DJR Cyrillic Micro", "Forma DJR Cyrillic Display";
   font-weight: 400;
   font-family: "SFT-Schrifted-Serif-T", italic;
 }
+/* Шрифты */
+
+h2 {
+  font-size: 7rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "SFT-Schrifted-Serif-T";
+  -webkit-text-stroke: 1px;
+  -webkit-font-smoothing: antialiased;
+  line-height: 90%;
+}
+
+h4 {
+  color: #050505;
+  text-align: center;
+  font-family: "Forma DJR Cyrillic Display";
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.8rem;
+}
+
+h5 {
+  color: #050505;
+  text-align: center;
+  font-family: "Forma DJR Cyrillic Display";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.8rem;
+}
+
+h6 {
+  color: var(--BLACK, #050505);
+  text-align: center;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #050505;
+  font-family: "SFT Schrifted Serif TRIAL T";
+  font-size: 4.5rem;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 4.8rem;
+  letter-spacing: 0.1rem;
+}
 
 p {
   font-family: "Forma DJR Cyrillic Micro";
-}
-h1 {
-  font-family: "Forma DJR Cyrillic Micro";
-}
-h2 {
-  font-family: "SFT-Schrifted-Serif-T";
-  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 130%;
 }
 
-.header {
-  z-index: 1;
-  position: fixed;
-  top: 5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 70vw;
-  height: 3vw;
-  border-radius: 2vw;
-  background-color: white;
-  border: 0.09vw solid #000;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.6vw;
-  .A_Logo {
-    display: flex;
-    background: #000;
-    width: 8vw;
-    height: 2vw;
-    border-radius: 2vw;
-    justify-content: center;
-    align-items: center;
-    .logoimg {
-      width: 5vw;
-    }
-  }
-  .logo2 {
-    display: flex;
-    border-radius: 2vw;
-    width: 11vw;
-    justify-content: space-between;
-    .A_HeaderText {
-      text-decoration: none;
-      background-color: black;
-      color: white;
-      width: 6vw;
-      height: 2vw;
-      text-align: center;
-      font-family: "Forma DJR Cyrillic Micro";
-      font-size: 0.9vw;
-      border-radius: 2vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .A_HeaderText:hover {
-      background-color: white;
-      color: black;
-      border: 0.1vw solid #000;
-    }
-    .vk {
-      background-color: black;
-      width: 2vw;
-      height: 2vw;
-      .vkphoto {
-        width: 1.5vw;
-      }
-      border-radius: 2vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .tg {
-      background-color: black;
-      width: 2vw;
-      height: 2vw;
-      .tgphoto {
-        width: 1.5vw;
-      }
-      border-radius: 2vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-}
-.O_Header {
-  z-index: 2;
-  position: fixed;
-  top: 5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 38vw;
-  border-radius: 2vw;
-  background-color: white;
-  border: 0.09vw solid #000;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1vw;
-  .A_Logo {
-    display: flex;
-    background: #ffffff;
-    width: 7vw;
-    height: 2vw;
-    border-radius: 2vw;
-    justify-content: center;
-    align-items: center;
-    .logoimg {
-      width: 5vw;
-    }
-    .A_Logo:hover {
-      background-color: #ff5c39;
-      border: 0.1vw solid #000;
-    }
-  }
-  .A_HeaderText {
-    text-decoration: none;
-    background-color: rgb(255, 255, 255);
-    color: black;
-    width: 7vw;
-    height: 2vw;
-    text-align: center;
-    font-family: "Forma DJR Cyrillic Micro";
-    font-size: 1vw;
-    border-radius: 2vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .A_HeaderText:hover {
-    font-family: "SFT-Schrifted-Serif-T", italic;
-    background-color: #ff5c39;
-    color: white;
-    border: 0.1vw solid #000;
-  }
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: default;
 }
 
-.S_MainBlock {
-  width: 100%;
-  height: 100vh;
-  background-color: #ff5c39;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  .O_MainBlock {
-    position: relative;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    z-index: 0;
-    height: 100vh;
-
-    .noob {
-      width: 60vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .A_Circle {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: white;
-      border-radius: 50%;
-      width: 100%;
-      height: 100%;
-      margin: auto;
-      z-index: -1;
-      filter: blur(25px);
-    }
-    .star {
-      width: 3vw;
-      margin-bottom: 14vw;
-    }
-  }
-
-  .A_title {
-    font-family: "Forma DJR Cyrillic Micro";
-    font-size: 26px;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    margin-top: -5vw;
-    z-index: 2;
-    transform: translateY(-200%);
-  }
-
-  .title2 {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    width: 100%;
-    height: 10vw;
-    margin-left: 5vw;
-    margin-top: auto;
-    .star {
-      width: 3vw;
-      margin-bottom: 2vw;
-    }
-    .slang {
-      font-family: "Forma DJR Cyrillic Micro";
-      font-size: 1vw;
-      color: black;
-      margin-bottom: 3vw;
-      margin-left: 1vw;
-    }
-  }
-
-  /* ГЛАЗА */
-  .move-area {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-  }
-  .container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4vw;
-    width: 50vw;
-  }
-  .eye {
-    position: relative;
-    display: inline-block;
-    border-radius: 50%;
-    height: 11vw;
-    width: 11vw;
-  }
-  .eye:after {
-    position: absolute;
-    bottom: 5vw;
-    right: 1vw;
-    height: 5vw;
-    width: 5vw;
-    background-color: black;
-    border-radius: 50%;
-    content: "";
-  }
-}
-
-.block2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1vw;
-  .my-form-text {
-    text-align: center;
-    font-family: "SFT-Schrifted-Serif-T", sans-serif;
-    font-size: 2vw;
-  }
-  form {
-    margin-top: 0.6vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1vw;
-    width: 31vw;
-    height: 4.5vw;
-    border-radius: 5vw;
-    border: 0.09vw solid #000;
-    background-color: #ffffff;
-    text-decoration: none;
-    #my-form {
-      width: 50%;
-      margin: 0 auto;
-      padding: 1rem;
-      border: 1px solid #000;
-      border-radius: 5px;
-      background-color: #fff;
-    }
-    input {
-      border-radius: 2vw;
-      width: 18vw;
-      height: 3vw;
-      font-family: "Forma DJR Cyrillic Micro";
-      font-size: 1vw;
-      text-align: center;
-      border: 0.1vw solid #000;
-      background-color: #f0efef;
-    }
-    button {
-      border-radius: 2vw;
-      width: 10vw;
-      height: 3vw;
-      background-color: black;
-      color: white;
-      font-family: "Forma DJR Cyrillic Micro";
-      font-size: 1vw;
-      border: 0.1vw solid #000;
-    }
-  }
-}
+/* О НАС - пока не переделанная, но нужная */
 
 .frame1 {
   width: 100%;
@@ -387,10 +143,6 @@ h2 {
       font-size: 1vw;
     }
   }
-}
-.skobkiheader {
-  font-size: 2vw;
-  text-align: center;
 }
 
 .frame2 {
@@ -636,257 +388,6 @@ h2 {
     .rectangle {
       width: 29vw;
       display: flex;
-    }
-  }
-}
-
-.footer {
-  width: 100%;
-  height: 15vw;
-  background-color: #ff5c39;
-  border-top-left-radius: 3vw;
-  border-top-right-radius: 3vw;
-  .emailtxt {
-    padding: 4vw 4vw;
-    font-size: 2vw;
-    line-height: 0.9;
-    color: white;
-  }
-  form {
-    margin: -2vw 4vw 0vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1vw;
-    width: 31vw;
-    height: 4.5vw;
-    border-radius: 5vw;
-    border: 0.09vw solid #000;
-    background-color: #ffffff;
-    text-decoration: none;
-    input {
-      border-radius: 2vw;
-      width: 18vw;
-      height: 3vw;
-      font-family: "Forma DJR Cyrillic Micro";
-      font-size: 1vw;
-      text-align: center;
-      background-color: #dedede;
-      border: 0.09vw solid #000;
-    }
-    button {
-      border-radius: 2vw;
-      width: 10vw;
-      height: 3vw;
-      background-color: black;
-      color: white;
-      font-family: "Forma DJR Cyrillic Micro";
-      font-size: 1vw;
-      border: 0.1vw solid #000;
-    }
-  }
-}
-.M_DescriptionBlock {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 20px;
-  font-family: "Forma DJR Cyrillic Micro";
-  font-size: 30px;
-  text-align: left;
-  line-height: 1;
-
-  &::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: black;
-    margin-top: 10px;
-  }
-
-  .content {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 5px;
-
-    .highlight {
-      font-family: "SFT-Schrifted-Serif-T", italic;
-    }
-
-    .icon {
-      width: 40px;
-      height: 40px;
-    }
-  }
-}
-
-.title-main {
-  font-size: 3rem;
-  padding: 0 0 15px;
-  line-height: normal;
-}
-.subtitle {
-  font-family: "Forma DJR Cyrillic Micro", sans-serif;
-  font-size: 1.2rem;
-  line-height: normal;
-}
-
-.all_articles {
-  font-family: "Forma DJR Cyrillic Micro", sans-serif;
-  font-size: 14px;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 8px 16px;
-  border: 1px solid #000;
-  border-radius: 30px;
-  background-color: black;
-  cursor: pointer;
-  transition: all 0.3s ease;
-
-  &:hover {
-    background-color: #ff5c39;
-    color: #fff;
-  }
-
-  &:active {
-    transform: scale(0.95);
-  }
-}
-.header-main-all {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 60px 60px 60px;
-}
-.articles-main-block {
-  padding: 40px 0 0;
-  .articles {
-    gap: 15px;
-    padding: 0;
-  }
-}
-.S_Dictionary {
-  .O_CardDictionariMain {
-    width: 100vw;
-    border-radius: 30px;
-    background-color: #ff5c39;
-    padding: 60px 0;
-  }
-}
-
-.forma-section {
-  width: 100vw;
-  height: 70vh;
-  background-color: #f0efef;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  .my-form-text {
-    font-size: 2rem;
-  }
-
-  .my-form-text-p {
-    font-size: 1rem;
-  }
-
-  .forma-png {
-    width: 80vw;
-    position: absolute;
-    margin-top: -7vw;
-  }
-}
-footer {
-  background-color: #000;
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-
-  .M_SocialsFooter {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-
-    .A_FuterHeader {
-      font-size: 18px;
-      margin-right: 10px;
-    }
-
-    .icon {
-      display: flex;
-      gap: 60px;
-      padding: 60px;
-
-      a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 20px;
-        height: 20px;
-        background-color: white;
-        border-radius: 50%;
-        color: black;
-        font-size: 20px;
-        text-decoration: none;
-        transition: background-color 0.3s, color 0.3s;
-
-        &:hover {
-          background-color: gray;
-          color: white;
-        }
-      }
-    }
-  }
-
-  .M_InformationFooter {
-    display: flex;
-    gap: 50px;
-
-    .M_Creators,
-    .M_Sections {
-      text-align: left;
-      font-size: 16px;
-
-      h4 {
-        margin-bottom: 10px;
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-
-        img {
-          width: 10px;
-          height: 10px;
-          margin-right: 10px;
-        }
-      }
-
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-
-        li {
-          margin-bottom: 5px;
-
-          a {
-            text-decoration: none;
-            color: white;
-            transition: color 0.3s;
-
-            &:hover {
-              color: gray;
-            }
-          }
-        }
-      }
     }
   }
 }

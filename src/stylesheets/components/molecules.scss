@@ -1,0 +1,194 @@
+/* ГЛАВНАЯ */
+
+.M_TextForm {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  justify-content: center;
+  align-items: center;
+}
+.M_ArticleText {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+  max-width: 700px;
+}
+
+.M_PhotoArticle {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.M_TelegramIndex {
+  width: 92vw;
+  margin-left: 4%;
+}
+.M_Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 2.5rem;
+  border-radius: 50px;
+  background-color: #000000;
+  color: #dedede;
+  font-size: large;
+}
+.M_Button img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+.M_CategoryCardText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.M_DescriptionBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  font-family: "Forma DJR Cyrillic Micro";
+  font-size: 30px;
+  text-align: left;
+  line-height: 1;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin-top: 10px;
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+
+    .highlight {
+      font-family: "SFT-Schrifted-Serif-T", italic;
+    }
+
+    .icon {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+/* РАЗДЕЛ СТАТЬИ */
+/* РАЗДЕЛ CЛОВАРЬ */
+/* РАЗДЕЛ МИНИ-ГИД */
+/* СТРАНИЦА СТАТЬИ */
+
+.M_TitleArticle {
+  margin-bottom: 10px;
+}
+
+.M_Name {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.M_Description {
+  font-size: 22px;
+  width: 50vw;
+  font-style: italic;
+  font-family: "SFT-Schrifted-Serif-T";
+  line-height: 1.5;
+  margin-left: 60px;
+}
+
+.M_HeaderArticle {
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 0px 45px 0px;
+  font-family: "Forma DJR Cyrillic Display";
+}
+
+.M_HeaderArticle h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 18px;
+}
+
+.M_Content {
+  padding-left: 21%;
+  width: 70vw;
+}
+
+.M_Content p {
+  font-size: 20px;
+  line-height: 26px;
+  margin: 18px 0 22px;
+}
+
+.M_Content ul {
+  margin-left: 20px;
+  padding-left: 0;
+}
+
+.M_Content li {
+  font-size: 18px;
+  line-height: 1.5;
+  list-style-type: disc;
+}
+
+.M_Image {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.M_Image img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+}
+
+.M_Image p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+}
+
+.M_NameAuthors {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  flex-direction: column;
+}
+.M_Telegram {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+.M_Authors {
+  display: flex;
+  width: 50vw;
+  gap: 4vw;
+  justify-content: space-between;
+}
+
+/* СТРАНИЦА МИНИ-ГИДА */
+
+.M_MiniGuideText {
+  display: flex;
+  width: 45vw;
+  flex-direction: column;
+  gap: 1vw;
+  align-items: flex-start;
+}

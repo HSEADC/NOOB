@@ -1,3 +1,5 @@
+/* ГЛАВНАЯ */
+
 .A_HeaderText {
   width: 5vw;
 }
@@ -5,4 +7,426 @@
   display: flex;
   width: 2rem;
   justify-content: center;
+}
+
+.A_CircleForm {
+  position: absolute;
+  overflow: hidden;
+  background: white;
+  border-radius: 50%;
+  width: 100%;
+  height: 50%;
+  margin: auto;
+  z-index: -3;
+  filter: blur(25px);
+}
+
+.A_LogoForm img {
+  width: 20vw;
+}
+
+.A_LogoError {
+  width: 60vw;
+}
+
+.A_IdeaForPost {
+  position: absolute;
+  width: 70vw;
+}
+
+.A_HeaderChannel {
+  text-align: center;
+  padding: 0;
+}
+
+.A_TextChannel {
+  text-align: center;
+}
+
+.A_CategoryTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+}
+
+.A_CategoryText {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.A_CategoryImg img {
+  width: 45vw;
+}
+
+.A_MainTitle {
+  font-size: 3rem;
+  padding: 0 0 15px;
+  line-height: normal;
+}
+
+/* РАЗДЕЛ СТАТЬИ */
+
+.A_SectionMinitext {
+  width: 200px;
+}
+
+.A_Tegs {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  border-radius: 20px;
+  font-family: "Forma DJR Cyrillic Micro", sans-serif;
+  white-space: nowrap;
+
+  &.active {
+    background-color: #ff5c39;
+  }
+}
+
+.HeaderArticles {
+  background: #f2f8fd;
+}
+/* РАЗДЕЛ CЛОВАРЬ */
+
+.A_PopUpTitle {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+.PopUpText {
+  text-align: center;
+}
+.A_PopUpImage {
+  width: 100%;
+}
+
+/* РАЗДЕЛ МИНИ-ГИД */
+
+.A_SectionMinitext {
+  font-family: "Forma DJR Cyrillic Micro", sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+  line-height: normal;
+}
+
+/* СТРАНИЦА СТАТЬИ */
+
+.A_Cover {
+  width: 100%;
+  height: 20vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0 0 2vw 2vw;
+}
+
+.A_Cover img {
+  width: 100%;
+}
+
+.A_Icon {
+  position: absolute;
+  width: 9vw;
+  margin-top: 15%;
+  margin-left: 6%;
+  height: 9vw;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  overflow: hidden;
+  border: 1px solid #1a1a1d;
+}
+.A_Icon img {
+  width: 100px;
+  height: 100px;
+}
+
+.A_TitleArticle1 {
+  font-size: 62px;
+  font-weight: bold;
+}
+
+.A_TitleArticle2 {
+  font-size: 62px;
+  font-style: italic;
+  font-family: "SFT-Schrifted-Serif-T";
+  color: #222;
+}
+.A_Tag {
+  padding: 8px 18px;
+  font-family: "Forma DJR Cyrillic Micro", sans-serif;
+  font-size: 1.2rem;
+  color: #ffffff;
+  line-height: normal;
+  border-radius: 60px;
+  border: none;
+  cursor: pointer;
+}
+
+.A_Tag:first-child {
+  background: #1a1a1d;
+  color: white;
+}
+
+.A_Tag:last-child {
+  background: white;
+  border: 1px solid black;
+  color: black;
+}
+.A_Name {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.A_UserPhoto img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.A_NameBig {
+  font-weight: bold;
+  font-family: "Forma DJR Cyrillic Micro", sans-serif;
+  font-size: 22px;
+  color: black;
+}
+
+.A_Profession {
+  font-size: 18px;
+  font-family: "Forma DJR Cyrillic Micro", sans-serif;
+  color: #666;
+}
+.A_Divider {
+  flex-grow: 1;
+  height: 1px;
+  background: black;
+}
+.A_ArticleText {
+  font-size: 52px;
+  font-style: italic;
+  font-family: "SFT-Schrifted-Serif-T";
+  line-height: normal;
+  -webkit-text-stroke: 1px;
+}
+
+.A_HeaderTest {
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: "Forma DJR Cyrillic Display";
+}
+
+.A_AnswerMessage {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+label {
+  font-size: 1.2rem;
+  font-family: "Forma DJR Cyrillic Micro", sans-serif;
+}
+
+.A_AnswerMessage {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.A_AnswerMessage input[type="checkbox"] {
+  appearance: none;
+  width: 26px;
+  height: 26px;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.A_AnswerMessage input[type="checkbox"]:checked::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #ff5c39;
+  border-radius: 50%;
+  position: absolute;
+}
+.A_Button {
+  margin-top: 12px;
+  padding: 12px;
+  background: #1a1a1d;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 6vw;
+}
+.A_Button:hover {
+  background: #ff5c39;
+}
+.A_NumberOfQuestions {
+  font-size: 18px;
+  color: gray;
+}
+
+.A_RestartButton {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px; /* Делаем края закругленными */
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.A_RestartButton:hover::before {
+  left: 100%;
+}
+
+.A_RestartButton:hover {
+  background-color: black;
+  transform: scale(1.05);
+}
+
+.A_RestartButton:active {
+  transform: scale(0.95);
+}
+
+.A_Subscribe {
+  background: black;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-family: "Forma DJR Cyrillic Micro", sans-serif;
+}
+
+.A_Subscribe:hover {
+  background: #333;
+}
+
+.A_AuthorsPhoto img {
+  width: 120px;
+  height: 120;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.A_FinalCount {
+  font-family: "Forma DJR Cyrillic Display";
+  font-size: 1.2rem;
+}
+
+.A_ResultHeader {
+  font-size: 3rem;
+}
+
+.A_ResultText {
+  font-size: 1.2rem;
+}
+.A_Question {
+  font-family: "Forma DJR Cyrillic Display";
+  font-size: 2rem;
+}
+
+/* СТРАНИЦА МИНИ-ГИДА */
+
+.A_MiniGuideCoverImg {
+  display: flex;
+  justify-content: center;
+}
+
+.A_MiniGuideCoverImg img {
+  width: 50vw;
+}
+
+//* Cостояния для ссылок и изменение цвета *//
+
+.orange {
+  background: #ff5c39;
+}
+
+.black {
+  background: #1a1a1d;
+}
+
+.pink {
+  background: #fccaca;
+}
+
+.blue {
+  background: #f2f8fd;
+}
+
+.link {
+  font-size: 16px;
+  color: #8e8e8e;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.text_link {
+  color: #ff5c39;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #ff5c39;
+  text-decoration: none;
+}
+
+.linkerror {
+  color: #ff5c39;
+  text-decoration: underline;
+}
+
+.linkblue {
+  color: #00aaff;
+  text-decoration: underline;
+}
+
+.blue_cover {
+  background-color: #c5ebff;
+}
+
+.CategoriesPink {
+  background: linear-gradient(90deg, #fff5f5, #fccaca);
+}
+
+.CategoriesOrange {
+  background: linear-gradient(90deg, #ffebe6, #ff5c39);
+}
+
+.readarticle {
+  width: 12rem;
+}
+
+.tegsArticle {
+  justify-content: flex-start;
+}
+.HeaderDictonary {
+  background: #fccaca;
+}
+
+.HeaderMiniGuid {
+  background: #ff5c39;
+  color: #f9f9f9;
+
+  p {
+    color: #f9f9f9;
+  }
 }

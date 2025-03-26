@@ -1,0 +1,235 @@
+/* РАЗДЕЛ СТАТЬИ */
+
+.C_TegBars {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  padding: 20px;
+  flex-wrap: wrap;
+
+  button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: "Forma DJR Cyrillic Micro", sans-serif;
+
+    &:hover {
+      background-color: #444;
+      cursor: pointer;
+    }
+  }
+}
+.C_CardsArticle {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    cursor: default;
+  }
+
+  .O_CardArticles {
+    background-color: white;
+    border: 1.5px solid black;
+    border-radius: 22px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 22vw;
+    height: 100%;
+    min-width: 300px;
+    transition: opacity 0.3s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: translateY(-5px);
+      cursor: pointer;
+      border-color: #ff5c39;
+    }
+
+    img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .M_CardText {
+      padding: 15px 20px 30px 20px;
+      flex-grow: 1;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 100%;
+      height: fit-content;
+      gap: 0.5vw;
+
+      h3 {
+        font-family: "Forma DJR Cyrillic Micro", sans-serif;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        line-height: normal;
+      }
+
+      span {
+        background-color: #ffffff;
+        color: #333;
+        border: 1px solid black;
+        font-size: 1rem;
+        padding: 5px 10px;
+        border-radius: 20px;
+      }
+
+      .span-black {
+        background-color: #050505;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+/* РАЗДЕЛ CЛОВАРЬ */
+
+.C_Dictionary {
+  display: flex;
+  gap: 20px;
+  padding: 30px 30px 90px;
+  max-width: 1400px;
+  margin: 0 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* РАЗДЕЛ МИНИ-ГИД */
+.C_MiniGuide {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 60px 120px 60px;
+  justify-content: center;
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+
+  .O_CardGuide {
+    position: relative;
+    padding: 22px;
+    height: 310px;
+    width: 310px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1.5px solid #000;
+    box-shadow: 0px 7px 0px 0px #000;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      right: -5px;
+      bottom: -10px;
+      border: 1.5px solid #000;
+      border-radius: 25px;
+      z-index: -1;
+      transition: border-color 0.3s ease;
+    }
+
+    &:hover {
+      transform: translateY(-5px);
+      border-color: #ff5c39;
+      box-shadow: 0px 7px 0px 0px #ff5c39;
+
+      &::after {
+        border-color: #ff5c39;
+      }
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      line-height: normal;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-family: "Forma DJR Cyrillic Display";
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.2;
+      margin-bottom: 10px;
+      color: #000000;
+    }
+
+    img {
+      margin-top: auto;
+      max-width: 100%;
+    }
+  }
+
+  .O_CardGuide div {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .M_GuideCardText {
+    flex-grow: 1;
+  }
+
+  .O_CardGuide img {
+    margin-top: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+}
+.C_MiniGuideIn {
+  padding: 0;
+}
+
+/* СТРАНИЦА СТАТЬИ */
+
+.C_Tegs {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.C_AnswerMessages {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: start;
+}
+
+/* СТРАНИЦА МИНИ-ГИДА */

@@ -10,6 +10,7 @@ module.exports = {
   entry: {
     index: "./src/index.js",
     eyes: "./src/js/eyes.js",
+    form: "./src/js/form.js",
     tests: "./src/tests/test1.js",
     tests_typography: "./src/tests/test_typography.js",
     tests_freelance: "./src/tests/test_freelance.js",
@@ -85,7 +86,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/index.html",
       filename: "./index.html",
-      chunks: ["index", "eyes"],
+      chunks: ["index", "eyes", "form"],
     }),
 
     // "Mini_guide"
@@ -113,20 +114,13 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/about.html",
       filename: "./about.html",
-      chunks: ["index"], // Финальная версия файла
+      chunks: ["index"],
     }),
 
     // "Tests"
     new HtmlWebpackPlugin({
       template: "./src/styleguide.html",
       filename: "./styleguide.html",
-      chunks: ["index"],
-    }),
-
-    // "Tests"
-    new HtmlWebpackPlugin({
-      template: "./src/select.html",
-      filename: "./select.html",
       chunks: ["index"],
     }),
 
@@ -253,6 +247,39 @@ module.exports = {
       chunks: ["index"],
     }),
 
+    new HtmlWebpackPlugin({
+      template: "./src/mini_guide/inspiration.html",
+      filename: "./mini_guide/inspiration.html",
+      chunks: ["index"],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/mini_guide/telegram_chanel.html",
+      filename: "./mini_guide/telegram_chanel.html",
+      chunks: ["index"],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/mini_guide/moodboard.html",
+      filename: "./mini_guide/moodboard.html",
+      chunks: ["index"],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/mini_guide/design_studios.html",
+      filename: "./mini_guide/design_studios.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/mini_guide/hot_keys.html",
+      filename: "./mini_guide/hot_keys.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/mini_guide/foreign.html",
+      filename: "./mini_guide/foreign.html",
+      chunks: ["index"],
+    }),
+
     // Публикации в разделе словарик "dictionary"
     new HtmlWebpackPlugin({
       template: "./src/dictionary/word1.html",
@@ -260,17 +287,17 @@ module.exports = {
       chunks: ["index"],
     }),
 
-    // Публикации в разделе главная "index"
-    new HtmlWebpackPlugin({
-      template: "./src/index/pages.html",
-      filename: "./index/pages.html",
-      chunks: ["index"],
-    }),
-
-    // Страница 404
+    // Страницы ошибки
     new HtmlWebpackPlugin({
       template: "./src/http-codes/404.html",
       filename: "./http-codes/404.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/http-codes/505.html",
+      filename: "./http-codes/505.html",
+      chunks: ["index"],
     }),
 
     new webpack.ProvidePlugin({

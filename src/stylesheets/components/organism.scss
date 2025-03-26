@@ -1,0 +1,340 @@
+/* ГЛАВНАЯ */
+
+.O_Header {
+  z-index: 2;
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 38vw;
+  border-radius: 2vw;
+  background-color: white;
+  border: 0.09vw solid #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw;
+  .A_Logo {
+    display: flex;
+    background: #ffffff;
+    width: 7vw;
+    height: 2vw;
+    border-radius: 2vw;
+    justify-content: center;
+    align-items: center;
+    .logoimg {
+      width: 5vw;
+    }
+    .A_Logo:hover {
+      background-color: #ff5c39;
+      border: 0.1vw solid #000;
+    }
+  }
+  .A_HeaderText {
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    width: 7vw;
+    height: 2vw;
+    text-align: center;
+    font-family: "Forma DJR Cyrillic Micro";
+    font-size: 1vw;
+    border-radius: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .A_HeaderText:hover {
+    font-family: "SFT-Schrifted-Serif-T", italic;
+    background-color: #ff5c39;
+    color: white;
+    border: 0.1vw solid #000;
+  }
+}
+#O_Form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1vw;
+  width: 360px;
+
+  height: 60px;
+  border-radius: 5vw;
+  border: 1px solid #000;
+  background-color: #ffffff;
+  text-decoration: none;
+  input {
+    border-radius: 10vw;
+    width: 220px;
+    height: 40px;
+    font-family: "Forma DJR Cyrillic Micro";
+    font-size: 1rem;
+    text-align: center;
+    background-color: #f2f8fd;
+    border: 0.09vw solid #000;
+  }
+  button {
+    border-radius: 10vw;
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-family: "Forma DJR Cyrillic Micro";
+    font-size: 1rem;
+    border: 0.1vw solid #000;
+  }
+  .button:hover {
+    background-color: #ff5c39;
+  }
+}
+
+.O_CardCategories {
+  position: relative;
+}
+
+.O_CardCategoriesSmall {
+  max-width: 48vw;
+  padding: 20px;
+  gap: 2vw;
+  border-radius: 30px;
+  border: 1px solid black;
+  box-shadow: 0px 6px 0px black;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* РАЗДЕЛ СТАТЬИ */
+
+.O_CardArticles.hidden {
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+/* РАЗДЕЛ CЛОВАРЬ */
+
+.O_CardDictionari {
+  background-color: white;
+  border: 1.5px solid black;
+  box-shadow: 0px 7px 0px 0px #000;
+  border-radius: 22px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 420px;
+  height: 320px;
+  transition: all 0.8s;
+  transform-style: preserve-3d;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -10px;
+    border: 1.5px solid #000;
+    border-radius: 25px;
+    z-index: -1;
+    transition: border-color 0.3s ease;
+  }
+  &:hover {
+    transform: translateY(-5px);
+    border-color: #ff5c39;
+    box-shadow: 0px 7px 0px 0px #ff5c39;
+
+    &::after {
+      border-color: #ff5c39;
+    }
+  }
+
+  .M_DictHeader {
+    display: flex;
+    width: 255px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  h4 {
+    color: #000000;
+    font-family: "SFT-Schrifted-Serif-T";
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 38px;
+  }
+}
+.O_PopUpContainer {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  background-color: rgba(39, 39, 39, 0.7);
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  overflow: hidden;
+
+  &.visible {
+    display: flex;
+  }
+}
+/* РАЗДЕЛ МИНИ-ГИД */
+
+.O_CardGuide.hidden {
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* СТРАНИЦА СТАТЬИ */
+
+.O_TitleArticleTeg {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 20%;
+  width: 100%;
+  padding: 6% 6% 3%;
+}
+.O_BreakerOpinion {
+  margin-left: 6%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: normal;
+  width: 86vw;
+  background: white;
+  border-radius: 30px;
+  border: 1px solid black;
+  padding: 16px;
+  box-shadow: 0px 6px 0px black;
+}
+.O_ArticleText {
+  width: 86vw;
+  margin-left: 6%;
+  margin-top: 4vw;
+  gap: 2vw;
+  background: white;
+}
+.O_Quote {
+  background: #f2f8fd;
+  width: 86vw;
+  margin-left: 6%;
+  padding: 16px 24px;
+  border-radius: 16px;
+  border: 1px solid black;
+  display: inline-block;
+  font-size: 32px;
+  font-style: italic;
+  font-family: "SFT-Schrifted-Serif-T";
+  line-height: normal;
+  margin: 45px;
+}
+
+.O_Images {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 6%;
+  width: 86vw;
+  margin: 45px 6%;
+}
+
+.O_ImagesGaid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 45vw;
+}
+.O_Telegram {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #fccaca, #ff5c39);
+  border-radius: 30px;
+  text-decoration: none;
+  color: black;
+  font-size: 32px;
+  font-style: italic;
+  font-family: "SFT-Schrifted-Serif-T";
+  line-height: normal;
+  margin: 45px;
+  width: 86vw;
+  margin-left: 6%;
+  padding: 16px 24px;
+  border: 1px solid black;
+  gap: 12px;
+}
+.O_Download {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f2f8fd;
+  border-radius: 30px;
+  text-decoration: none;
+  color: black;
+  font-size: 32px;
+  font-style: italic;
+  font-family: "SFT-Schrifted-Serif-T";
+  line-height: normal;
+  margin: 45px;
+  width: 86vw;
+  margin-left: 6%;
+  padding: 16px 24px;
+  border: 1px solid black;
+  gap: 12px;
+}
+
+/* СТРАНИЦА МИНИ-ГИДА */
+
+.O_HeaderGaid {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.O_MiniGuideText {
+  display: flex;
+  gap: 2vw;
+  flex-direction: column;
+}
+.O_TelegramGaid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(90deg, #fccaca, #ff5c39);
+  border-radius: 30px;
+  text-decoration: none;
+  color: black;
+  font-size: 32px;
+  font-style: italic;
+  font-family: "SFT-Schrifted-Serif-T";
+  line-height: normal;
+  margin: 45px;
+  width: 45vw;
+  margin-left: 25%;
+  padding: 16px 24px;
+  border: 1px solid black;
+  gap: 12px;
+}
+.O_MiniGuideImg {
+  display: flex;
+  gap: 2vw;
+}
+
+.O_MiniGuideTextPlagin {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
