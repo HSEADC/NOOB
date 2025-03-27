@@ -125,6 +125,7 @@ module.exports = {
     }),
 
     //ПРИМЕРЫ СТАТЕЙ
+
     // Публикации в разделе статьи "articles"
     new HtmlWebpackPlugin({
       template: "./src/articles/networking.html",
