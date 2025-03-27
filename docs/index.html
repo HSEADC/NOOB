@@ -38,6 +38,7 @@
     />
     <script defer="defer" src="index.js"></script>
     <script defer="defer" src="eyes.js"></script>
+    <script defer="defer" src="form.js"></script>
     <link href="index.css" rel="stylesheet" />
   </head>
   <body class="index">
@@ -47,12 +48,11 @@
       ><a class="A_HeaderText" href="./articles.html">Статьи</a>
       <a class="A_HeaderText" href="./dictionary.html">Словарик</a>
       <a class="A_HeaderText" href="./mini_guide.html">Мини-гид</a>
-      <a class="A_HeaderText" href="./styleguide.html">Стайл-гайд</a>
-      <a class="A_HeaderText" href="./about.html">О нас</a>
+      <a class="A_HeaderText" href="./http-codes/404.html">О нас</a>
     </div>
-    <div class="block1">
-      <div class="title1">
-        <div class="circle"></div>
+    <div class="S_MainBlock">
+      <div class="O_MainBlock">
+        <div class="A_Circle"></div>
         <img class="noob" src="images/abecec06ce5eb0e10188.png" alt="" />
         <img class="star" src="images/2f336684856a56c9e44e.png" alt="" />
       </div>
@@ -62,7 +62,7 @@
           <div class="eye"></div>
         </div>
       </section>
-      <div class="title"><h1>— медиа для дизайнеров-нубиков</h1></div>
+      <div class="A_title"><h1>— медиа для дизайнеров-нубиков</h1></div>
     </div>
     <div class="M_DescriptionBlock">
       <div class="content">
@@ -83,9 +83,66 @@
       </div>
     </div>
     <section class="popular_articles">
-      <div class="header-main-all">
+      <div class="S_Header_Main_All">
         <div class="header-main">
-          <h2 class="title-main">
+          <h2 class="A_MainTitle">
+            Категории
+            <img
+              class="emoji"
+              src="images/bf937782658d729fb631.svg"
+              alt="звезда"
+            />
+          </h2>
+          <p class="subtitle">В медиа есть три главных раздела</p>
+        </div>
+      </div>
+      <div class="S_Articles_Main_Block">
+        <div class="W_AllCardCategories">
+          <div class="O_CardCategories">
+            <div class="W_CategoryCard">
+              <div class="M_CategoryCardText">
+                <div class="A_CategoryTitle"><h4>Статьи</h4></div>
+                <div class="A_CategoryText">
+                  <p>Освещаем разные стороны работы дизайнера</p>
+                </div>
+              </div>
+              <div class="A_CategoryImg">
+                <img src="images/f3a110373cc3dd316176.svg" alt="" />
+              </div>
+              <a href="./articles.html"
+                ><div class="M_Button ButtonSize">→</div></a
+              >
+            </div>
+          </div>
+          <div class="W_CardCategories">
+            <div class="O_CardCategoriesSmall CategoriesPink">
+              <div class="M_CategoryCardText">
+                <div class="A_CategoryTitle"><h4>Словарик</h4></div>
+                <div class="A_CategoryText">
+                  <p>Освещаем разные стороны работы дизайнера</p>
+                </div>
+              </div>
+              <a href="./dictionary.html"
+                ><div class="M_Button ButtonSize">→</div></a
+              >
+            </div>
+            <div class="O_CardCategoriesSmall CategoriesOrange">
+              <div class="M_CategoryCardText">
+                <div class="A_CategoryTitle"><h4>Мини-гид</h4></div>
+                <div class="A_CategoryText"><p>Короткий формат статей</p></div>
+              </div>
+              <a href="./mini_guide.html"
+                ><div class="M_Button ButtonSize ButtonCategory">→</div></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="popular_articles">
+      <div class="S_Header_Main_All">
+        <div class="header-main">
+          <h2 class="A_MainTitle">
             Популярные статьи
             <img
               class="emoji"
@@ -95,62 +152,181 @@
           </h2>
           <p class="subtitle">Статьи, которые точно будут тебе интересны</p>
         </div>
-        <a class="all_articles" href="./articles.html">все статьи →</a>
+        <a class="S_All_Articles" href="./articles.html">все статьи →</a>
       </div>
-      <div class="articles-main-block">
-        <div class="K_CardsArticle">
-          <a href="./http-codes/404.html"
-            ><div class="O_CardArticles">
-              <img src="images/81f53565705cf1a088ac.svg" alt="" />
-              <div class="M_CardText">
-                <h3>Успешный нетворкинг для интровертов</h3>
-                <div class="tags">
-                  <span class="span-black">Продвижение</span>
-                  <span>#Нетворкинг</span>
-                </div>
+      <div class="S_Articles_Main_Block">
+        <div class="C_CardsArticle">
+          <a
+            href="./articles/networking.html"
+            class="O_CardArticles progress all"
+            ><img
+              src="images/81f53565705cf1a088ac.svg"
+              alt="Успешный нетворкинг для интровертов"
+            />
+            <div class="M_CardText">
+              <h3>Успешный нетворкинг для интровертов</h3>
+              <div class="tags">
+                <span class="span-black">Продвижение</span>
+                <span>#Нетворкинг</span>
               </div>
             </div></a
-          ><a href="./http-codes/404.html"
-            ><div class="O_CardArticles">
-              <img src="images/1365e075bae0c8201d26.svg" alt="" />
-              <div class="M_CardText">
-                <h3>Как использовать соцсети<br />для продвижения?</h3>
-                <div class="tags">
-                  <span class="span-black">Продвижение</span>
-                  <span>#Соцсети</span>
-                </div>
+          ><a
+            href="./articles/social_media.html"
+            class="O_CardArticles progress all"
+            ><img
+              src="images/ad59d31b12d06ab0d073.svg"
+              alt="Как использовать соцсети для продвижения?"
+            />
+            <div class="M_CardText">
+              <h3>Как использовать соцсети для продвижения?</h3>
+              <div class="tags">
+                <span class="span-black">Продвижение</span>
+                <span>#Соцсети</span>
               </div>
             </div></a
-          ><a href="./http-codes/404.html"
-            ><div class="O_CardArticles">
-              <img src="images/89034401a5ce584363b3.svg" alt="" />
-              <div class="M_CardText">
-                <h3>Оформи учебные проекты<br />в рабочие дизайн-кейсы</h3>
-                <div class="tags">
-                  <span class="span-black">Продвижение</span>
-                  <span>#Конкурсы</span>
-                </div>
+          ><a href="./articles/design_case.html" class="O_CardArticles work all"
+            ><img
+              src="images/89034401a5ce584363b3.svg"
+              alt="Оформи учебные проекты в рабочие дизайн-кейсы"
+            />
+            <div class="M_CardText">
+              <h3>Оформи учебные проекты в рабочие дизайн-кейсы</h3>
+              <div class="tags">
+                <span class="span-black">Работа</span> <span>#Дизайн</span>
               </div>
             </div></a
-          ><a href="./http-codes/404.html"
-            ><div class="O_CardArticles">
-              <img src="images/d72f40e8522518797646.svg" alt="" />
-              <div class="M_CardText">
-                <h3>Гори проектом, не сгоря:<br />как не выгорать</h3>
-                <div class="tags">
-                  <span class="span-black">Продвижение</span>
-                  <span>#Выгорание</span>
-                </div>
+          ><a
+            href="./articles/how_not_to_get_tired.html"
+            class="O_CardArticles psicologi all"
+            ><img
+              src="images/d72f40e8522518797646.svg"
+              alt="Как не выгорать на проекте"
+            />
+            <div class="M_CardText">
+              <h3>Гори проектом, не сгорая: как не выгорать</h3>
+              <div class="tags">
+                <span class="span-black">Психология</span>
+                <span>#Выгорание</span>
               </div>
             </div></a
-          ><a href="./http-codes/404.html"></a>
+          >
         </div>
       </div>
     </section>
-    <section class="S_Dictionary">
-      <div class="header-main-all">
+    <section class="S_Article">
+      <div class="M_ArticleText">
+        <div class="C_Tegs tegsArticle">
+          <div class="A_Tag">новинка</div>
+          <div class="A_Tag">#книги</div>
+        </div>
+        <div class="W_TitleArticle">
+          <div class="M_TitleArticle">
+            <h1 class="A_TitleArticle1">Полезные книги</h1>
+            <h1 class="A_TitleArticle2">по дизайну</h1>
+          </div>
+          <p>
+            Мы подготовили подборку книг, которые станут настоящим must-read для
+            каждого. В нашей статье ты найдешь книги, которые помогут тебе стать
+            лучше.
+          </p>
+        </div>
+        <a href="./articles/books.html"
+          ><div class="M_Button ButtonCategory readarticle">
+            Читать статью →
+          </div></a
+        >
+      </div>
+      <div class="M_PhotoArticle">
+        <div class="M_Name">
+          <div class="A_UserPhoto">
+            <img src="images/7f73812296d5942b7193.svg" alt="" />
+          </div>
+          <div class="A_Name">
+            <div class="A_NameBig">Бадмаева Айса</div>
+            <div class="A_Profession">Дизайнер</div>
+          </div>
+        </div>
+        <img src="images/f531b5605818d81ba4f9.svg" alt="" />
+      </div>
+    </section>
+    <a href="https://t.me/noob_media" class="O_Telegram M_TelegramIndex"
+      ><div class="M_Telegram">
+        <div class="A_IconTg">
+          <img src="images/e71eb1b0fa9b86e98a71.svg" alt="Telegram" />
+        </div>
+        <span>Больше полезного<br />в тгк нубика</span>
+      </div>
+      <button class="A_Subscribe">подписаться</button></a
+    >
+    <section class="archive_links">
+      <div class="S_Header_Main_All">
         <div class="header-main">
-          <h2 class="title-main">
+          <h2 class="A_MainTitle">
+            Мини-гид
+            <img
+              class="emoji"
+              src="images/bdc4ea1edc629c99a64f.svg"
+              alt="звезда"
+            />
+          </h2>
+          <p class="subtitle">
+            Мини-гид с полезными материалами для разных случаев
+          </p>
+        </div>
+        <a class="S_All_Articles" href="./mini_guide.html">все статьи →</a>
+      </div>
+      <div class="C_MiniGuide">
+        <a href="./mini_guide/mockups.html" class="O_CardGuide all archive"
+          ><div>
+            <div class="M_GuideCardText">
+              <h1>Где искать мокапы?</h1>
+              <p>
+                Сборник сайтов с лучшими бесплатными мокапами для твоего проекта
+              </p>
+            </div>
+            <img src="images/f62351b36d27f951e52c.svg" alt="Мокап" /></div></a
+        ><a href="./mini_guide/plagin1.html" class="O_CardGuide all archive"
+          ><div>
+            <div class="M_GuideCardText">
+              <h1>Плагины для<br />Figma</h1>
+              <p>Плагины, которые облегчат твою работу</p>
+            </div>
+            <img src="images/170de65fa1ad30e2acb6.svg" alt="Мокап" /></div></a
+        ><a href="./mini_guide/fonts.html" class="O_CardGuide all archive"
+          ><div>
+            <div class="M_GuideCardText">
+              <h1>Подборка<br />шрифтов</h1>
+              <p>Лучшие сайты<br />с бесплатными шрифтами</p>
+            </div>
+            <img src="images/be75e88281528aa1c8e9.svg" alt="Мокап" /></div></a
+        ><a href="./mini_guide/neuros.html" class="O_CardGuide all gaid"
+          ><div>
+            <div class="M_GuideCardText">
+              <h1>Нейросети<br />для ускорения<br />работы</h1>
+              <p>Нейронки, которые значительно ускорят твою работу</p>
+            </div>
+            <img src="images/06380d27b0ee2614e9b1.svg" alt="Мокап" /></div
+        ></a>
+      </div>
+    </section>
+    <section class="S_Channel">
+      <div class="W_ChannelText">
+        <h2 class="A_MainTitle A_HeaderChannel">
+          Предложи тему<br />для поста
+        </h2>
+        <p class="A_TextChannel">Следи за новостями в канале</p>
+      </div>
+      <div class="W_ChannelImg">
+        <a href="https://t.me/noob_media"
+          ><div class="M_Button readarticle">Ждем твои идеи</div></a
+        ><img src="images/8b5ce5204d4a0b89b746.svg" alt="" />
+      </div>
+      <img src="images/95e526dc19fd64d8bc62.png" alt="" class="A_IdeaForPost" />
+    </section>
+    <section class="S_Dictionary">
+      <div class="S_Header_Main_All">
+        <div class="header-main">
+          <h2 class="A_MainTitle">
             Словарь новичка
             <img
               class="emoji"
@@ -160,7 +336,7 @@
           </h2>
           <p class="subtitle">Собрали все непонятные для тебя слова</p>
         </div>
-        <a class="all_articles" href="./dictionary.html">весь словарь →</a>
+        <a class="S_All_Articles" href="./dictionary.html">весь словарь →</a>
       </div>
       <div class="C_Dictionary">
         <div class="O_CardDictionari">
@@ -183,84 +359,34 @@
         </div>
       </div>
     </section>
-    <section class="archive_links">
-      <div class="header-main-all">
-        <div class="header-main">
-          <h2 class="title-main">
-            Мини-гид
-            <img
-              class="emoji"
-              src="images/bdc4ea1edc629c99a64f.svg"
-              alt="звезда"
+    <section class="S_Form">
+      <div class="W_Form">
+        <div class="W_FormImages">
+          <div class="A_CircleForm"></div>
+          <div class="A_LogoForm">
+            <img src="images/f84b59c93e1b6b7bd786.png" alt="" />
+          </div>
+          <div class="M_TextForm">
+            <div class="A_TextForm">
+              <h2 class="A_MainTitle">Будь в курсе первым!</h2>
+            </div>
+            <div class="A_TextForm"><p>Подпишись на новости от нубика</p></div>
+          </div>
+          <form
+            id="O_Form"
+            action="https://formspree.io/f/xovagrew"
+            method="POST"
+          >
+            <input
+              type="email"
+              placeholder="Введите ваш email..."
+              name="email"
             />
-          </h2>
-          <p class="subtitle">
-            Мини-гид с полезными материалами для разных случаев
-          </p>
+            <button id="my-form-button">отправить</button>
+          </form>
         </div>
-        <a class="all_articles" href="./mini_guide.html">все статьи →</a>
-      </div>
-      <div class="C_MiniGuide">
-        <a href="./http-codes/404.html"
-          ><div class="O_CardGuide">
-            <div class="M_GuideCardText">
-              <h1>Где искать мокапы?</h1>
-              <p>
-                Сборник сайтов с лучшими бесплатными мокапами для твоего проекта
-              </p>
-            </div>
-            <img src="images/f62351b36d27f951e52c.svg" alt="Мокап" /></div></a
-        ><a href="./http-codes/404.html"
-          ><div class="O_CardGuide">
-            <div class="M_GuideCardText">
-              <h1>Плагины для<br />Figma</h1>
-              <p>Плагины, которые облегчат твою работу</p>
-            </div>
-            <img src="images/170de65fa1ad30e2acb6.svg" alt="Мокап" /></div></a
-        ><a href="./http-codes/404.html"
-          ><div class="O_CardGuide">
-            <div class="M_GuideCardText">
-              <h1>Подборка<br />шрифтов</h1>
-              <p>Лучшие сайты<br />с бесплатными шрифтами</p>
-            </div>
-            <img src="images/be75e88281528aa1c8e9.svg" alt="Мокап" /></div></a
-        ><a href="./http-codes/404.html"
-          ><div class="O_CardGuide">
-            <div class="M_GuideCardText">
-              <h1>Нейросети<br />для ускорения<br />работы</h1>
-              <p>Нейронки, которые значительно ускорят<br />твою работу</p>
-            </div>
-            <img src="images/06380d27b0ee2614e9b1.svg" alt="Мокап" /></div
-        ></a>
       </div>
     </section>
-    <script>
-      var form = document.getElementById("my-form");
-      async function handleSubmit(e) {
-        e.preventDefault();
-        var t = document.getElementById("my-form-status"),
-          r = new FormData(e.target);
-        fetch(e.target.action, {
-          method: form.method,
-          body: r,
-          headers: { Accept: "application/json" },
-        })
-          .then((e) => {
-            e.ok
-              ? ((t.innerHTML = "Thanks for your submission!"), form.reset())
-              : e.json().then((e) => {
-                  Object.hasOwn(e, "errors")
-                    ? (t.innerHTML = e.errors.map((e) => e.message).join(", "))
-                    : (t.innerHTML =
-                        "Oops! There was a problem submitting your form");
-                });
-          })
-          .catch((e) => {
-            t.innerHTML = "Oops! There was a problem submitting your form";
-          });
-      }
-      form.addEventListener("submit", handleSubmit);
-    </script>
     <footer>
       <div class="M_SocialsFooter">
         <div class="A_FuterHeader">Подписывайся на соц.сети нуба!</div>

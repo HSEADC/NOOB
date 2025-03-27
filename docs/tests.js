@@ -15,6 +15,7 @@ function initTest(stages) {
   var question = document.querySelector(".A_Question");
   var answers = document.querySelectorAll(".Q_AnswerQuestion");
 
+<<<<<<< HEAD
   //номер вопроса
   numberOfQuestions.innerHTML = "\u0432\u043E\u043F\u0440\u043E\u0441 \u2116".concat(currentStage + 1, "/").concat(stages.length);
 
@@ -22,11 +23,24 @@ function initTest(stages) {
   question.innerHTML = stages[currentStage].question;
 
   //проверяем колва тегов для ответов и выводим
+=======
+  // номер вопроса
+  numberOfQuestions.innerHTML = "\u0432\u043E\u043F\u0440\u043E\u0441 \u2116".concat(currentStage + 1, "/").concat(stages.length);
+
+  // выводим текст вопроса
+  question.innerHTML = stages[currentStage].question;
+
+  // проверяем количество тегов для ответов и выводим
+>>>>>>> main
   for (var i = 0; i < answers.length; i++) {
     answers[i].innerHTML = stages[currentStage].answers[i].text;
   }
 
+<<<<<<< HEAD
   //проверяем колва чекбоксов и добавляем атрибут с колвом баллов
+=======
+  // проверяем количество чекбоксов и добавляем атрибут с количеством баллов
+>>>>>>> main
   for (var _i = 0; _i < checkboxes.length; _i++) {
     checkboxes[_i].dataset.count = stages[currentStage].answers[_i].count;
   }
@@ -52,6 +66,7 @@ function updateStage(stages, resultTable) {
 }
 function showResult(resultTable) {
   var testMessages = document.querySelector(".S_Test");
+<<<<<<< HEAD
   testMessages.remove();
   var testResult = document.createElement("div");
   testResult.classList.add("S_TestResult");
@@ -70,6 +85,24 @@ function showResult(resultTable) {
     resultHeader.innerHTML = resultTable[0].header;
     resultText.innerHTML = resultTable[0].paragraph;
   } else if (resultCount == 2 || resultTable == 3) {
+=======
+  testMessages.innerHTML = ""; // Очищаем содержимое теста, но НЕ удаляем его
+
+  var finalCount = document.createElement("div");
+  finalCount.classList.add("A_FinalCount");
+  finalCount.innerHTML = "\u0418\u0442\u043E\u0433\u043E \u0431\u0430\u043B\u043B\u043E\u0432: ".concat(resultCount);
+  var resultHeader = document.createElement("h2");
+  resultHeader.classList.add("A_ResultHeader");
+  var resultText = document.createElement("p");
+  resultText.classList.add("A_ResultText");
+  testMessages.appendChild(finalCount);
+  testMessages.appendChild(resultHeader);
+  testMessages.appendChild(resultText);
+  if (resultCount == 0 || resultCount == 1) {
+    resultHeader.innerHTML = resultTable[0].header;
+    resultText.innerHTML = resultTable[0].paragraph;
+  } else if (resultCount == 2 || resultCount == 3) {
+>>>>>>> main
     resultHeader.innerHTML = resultTable[1].header;
     resultText.innerHTML = resultTable[1].paragraph;
   } else {
@@ -86,6 +119,7 @@ console.clear();
 var stages = [
 //этап 1
 {
+<<<<<<< HEAD
   question: ["Начнём с простого. Что можно делать с дайсами?"],
   //каждый ответ содержит текст и колво баллов
   answers: [{
@@ -99,6 +133,21 @@ var stages = [
     count: 0
   }, {
     text: "колоть",
+=======
+  question: ["Что поможет дизайнеру избежать выгорания?"],
+  //каждый ответ содержит текст и колво баллов
+  answers: [{
+    text: "Работать без перерывов, чтобы быстрее завершить проекты",
+    count: 1
+  }, {
+    text: "Чередовать задачи, ставить границы и находить баланс",
+    count: 0
+  }, {
+    text: "Игнорировать усталость и брать еще больше заказов",
+    count: 0
+  }, {
+    text: "Уходить в полное уединение и избегать общения с коллегами",
+>>>>>>> main
     count: 0
   }]
 },
@@ -135,6 +184,7 @@ var stages = [
     text: "гавгав",
     count: 0
   }]
+<<<<<<< HEAD
 },
 //этап 4
 {
@@ -162,6 +212,18 @@ var resultTable = [{
 }, {
   header: "Кажется, ты нормис",
   paragraph: "Учи лучше. Жопа"
+=======
+}];
+var resultTable = [{
+  header: "В следующий раз повезет [ ± _ ± ]",
+  paragraph: "Побольше практикуйся и у тебя все получится!"
+}, {
+  header: "Кажется, надо еще раз повторить (づ ◕‿◕ )づ",
+  paragraph: "Ты уже близок к правде"
+}, {
+  header: "Ты молодец, так держать ヽ(・∀・)ﾉ",
+  paragraph: "Я в тебя верю, иди к своим целям"
+>>>>>>> main
 }];
 document.addEventListener("DOMContentLoaded", function () {
   initTest(stages);
@@ -240,7 +302,11 @@ document.addEventListener("DOMContentLoaded", function () {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
+<<<<<<< HEAD
 /******/ 		__webpack_require__.h = () => ("c1dc74991e71c5953761")
+=======
+/******/ 		__webpack_require__.h = () => ("c6de52e18f27ef5f1cb3")
+>>>>>>> main
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
