@@ -26,14 +26,18 @@
 }
 .M_Button {
   display: flex;
+  font-family: "Forma DJR Cyrillic Micro";
   align-items: center;
   justify-content: center;
-  width: 5rem;
   height: 2.5rem;
   border-radius: 50px;
   background-color: #000000;
   color: #dedede;
   font-size: large;
+}
+
+.ButtonSize {
+  width: 80px;
 }
 .M_Button img {
   width: 24px;

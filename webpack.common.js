@@ -279,6 +279,51 @@ module.exports = {
       filename: "./mini_guide/foreign.html",
       chunks: ["index"],
     }),
+    new HtmlWebpackPlugin({
+      template: "./src/mini_guide/good_bad_presentation.html",
+      filename: "./mini_guide/good_bad_presentation.html",
+      chunks: ["index"],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/mini_guide/font_cirilic.html",
+      filename: "./mini_guide/font_cirilic.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/mini_guide/movie.html",
+      filename: "./mini_guide/movie.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/mini_guide/photostock.html",
+      filename: "./mini_guide/photostock.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/mini_guide/ui_kit.html",
+      filename: "./mini_guide/ui_kit.html",
+      chunks: ["index"],
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/mini_guide/icons.html",
+      filename: "./mini_guide/icons.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/mini_guide/color_palette.html",
+      filename: "./mini_guide/color_palette.html",
+      chunks: ["index"],
+    }),
+
+    new HtmlWebpackPlugin({
+      template: "./src/mini_guide/brouser.html",
+      filename: "./mini_guide/brouser.html",
+      chunks: ["index"],
+    }),
 
     // Публикации в разделе словарик "dictionary"
     new HtmlWebpackPlugin({
