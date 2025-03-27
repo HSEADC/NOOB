@@ -51,11 +51,10 @@
       <a class="A_HeaderText" href="./articles.html">Статьи</a>
       <a class="A_HeaderText" href="./dictionary.html">Словарик</a>
       <a class="A_HeaderText" href="./mini_guide.html">Мини-гид</a>
-      <a class="A_HeaderText" href="./styleguide.html">Стайл-гайд</a>
-      <a class="A_HeaderText" href="./about.html">О нас</a>
+      <a class="A_HeaderText" href="./http-codes/404.html">О нас</a>
     </div>
-    <div class="header-background">
-      <h2>Статьи</h2>
+    <div class="S_SectionHeaders HeaderArticles">
+      <h2 class="A_CoverHeader">Статьи</h2>
       <div class="M_TultipArticle">
         <img src="./images/articles_img/tul.svg" />
       </div>
@@ -65,17 +64,21 @@
     </div>
 
     <div class="C_TegBars">
-      <button>Продвижение</button>
-      <button>Работа</button>
-      <button>Психология</button>
-      <button>Теория</button>
-      <button>Кейсы</button>
+      <div class="A_Tegs all active">Все</div>
+      <div class="A_Tegs work">Работа</div>
+      <div class="A_Tegs psicologi">Психология</div>
+      <div class="A_Tegs theory">Теория</div>
+      <div class="A_Tegs cases">Кейсы</div>
+      <div class="A_Tegs progress">Продвижение</div>
     </div>
 
-    <div class="K_CardsArticle">
-      <a href="./http-codes/404.html">
-        <div class="O_CardArticles">
-          <img src="./images/articles_img/ducks.svg" alt="" />
+    <div class="C_CardsArticle">
+      <a href="./articles/networking.html" class="O_CardArticles progress all">
+        <div>
+          <img
+            src="./images/articles_img/ducks.svg"
+            alt="Успешный нетворкинг для интровертов"
+          />
           <div class="M_CardText">
             <h3>Успешный нетворкинг для интровертов</h3>
             <div class="tags">
@@ -85,60 +88,16 @@
           </div>
         </div>
       </a>
-      <a href="./http-codes/404.html">
-        <div class="O_CardArticles">
-          <img src="./images/articles_img/iphone.svg" alt="" />
-          <div class="M_CardText">
-            <h3>Как использовать соцсети <br />для продвижения?</h3>
-            <div class="tags">
-              <span class="span-black">Продвижение</span>
-              <span>#Соцсети</span>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="./http-codes/404.html">
-        <div class="O_CardArticles">
-          <img src="./images/articles_img/woman.svg" alt="" />
-          <div class="M_CardText">
-            <h3>Оформи учебные проекты <br />в рабочие дизайн-кейсы</h3>
-            <div class="tags">
-              <span class="span-black">Продвижение</span>
-              <span>#Конкурсы</span>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="./http-codes/404.html">
-        <div class="O_CardArticles">
-          <img src="./images/articles_img/help_gay.svg" alt="" />
-          <div class="M_CardText">
-            <h3>
-              Гори проектом, не сгоря:<br />
-              как не выгорать
-            </h3>
-            <div class="tags">
-              <span class="span-black">Продвижение</span>
-              <span>#Выгорание</span>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="./http-codes/404.html">
-        <div class="O_CardArticles">
-          <img src="./images/articles_img/mackbook.svg" alt="" />
-          <div class="M_CardText">
-            <h3>Успешный нетворкинг для интровертов</h3>
-            <div class="tags">
-              <span class="span-black">Продвижение</span>
-              <span>#Нетворкинг</span>
-            </div>
-          </div>
-        </div>
-      </a>
-      <a href="./http-codes/404.html">
-        <div class="O_CardArticles">
-          <img src="./images/articles_img/anons.svg" alt="" />
+
+      <a
+        href="./articles/social_media.html"
+        class="O_CardArticles progress all"
+      >
+        <div>
+          <img
+            src="./images/articles_img/iphone.svg"
+            alt="Как использовать соцсети для продвижения?"
+          />
           <div class="M_CardText">
             <h3>Как использовать соцсети для продвижения?</h3>
             <div class="tags">
@@ -148,9 +107,64 @@
           </div>
         </div>
       </a>
-      <a href="./http-codes/404.html">
-        <div class="O_CardArticles">
-          <img src="./images/articles_img/prog_cat.svg" alt="" />
+
+      <a href="./articles/design_case.html" class="O_CardArticles work all">
+        <div>
+          <img
+            src="./images/articles_img/woman.svg"
+            alt="Оформи учебные проекты в рабочие дизайн-кейсы"
+          />
+          <div class="M_CardText">
+            <h3>Оформи учебные проекты в рабочие дизайн-кейсы</h3>
+            <div class="tags">
+              <span class="span-black">Работа</span>
+              <span>#Дизайн</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a
+        href="./articles/how_not_to_get_tired.html"
+        class="O_CardArticles psicologi all"
+      >
+        <div>
+          <img
+            src="./images/articles_img/help_gay.svg"
+            alt="Как не выгорать на проекте"
+          />
+          <div class="M_CardText">
+            <h3>Гори проектом, не сгорая: как не выгорать</h3>
+            <div class="tags">
+              <span class="span-black">Психология</span>
+              <span>#Выгорание</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="./articles/success_story.html" class="O_CardArticles cases all">
+        <div>
+          <img
+            src="./images/articles_img/mackbook.svg"
+            alt="Успешный нетворкинг для интровертов"
+          />
+          <div class="M_CardText">
+            <h3>История успеха. Реальный кейс дизайнера</h3>
+            <div class="tags">
+              <span class="span-black">Кейсы</span>
+              <span>#Мотивация</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a
+        href="./articles/competitions.html"
+        class="O_CardArticles progress all"
+      >
+        <div>
+          <img src="./images/articles_img/anons.svg" alt="Конкурсы" />
           <div class="M_CardText">
             <h3>Где участвовать? Конкурсы для дизайнеров</h3>
             <div class="tags">
@@ -160,110 +174,156 @@
           </div>
         </div>
       </a>
-      <a href="./http-codes/404.html">
-        <div class="O_CardArticles">
-          <img src="./images/articles_img/coffee.svg" alt="" />
+
+      <a href="./articles/internship.html" class="O_CardArticles progress all">
+        <div>
+          <img
+            src="./images/articles_img/cat.svg"
+            alt="Где участвовать? Конкурсы для дизайнеров"
+          />
           <div class="M_CardText">
-            <h3>Гори проектом, не сгоря: как не выгорать</h3>
+            <h3>Как попасть на стажировку в дизайн-студию</h3>
             <div class="tags">
-              <span class="span-black">Продвижение</span>
-              <span>#Выгорание</span>
+              <span class="span-black">Работа</span>
+              <span>#Стажировки</span>
             </div>
           </div>
         </div>
       </a>
-      <a href="./http-codes/404.html">
-        <div class="O_CardArticles">
-          <img src="./images/articles_img/book.svg" alt="" />
+      <a href="./articles/freelance_place.html" class="O_CardArticles work all">
+        <div>
+          <img
+            src="./images/articles_img/covork.svg"
+            alt="Где пофрилансить? Лучшие коворки Москвы"
+          />
           <div class="M_CardText">
-            <h3>Успешный нетворкинг для интровертов</h3>
+            <h3>Где пофрилансить? Лучшие коворки Москвы</h3>
             <div class="tags">
-              <span class="span-black">Продвижение</span>
-              <span>#Нетворкинг</span>
+              <span class="span-black">Работа</span>
+              <span>#Коворки</span>
             </div>
           </div>
         </div>
       </a>
-      <a href="./http-codes/404.html">
-        <div class="O_CardArticles">
-          <img src="./images/articles_img/money.svg" alt="" />
+      <a href="./articles/typography.html" class="O_CardArticles theory all">
+        <div>
+          <img
+            src="./images/articles_img/book.svg"
+            alt="Типографика. Как новичку выбрать шрифт для проекта?"
+          />
           <div class="M_CardText">
-            <h3>Как использовать соцсети для продвижения?</h3>
+            <h3>Типографика. Как новичку выбрать шрифт для проекта?</h3>
             <div class="tags">
-              <span class="span-black">Продвижение</span>
-              <span>#Соцсети</span>
+              <span class="span-black">Теория</span>
+              <span>#Типографика</span>
             </div>
           </div>
         </div>
       </a>
-      <a href="./http-codes/404.html">
-        <div class="O_CardArticles">
-          <img src="./images/articles_img/book_girl.svg" alt="" />
+      <a href="./articles/study_and_work.html" class="O_CardArticles work all">
+        <div>
+          <img
+            src="./images/articles_img/money.svg"
+            alt="Учеба и фриланс. Как искать клиентов?"
+          />
           <div class="M_CardText">
-            <h3>Где участвовать? Конкурсы для дизайнеров</h3>
+            <h3>Учеба и фриланс. Как искать клиентов?</h3>
             <div class="tags">
-              <span class="span-black">Продвижение</span>
-              <span>#Конкурсы</span>
+              <span class="span-black">Работа</span>
+              <span>#Фриланс</span>
             </div>
           </div>
         </div>
       </a>
-      <a href="./http-codes/404.html">
-        <div class="O_CardArticles">
-          <img src="./images/articles_img/lemon.svg" alt="" />
+      <a href="./articles/books.html" class="O_CardArticles theory all">
+        <div>
+          <img
+            src="./images/articles_img/book_girl.svg"
+            alt="Полезные книги по дизайну: Должен прочитать каждый"
+          />
           <div class="M_CardText">
-            <h3>Гори проектом, не сгоря: как не выгорать</h3>
+            <h3>Полезные книги по дизайну: Должен прочитать каждый</h3>
             <div class="tags">
-              <span class="span-black">Продвижение</span>
-              <span>#Выгорание</span>
+              <span class="span-black">Теория</span>
+              <span>#Книги</span>
             </div>
           </div>
         </div>
       </a>
-      <a href="./http-codes/404.html">
-        <div class="O_CardArticles">
-          <img src="./images/articles_img/tiger.svg" alt="" />
+      <a href="./articles/trends.html" class="O_CardArticles theory all">
+        <div>
+          <img
+            src="./images/articles_img/lemon.svg"
+            alt="Гори проектом, не сгоря: как не выгорать"
+          />
           <div class="M_CardText">
-            <h3>Успешный нетворкинг для интровертов</h3>
+            <h3>Тренды в учебных проектах: За и против</h3>
             <div class="tags">
-              <span class="span-black">Продвижение</span>
-              <span>#Нетворкинг</span>
+              <span class="span-black">Теория</span>
+              <span>#Тренды</span>
             </div>
           </div>
         </div>
       </a>
-      <a href="./http-codes/404.html">
-        <div class="O_CardArticles">
-          <img src="./images/articles_img/covork.svg" alt="" />
+      <a href="./articles/advise.html" class="O_CardArticles cases all">
+        <div>
+          <img
+            src="./images/articles_img/tiger.svg"
+            alt="Советы старшекурсников."
+          />
           <div class="M_CardText">
-            <h3>Как использовать соцсети для продвижения?</h3>
+            <h3>Советы старшекурсников. То, что тебе точно пригодится!</h3>
             <div class="tags">
-              <span class="span-black">Продвижение</span>
-              <span>#Соцсети</span>
+              <span class="span-black">Кейсы</span>
+              <span>#Советы</span>
             </div>
           </div>
         </div>
       </a>
-      <a href="./http-codes/404.html">
-        <div class="O_CardArticles">
-          <img src="./images/articles_img/sad_mm.svg" alt="" />
+      <a href="./articles/mentor.html" class="O_CardArticles progress all">
+        <div>
+          <img
+            src="./images/articles_img/covork.svg"
+            alt="Где найти наставника для студента-дизайнера"
+          />
           <div class="M_CardText">
-            <h3>Где участвовать? Конкурсы для дизайнеров</h3>
+            <h3>Где найти наставника для студента-дизайнера</h3>
             <div class="tags">
               <span class="span-black">Продвижение</span>
-              <span>#Конкурсы</span>
+              <span>#Наставник</span>
             </div>
           </div>
         </div>
       </a>
-      <a href="./http-codes/404.html">
-        <div class="O_CardArticles">
-          <img src="./images/articles_img/clock.svg" alt="" />
+      <a href="./articles/criticism.html" class="O_CardArticles psicologi all">
+        <div>
+          <img
+            src="./images/articles_img/sad_boy.svg"
+            alt="Как реагировать на критику и чем она полезна"
+          />
           <div class="M_CardText">
-            <h3>Гори проектом, не сгоря: как не выгорать</h3>
+            <h3>Как реагировать на критику и чем она полезна</h3>
             <div class="tags">
-              <span class="span-black">Продвижение</span>
-              <span>#Выгорание</span>
+              <span class="span-black">Психология</span>
+              <span>#Критика</span>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a
+        href="./articles/time_control.html"
+        class="O_CardArticles psicologi all"
+      >
+        <div>
+          <img
+            src="./images/articles_img/clock.svg"
+            alt="Лучшие приложения для организации учебных задач"
+          />
+          <div class="M_CardText">
+            <h3>Лучшие приложения для организации учебных задач</h3>
+            <div class="tags">
+              <span class="span-black">Психология</span>
+              <span>#Учеба</span>
             </div>
           </div>
         </div>

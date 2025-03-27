@@ -1,6 +1,6 @@
 @media screen and (max-width: 1024px) {
   .mininoob2block {
-    gap: 10px !important; /* Значение для средних экранов */
+    gap: 10px !important;
   }
   .color {
     height: 150px !important;
@@ -19,6 +19,11 @@
         height: 5vh;
       }
     }
+  }
+
+  .O_CardArticles {
+    width: 30vw !important;
+    height: 100% !important;
   }
 }
 
@@ -43,10 +48,15 @@
       border-radius: 30vw;
     }
   }
-  .title {
+  .A_title {
     font-size: large !important;
     transform: translateY(-500%) !important;
     font-size: 1.5vw;
+  }
+
+  .O_CardArticles {
+    width: 60vw !important;
+    height: 100% !important;
   }
 }
 
@@ -62,6 +72,8 @@
   }
   .O_Header {
     height: 10vw;
+    display: flex;
+    justify-content: center;
     width: 90vw;
     border-radius: 6vw;
     padding: 2vw;
@@ -71,11 +83,45 @@
     }
   }
 
-  .title {
+  .A_title {
     font-size: large !important;
     transform: translateY(-1100%) !important;
   }
   .mockup {
     width: 90vw !important;
+  }
+
+  h2 {
+    font-size: 5rem !important;
+  }
+  .C_TegBars {
+    overflow: hidden;
+  }
+  footer {
+    overflow: hidden;
+  }
+
+  .O_CardArticles {
+    width: 40vw !important;
+    height: 100% !important;
+  }
+
+  .A_Icon {
+    width: 80px;
+    height: 80px;
+    margin-top: 27%;
+  }
+  .A_Cover {
+    height: 150px;
+  }
+  .A_Icon img {
+    width: 30px;
+    height: 30px;
+  }
+  .A_TitleArticle1 {
+    font-size: 18px;
+  }
+  .A_TitleArticle2 {
+    font-size: 16px;
   }
 }

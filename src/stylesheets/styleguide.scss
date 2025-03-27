@@ -1,75 +1,44 @@
-.O_Header {
-  z-index: 3;
-  position: fixed;
-  height: 3.5vw;
-  top: 5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50vw;
-  border-radius: 2vw;
-  background-color: white;
-  border: 0.09vw solid #000;
+.A_Logo {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  padding: 0.6vw;
-  .A_Logo {
-    display: flex;
-    background: #ffffff;
-    width: 7vw;
-    height: 2vw;
-    border-radius: 2vw;
-    justify-content: center;
-    align-items: center;
-    .logoimg {
-      width: 5vw;
-    }
-    .A_Logo:hover {
-      background-color: #ff5c39;
-      border: 0.1vw solid #000;
-    }
+  background: #ffffff;
+  width: 7vw;
+  height: 2vw;
+  border-radius: 2vw;
+  justify-content: center;
+  align-items: center;
+  .logoimg {
+    width: 5vw;
   }
-  .A_HeaderText {
-    text-decoration: none;
-    background-color: rgb(255, 255, 255);
-    color: black;
-    width: 7vw;
-    height: 2vw;
-    text-align: center;
-    font-family: "Forma DJR Cyrillic Micro";
-    font-size: 0.9vw;
-    border-radius: 2vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .A_HeaderText:hover {
-    font-family: "SFT-Schrifted-Serif-T", italic;
+  .A_Logo:hover {
     background-color: #ff5c39;
-    color: white;
     border: 0.1vw solid #000;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.A_HeaderText {
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  width: 7vw;
+  height: 2vw;
+  text-align: center;
+  font-family: "Forma DJR Cyrillic Micro";
+  font-size: 0.9vw;
+  border-radius: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.A_HeaderText:hover {
+  font-family: "SFT-Schrifted-Serif-T", italic;
+  background-color: #ff5c39;
+  color: white;
+  border: 0.1vw solid #000;
 }
 
-body {
-  font-family: "Forma DJR Cyrillic Micro", sans-serif;
-  color: #050505;
-  line-height: 1;
-}
 h2,
 h3 {
   font-family: "SFT-Schrifted-Serif-T", italic;
   line-height: normal;
-}
-p {
-  font-family: "Forma DJR Cyrillic Micro";
-  line-height: 1;
 }
 
 header {
@@ -92,7 +61,7 @@ header {
     font-size: 4vw;
     -webkit-text-stroke: 1px;
   }
-  .circle {
+  .A_Circle {
     position: absolute;
     top: 0;
     left: 0;
@@ -284,7 +253,7 @@ nav {
   gap: 60px;
   flex-wrap: wrap;
   align-items: center;
-  .typography-block1 {
+  .typography-S_MainBlock {
     display: flex;
     flex-direction: column;
     gap: 8px;

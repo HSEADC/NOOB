@@ -1,0 +1,111 @@
+/* ГЛАВНАЯ */
+
+.W_FormImages {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+.W_Form {
+  overflow: hidden;
+  z-index: 3;
+}
+.W_ChannelText {
+  display: block;
+  gap: 0;
+}
+.W_ChannelImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+  z-index: 10;
+}
+.W_TitleArticle {
+  display: block;
+  gap: 1vw;
+}
+.W_CategoryCard:hover {
+  transform: translateY(-3px);
+}
+.W_CategoryCard:hover .M_Button img {
+  transform: translateX(3px);
+}
+.W_AllCardCategories {
+  display: flex;
+  gap: 30px;
+  padding: 0 60px 0 60px;
+  align-items: stretch;
+}
+.W_CategoryCard {
+  padding: 30px;
+  max-width: 48vw;
+  gap: 2vw;
+  background: white;
+  border-radius: 30px;
+  border: 1px solid black;
+  box-shadow: 0px 6px 0px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  transition: transform 0.3s ease;
+  position: relative;
+  background: linear-gradient(90deg, #ffffff, #f2f8fd);
+}
+.W_CardCategories {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex: 1;
+}
+
+/* РАЗДЕЛ СТАТЬИ */
+/* РАЗДЕЛ CЛОВАРЬ */
+
+.W_PopUp {
+  width: 50vw;
+  height: 40vw;
+  background-color: #dbdbdb;
+  border-radius: 3vw;
+  padding: 1rem;
+}
+
+/* РАЗДЕЛ МИНИ-ГИД */
+
+/* СТРАНИЦА СТАТЬИ */
+
+.W_ArticleHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.W_Images {
+  display: flex;
+  gap: 20px;
+}
+.W_TestText {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  align-items: flex-start;
+}
+
+/* СТРАНИЦА МИНИ-ГИДА */
+
+.W_MiniGuideGaid {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25%;
+  margin-top: 8%;
+  gap: 4vw;
+}
+
+.W_MiniGuideText {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
