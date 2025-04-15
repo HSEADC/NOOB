@@ -89,6 +89,16 @@
 }
 
 /* РАЗДЕЛ СТАТЬИ */
+
+.M_TultipArticle {
+  cursor: pointer;
+  transition: transform 0.3s ease-out;
+}
+
+.M_TultipArticle:hover {
+  transform: translateY(-5px) scale(1.05) rotate(3deg);
+}
+
 /* РАЗДЕЛ CЛОВАРЬ */
 /* РАЗДЕЛ МИНИ-ГИД */
 /* СТРАНИЦА СТАТЬИ */

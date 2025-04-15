@@ -32,6 +32,10 @@
 .A_IdeaForPost {
   position: absolute;
   width: 70vw;
+  transition: transform 0.5s ease-out;
+}
+.A_IdeaForPost:hover {
+  transform: translateY(-5px) scale(1.05);
 }
 
 .A_HeaderChannel {
@@ -64,6 +68,28 @@
   padding: 0 0 15px;
   line-height: normal;
 }
+.A_LogoForm {
+  position: absolute;
+  margin-top: -25vw;
+  animation: moveAndTransform 4s infinite;
+}
+@keyframes moveAndTransform {
+  0% {
+    transform: translate(0, 0) scale(0.9) rotate(0deg); /* Начальная позиция */
+  }
+  25% {
+    transform: translate(5px, 0) scale(1) rotate(10deg); /* Немного наклоняем вправо */
+  }
+  50% {
+    transform: translate(5px, 5px) scale(1.1) rotate(-10deg); /* Немного наклоняем влево */
+  }
+  75% {
+    transform: translate(0, 5px) scale(1) rotate(10deg); /* Немного наклоняем вправо */
+  }
+  100% {
+    transform: translate(0, 0) scale(0.9) rotate(0deg); /* Возвращаемся в начальную позицию */
+  }
+}
 
 /* РАЗДЕЛ СТАТЬИ */
 
@@ -72,18 +98,24 @@
 }
 
 .A_Tegs {
+  cursor: pointer;
   display: inline-block;
   padding: 10px 20px;
-  background-color: black;
+  background-color: #1a1a1d;
   color: white;
   font-size: 1rem;
   border-radius: 20px;
   font-family: "Forma DJR Cyrillic Micro", sans-serif;
   white-space: nowrap;
+  transition: background-color 0.3s ease;
 
   &.active {
     background-color: #ff5c39;
   }
+}
+
+.A_Tegs:hover {
+  background-color: #303036;
 }
 
 .HeaderArticles {

@@ -1,50 +1,15 @@
 @media screen and (max-width: 1024px) {
-  .mininoob2block {
-    gap: 10px;
-  }
-  .color {
-    height: 150px;
-  }
-  .O_Header {
-    height: 4.5vw;
-    border-radius: 3vw;
-    padding: 1vw;
-    .A_HeaderText {
-      font-size: 1.2vw;
-      display: flex;
-      align-items: center;
-      .A_HeaderText {
-        width: 20vw;
-        height: 5vh;
-      }
-    }
+  body {
   }
 }
 
 @media screen and (max-width: 768px) {
-  .mininoob2block {
-    gap: 5px !important;
-  }
-
-  .place_setka {
-    width: 100% !important;
-  }
-
-  .O_Header {
-    height: 6vw;
-    border-radius: 4vw;
-    padding: 1.5vw;
-    .A_HeaderText {
-      font-size: 1.6vw;
-      width: 30vw;
-      height: 3vh;
-      border-radius: 30vw;
+  body {
+    .A_title {
+      font-size: large !important;
+      transform: translateY(-500%) !important;
+      font-size: 1.5vw;
     }
-  }
-  .A_title {
-    font-size: large !important;
-    transform: translateY(-500%) !important;
-    font-size: 1.5vw;
   }
 }
 
