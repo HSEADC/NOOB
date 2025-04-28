@@ -267,7 +267,7 @@
     }
 
     .S_Article {
-      gap: 14vw;
+      gap: 16vw;
 
       .W_TitleArticle {
         p {
@@ -376,6 +376,131 @@
 
     .W_Images {
       width: 92vw;
+    }
+    .O_TitleArticleTeg {
+      margin-top: 46%;
+    }
+
+    .A_Icon img {
+      width: 70px;
+      height: 70px;
+    }
+
+    .M_TitleArticle {
+      width: 82vw;
+    }
+
+    .C_Tegs {
+      margin-top: 10px;
+      .A_Tag {
+        font-size: 0.8rem;
+      }
+    }
+
+    .O_BreakerOpinion {
+      margin: 0px 0px 20px 20px;
+      padding: 16px;
+      flex-direction: column;
+      width: 88vw;
+      gap: 2vw;
+    }
+
+    .M_Description {
+      font-size: 16px;
+      width: 66vw;
+      font-style: italic;
+      font-family: "SFT-Schrifted-Serif-T";
+      line-height: 1.5;
+      margin-left: 0%;
+    }
+
+    .O_TitleArticleTeg {
+      padding: 3% 6% 6%;
+    }
+
+    .A_Divider {
+      display: none;
+    }
+    .M_HeaderArticle {
+      font-size: 18px;
+      gap: 20px;
+      padding: 10px 0px 20px 0px;
+    }
+
+    .M_Content {
+      padding-left: 0%;
+      width: 70vw;
+    }
+
+    .M_Content p {
+      font-size: 18px;
+      line-height: 26px;
+      margin: 18px 0 22px;
+    }
+
+    .M_Content li {
+      font-size: 16px;
+      line-height: 1.5;
+      list-style-type: disc;
+    }
+
+    .O_Quote {
+      width: 74vw;
+      margin-left: 6%;
+      padding: 16px 24px;
+      border-radius: 16px;
+      font-size: 18px;
+      margin: 20px;
+    }
+
+    .W_Images {
+      width: 88vw;
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    p {
+      font-family: "Forma DJR Cyrillic Micro";
+      font-size: 16px;
+      line-height: 130%;
+    }
+
+    .O_Telegram {
+      width: 88vw;
+      margin: 20px 0px 0px 20px;
+
+      .M_Telegram {
+        width: 88vw;
+        font-size: 1.5rem;
+        gap: 6vw;
+      }
+    }
+
+    .A_AuthorsPhoto img {
+      width: 80px;
+    }
+
+    .A_NameBig {
+      font-size: 16px;
+    }
+    .A_Profession {
+      font-size: 16px;
+    }
+
+    .S_Recomendation {
+      width: 100vw;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      background-color: #f2f8fd;
+      padding: 4% 0 10%;
+      margin-top: 6%;
+    }
+
+    .M_Content {
+      padding-left: 0%;
+      width: 80vw;
     }
   }
 }
