@@ -10,6 +10,47 @@
       transform: translateY(-500%) !important;
       font-size: 1.5vw;
     }
+
+    .W_MiniGuideGaid {
+      margin-left: 10%;
+      margin-top: 8%;
+      gap: 10vw;
+
+      .O_MiniGuideTextPlagin {
+        width: 88vw;
+      }
+
+      .M_MiniGuideText {
+        width: 70vw;
+      }
+      .A_MiniGuideImg {
+        width: 12vw;
+      }
+    }
+    .O_MiniGuideGaid {
+      .O_HeaderGaid {
+        .A_MiniGuideCoverImg img {
+          width: 78vw;
+        }
+        .A_HeaderGaid {
+          -webkit-text-stroke-width: 1px;
+          font-size: 4rem;
+          h6 {
+            -webkit-text-stroke-width: 2px;
+            font-size: 3.5rem;
+            line-height: normal;
+          }
+          h4 {
+            font-size: 1.8rem;
+            -webkit-text-stroke-width: 0cm;
+          }
+        }
+      }
+    }
+    .O_TelegramGaid {
+      margin-left: 10%;
+      width: 86vw;
+    }
   }
 }
 
@@ -189,7 +230,7 @@
       margin-top: -100vw;
     }
 
-    .C_MiniGuide {
+    .C_MiniGuideAll {
       padding: 30px 0px 30px 0px;
       justify-content: center;
 
@@ -257,6 +298,84 @@
       #O_Form {
         padding: 0 2vw;
       }
+    }
+
+    .O_MiniGuideGaid {
+      .O_HeaderGaid {
+        .A_MiniGuideCoverImg img {
+          width: 92vw;
+        }
+        .A_HeaderGaid {
+          -webkit-text-stroke-width: 1px;
+          font-size: 2rem;
+          h6 {
+            -webkit-text-stroke-width: 1px;
+            font-size: 2rem;
+          }
+          h4 {
+            font-size: 1.5rem;
+            -webkit-text-stroke-width: 0cm;
+          }
+        }
+      }
+    }
+
+    .W_MiniGuideGaid {
+      margin-left: 4%;
+      margin-top: 8%;
+      gap: 10vw;
+
+      .M_MiniGuideText {
+        width: 88vw;
+      }
+      .A_MiniGuideImg {
+        width: 18vw;
+      }
+    }
+
+    .O_TelegramGaid {
+      width: 92vw;
+      margin-left: 4%;
+      padding: 16px 24px;
+
+      .M_Telegram {
+        gap: 6vw;
+      }
+
+      .A_Subscribe {
+        display: none;
+      }
+    }
+
+    .C_MiniGuide {
+      height: 32vh;
+      overflow: hidden;
+      padding: 0px;
+      gap: 100px 20px;
+      padding: 30px 0px 30px 0px;
+      justify-content: center;
+
+      .O_CardGuide {
+        width: 180px;
+        height: 260px;
+        padding: 12px 12px 20px;
+
+        h1 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .A_ArticleText {
+      font-size: 2rem;
+      -webkit-text-stroke: 1px;
+    }
+    .O_MiniGuideImg {
+      flex-direction: column;
+    }
+
+    .W_Images {
+      width: 92vw;
     }
   }
 }

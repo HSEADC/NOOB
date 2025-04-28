@@ -32,10 +32,6 @@
 .A_IdeaForPost {
   position: absolute;
   width: 70vw;
-  transition: transform 0.5s ease-out;
-}
-.A_IdeaForPost:hover {
-  transform: translateY(-5px) scale(1.05);
 }
 
 .A_HeaderChannel {
