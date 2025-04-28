@@ -10,6 +10,47 @@
       transform: translateY(-500%) !important;
       font-size: 1.5vw;
     }
+
+    .W_MiniGuideGaid {
+      margin-left: 10%;
+      margin-top: 8%;
+      gap: 10vw;
+
+      .O_MiniGuideTextPlagin {
+        width: 88vw;
+      }
+
+      .M_MiniGuideText {
+        width: 70vw;
+      }
+      .A_MiniGuideImg {
+        width: 12vw;
+      }
+    }
+    .O_MiniGuideGaid {
+      .O_HeaderGaid {
+        .A_MiniGuideCoverImg img {
+          width: 78vw;
+        }
+        .A_HeaderGaid {
+          -webkit-text-stroke-width: 1px;
+          font-size: 4rem;
+          h6 {
+            -webkit-text-stroke-width: 2px;
+            font-size: 3.5rem;
+            line-height: normal;
+          }
+          h4 {
+            font-size: 1.8rem;
+            -webkit-text-stroke-width: 0cm;
+          }
+        }
+      }
+    }
+    .O_TelegramGaid {
+      margin-left: 10%;
+      width: 86vw;
+    }
   }
 }
 
@@ -44,11 +85,30 @@
     .M_DescriptionBlock {
       font-size: 1.5rem;
       padding: 16px;
+
+      .content {
+        display: block;
+        line-height: 1.8rem;
+
+        .icon {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
+    .A_MainTitle {
+      -webkit-text-stroke: 0px;
+    }
+
+    .S_MainBlock {
+      .move-area {
+        height: 100vh;
+      }
     }
 
     .A_title {
-      font-size: large;
-      transform: translateY(-1100%);
+      display: none;
     }
     .mockup {
       width: 90vw;
@@ -74,10 +134,10 @@
       height: 30px;
     }
     .A_TitleArticle1 {
-      font-size: 18px;
+      font-size: 36px;
     }
     .A_TitleArticle2 {
-      font-size: 16px;
+      font-size: 36px;
     }
 
     .W_AllCardCategories {
@@ -102,7 +162,7 @@
     .S_Header_Main_All {
       padding: 16px 16px 16px;
       width: 90vw;
-      gap: 2vw;
+      gap: 6vw;
     }
 
     .W_CategoryCard {
@@ -110,44 +170,87 @@
     }
 
     .C_CardsArticle {
-      flex-direction: column;
       justify-content: center;
+      padding: 0px;
 
       .O_CardArticles {
-        min-width: 370px;
+        min-width: 180px;
+        height: 220px;
+        align-items: normal;
+
+        img {
+          width: 100%;
+          height: 100px;
+          object-fit: cover;
+        }
+
+        .M_CardText {
+          padding: 10px 10px 10px 10px;
+          h3 {
+            font-size: 1rem;
+          }
+          .tags {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 1vw;
+            overflow: hidden;
+          }
+          span {
+            font-size: 0.6rem;
+          }
+        }
       }
     }
 
     .S_Article {
       flex-direction: column;
       padding: 20px;
-    }
-
-    .M_TitleArticle {
-      p {
-        width: 90vw;
+      .A_Tag {
+        font-size: 1rem;
       }
     }
 
     .O_Telegram {
-      flex-direction: column;
+      margin: 0px 0px 0px 20px;
 
       .M_Telegram {
-        flex-direction: column;
+        font-size: 2rem;
+        gap: 6vw;
+      }
+      .A_Subscribe {
+        display: none;
       }
     }
 
-    .C_MiniGuide {
-      padding: 10vw;
+    .S_Articles_Main_Block {
+      padding: 30px 0 0;
+    }
+    .A_LogoForm {
+      margin-top: -100vw;
+    }
+
+    .C_MiniGuideAll {
+      padding: 30px 0px 30px 0px;
       justify-content: center;
 
       .O_CardGuide {
-        min-width: 370px;
+        width: 180px;
+        height: 260px;
+        padding: 12px 12px 20px;
+
+        h1 {
+          font-size: 1.2rem;
+        }
       }
     }
 
-    .W_ChannelImg {
-      gap: 4vw;
+    .S_Channel {
+      padding: 120px 0;
+
+      .A_IdeaForPost {
+        display: none;
+      }
     }
 
     .O_CardDictionari {
@@ -157,6 +260,247 @@
 
     .A_LogoForm img {
       width: 50vw;
+    }
+
+    section {
+      padding: 10vw 0;
+    }
+
+    .S_Article {
+      gap: 16vw;
+
+      .W_TitleArticle {
+        p {
+          width: 90vw;
+          font-size: 1rem;
+        }
+        .M_ArticleText {
+          flex-direction: column;
+        }
+      }
+    }
+
+    .readarticle {
+      display: none;
+    }
+
+    h2 {
+      font-size: 4rem;
+    }
+    .M_TextForm {
+      .A_TextForm {
+        text-align: center;
+      }
+    }
+
+    .W_FormImages {
+      gap: 6vw;
+      #O_Form {
+        padding: 0 2vw;
+      }
+    }
+
+    .O_MiniGuideGaid {
+      .O_HeaderGaid {
+        .A_MiniGuideCoverImg img {
+          width: 92vw;
+        }
+        .A_HeaderGaid {
+          -webkit-text-stroke-width: 1px;
+          font-size: 2rem;
+          h6 {
+            -webkit-text-stroke-width: 1px;
+            font-size: 2rem;
+          }
+          h4 {
+            font-size: 1.5rem;
+            -webkit-text-stroke-width: 0cm;
+          }
+        }
+      }
+    }
+
+    .W_MiniGuideGaid {
+      margin-left: 4%;
+      margin-top: 8%;
+      gap: 10vw;
+
+      .M_MiniGuideText {
+        width: 88vw;
+      }
+      .A_MiniGuideImg {
+        width: 18vw;
+      }
+    }
+
+    .O_TelegramGaid {
+      width: 92vw;
+      margin-left: 4%;
+      padding: 16px 24px;
+
+      .M_Telegram {
+        gap: 6vw;
+      }
+
+      .A_Subscribe {
+        display: none;
+      }
+    }
+
+    .C_MiniGuide {
+      height: 32vh;
+      overflow: hidden;
+      padding: 0px;
+      gap: 100px 20px;
+      padding: 30px 0px 30px 0px;
+      justify-content: center;
+
+      .O_CardGuide {
+        width: 180px;
+        height: 260px;
+        padding: 12px 12px 20px;
+
+        h1 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    .A_ArticleText {
+      font-size: 2rem;
+      -webkit-text-stroke: 1px;
+    }
+    .O_MiniGuideImg {
+      flex-direction: column;
+    }
+
+    .W_Images {
+      width: 92vw;
+    }
+    .O_TitleArticleTeg {
+      margin-top: 46%;
+    }
+
+    .A_Icon img {
+      width: 70px;
+      height: 70px;
+    }
+
+    .M_TitleArticle {
+      width: 82vw;
+    }
+
+    .C_Tegs {
+      margin-top: 10px;
+      .A_Tag {
+        font-size: 0.8rem;
+      }
+    }
+
+    .O_BreakerOpinion {
+      margin: 0px 0px 20px 20px;
+      padding: 16px;
+      flex-direction: column;
+      width: 88vw;
+      gap: 2vw;
+    }
+
+    .M_Description {
+      font-size: 16px;
+      width: 66vw;
+      font-style: italic;
+      font-family: "SFT-Schrifted-Serif-T";
+      line-height: 1.5;
+      margin-left: 0%;
+    }
+
+    .O_TitleArticleTeg {
+      padding: 3% 6% 6%;
+    }
+
+    .A_Divider {
+      display: none;
+    }
+    .M_HeaderArticle {
+      font-size: 18px;
+      gap: 20px;
+      padding: 10px 0px 20px 0px;
+    }
+
+    .M_Content {
+      padding-left: 0%;
+      width: 70vw;
+    }
+
+    .M_Content p {
+      font-size: 18px;
+      line-height: 26px;
+      margin: 18px 0 22px;
+    }
+
+    .M_Content li {
+      font-size: 16px;
+      line-height: 1.5;
+      list-style-type: disc;
+    }
+
+    .O_Quote {
+      width: 74vw;
+      margin-left: 6%;
+      padding: 16px 24px;
+      border-radius: 16px;
+      font-size: 18px;
+      margin: 20px;
+    }
+
+    .W_Images {
+      width: 88vw;
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    p {
+      font-family: "Forma DJR Cyrillic Micro";
+      font-size: 16px;
+      line-height: 130%;
+    }
+
+    .O_Telegram {
+      width: 88vw;
+      margin: 20px 0px 0px 20px;
+
+      .M_Telegram {
+        width: 88vw;
+        font-size: 1.5rem;
+        gap: 6vw;
+      }
+    }
+
+    .A_AuthorsPhoto img {
+      width: 80px;
+    }
+
+    .A_NameBig {
+      font-size: 16px;
+    }
+    .A_Profession {
+      font-size: 16px;
+    }
+
+    .S_Recomendation {
+      width: 100vw;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      background-color: #f2f8fd;
+      padding: 4% 0 10%;
+      margin-top: 6%;
+    }
+
+    .M_Content {
+      padding-left: 0%;
+      width: 80vw;
     }
   }
 }
