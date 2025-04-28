@@ -44,11 +44,30 @@
     .M_DescriptionBlock {
       font-size: 1.5rem;
       padding: 16px;
+
+      .content {
+        display: block;
+        line-height: 1.8rem;
+
+        .icon {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
+    .A_MainTitle {
+      -webkit-text-stroke: 0px;
+    }
+
+    .S_MainBlock {
+      .move-area {
+        height: 100vh;
+      }
     }
 
     .A_title {
-      font-size: large;
-      transform: translateY(-1100%);
+      display: none;
     }
     .mockup {
       width: 90vw;
@@ -74,10 +93,10 @@
       height: 30px;
     }
     .A_TitleArticle1 {
-      font-size: 18px;
+      font-size: 36px;
     }
     .A_TitleArticle2 {
-      font-size: 16px;
+      font-size: 36px;
     }
 
     .W_AllCardCategories {
@@ -102,7 +121,7 @@
     .S_Header_Main_All {
       padding: 16px 16px 16px;
       width: 90vw;
-      gap: 2vw;
+      gap: 6vw;
     }
 
     .W_CategoryCard {
@@ -110,44 +129,87 @@
     }
 
     .C_CardsArticle {
-      flex-direction: column;
       justify-content: center;
+      padding: 0px;
 
       .O_CardArticles {
-        min-width: 370px;
+        min-width: 180px;
+        height: 220px;
+        align-items: normal;
+
+        img {
+          width: 100%;
+          height: 100px;
+          object-fit: cover;
+        }
+
+        .M_CardText {
+          padding: 10px 10px 10px 10px;
+          h3 {
+            font-size: 1rem;
+          }
+          .tags {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 1vw;
+            overflow: hidden;
+          }
+          span {
+            font-size: 0.6rem;
+          }
+        }
       }
     }
 
     .S_Article {
       flex-direction: column;
       padding: 20px;
-    }
-
-    .M_TitleArticle {
-      p {
-        width: 90vw;
+      .A_Tag {
+        font-size: 1rem;
       }
     }
 
     .O_Telegram {
-      flex-direction: column;
+      margin: 0px 0px 0px 20px;
 
       .M_Telegram {
-        flex-direction: column;
+        font-size: 2rem;
+        gap: 6vw;
       }
+      .A_Subscribe {
+        display: none;
+      }
+    }
+
+    .S_Articles_Main_Block {
+      padding: 30px 0 0;
+    }
+    .A_LogoForm {
+      margin-top: -100vw;
     }
 
     .C_MiniGuide {
-      padding: 10vw;
+      padding: 30px 0px 30px 0px;
       justify-content: center;
 
       .O_CardGuide {
-        min-width: 370px;
+        width: 180px;
+        height: 260px;
+        padding: 12px 12px 20px;
+
+        h1 {
+          font-size: 1.2rem;
+        }
       }
     }
 
-    .W_ChannelImg {
-      gap: 4vw;
+    .S_Channel {
+      padding: 120px 0;
+
+      .A_IdeaForPost {
+        display: none;
+      }
     }
 
     .O_CardDictionari {
@@ -157,6 +219,44 @@
 
     .A_LogoForm img {
       width: 50vw;
+    }
+
+    section {
+      padding: 10vw 0;
+    }
+
+    .S_Article {
+      gap: 14vw;
+
+      .W_TitleArticle {
+        p {
+          width: 90vw;
+          font-size: 1rem;
+        }
+        .M_ArticleText {
+          flex-direction: column;
+        }
+      }
+    }
+
+    .readarticle {
+      display: none;
+    }
+
+    h2 {
+      font-size: 4rem;
+    }
+    .M_TextForm {
+      .A_TextForm {
+        text-align: center;
+      }
+    }
+
+    .W_FormImages {
+      gap: 6vw;
+      #O_Form {
+        padding: 0 2vw;
+      }
     }
   }
 }
