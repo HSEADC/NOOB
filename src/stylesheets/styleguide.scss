@@ -14,22 +14,15 @@
     border: 0.1vw solid #000;
   }
 }
-.A_HeaderText {
-  text-decoration: none;
-  background-color: rgb(255, 255, 255);
-  color: black;
-  width: 7vw;
-  height: 2vw;
-  text-align: center;
-  font-family: "Forma DJR Cyrillic Micro";
-  font-size: 0.9vw;
-  border-radius: 2vw;
+.A_HeaderTextStyle {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-decoration: none;
 }
 .A_HeaderText:hover {
-  font-family: "SFT-Schrifted-Serif-T", italic;
+  font-family: "SFT-Schrifted-Serif-T";
+  font-style: italic;
   background-color: #ff5c39;
   color: white;
   border: 0.1vw solid #000;
@@ -37,47 +30,36 @@
 
 h2,
 h3 {
-  font-family: "SFT-Schrifted-Serif-T", italic;
+  font-family: "SFT-Schrifted-Serif-T";
+  font-style: italic;
   line-height: normal;
 }
 
-header {
-  background-color: #ff5c39;
-  color: #050505;
-  text-align: center;
-  padding: 30vw 10vw;
+.A_LogoStyle {
+  width: 100%;
+  font-weight: bold;
+  font-family: "SFT-Schrifted-Serif-T", italic;
+}
+.subtitle1 {
+  font-size: 2vw;
+  -webkit-text-stroke: 1px;
+}
+.A_Circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  border-radius: 65%;
+  width: 95%;
+  height: 90%;
+  margin: auto;
+  z-index: 0;
+}
+.content {
   position: relative;
-  height: 40vw;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  .A_Logo {
-    width: 100%;
-    font-weight: bold;
-    font-family: "SFT-Schrifted-Serif-T", italic;
-  }
-  .subtitle1 {
-    font-size: 4vw;
-    -webkit-text-stroke: 1px;
-  }
-  .A_Circle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: white;
-    border-radius: 65%;
-    width: 95%;
-    height: 90%;
-    margin: auto;
-    z-index: 0;
-  }
-  .content {
-    position: relative;
-    z-index: 1;
-  }
+  z-index: 1;
 }
 
 nav {
@@ -127,7 +109,7 @@ nav {
   gap: 0.5vw;
 }
 .mission {
-  background-color: #f0efef;
+  background-color: #f2f8fd;
   width: fit-content;
   padding: 2vw;
   border-radius: 2vw;
@@ -148,7 +130,7 @@ nav {
   flex-wrap: wrap;
   gap: 10px;
   justify-content: start;
-  margin-top: 20px;
+  margin-top: 30px;
   span {
     background-color: #ff5c39;
     color: #fff;
