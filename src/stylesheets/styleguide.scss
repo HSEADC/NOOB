@@ -90,7 +90,7 @@ nav {
   }
   h3 {
     font-size: 2rem;
-    -webkit-text-stroke: 0.3px;
+
     margin-top: 20px;
     margin-bottom: 10px;
   }
@@ -239,14 +239,14 @@ nav {
     gap: 8px;
     .maxititle {
       font-size: 4rem;
-      -webkit-text-stroke: 3px;
-      font-family: "SFT-Schrifted-Serif-T", italic;
+
+      font-family: "SFT-Schrifted-Serif-T";
+      font-style: italic;
     }
     .alphabet {
       font-size: 1rem;
-      font-weight: normal;
-      font-family: "SFT-Schrifted-Serif-T", italic;
-      -webkit-text-stroke: 1px;
+      font-style: italic;
+      font-family: "SFT-Schrifted-Serif-T";
     }
   }
   .typography-block2 {
