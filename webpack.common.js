@@ -16,6 +16,11 @@ module.exports = {
     tests_freelance: "./src/tests/test_freelance.js",
     filterTags: "./src/js/articleTags.js",
     filterTagsMini: "./src/js/miniguidTags.js",
+    dictAll: "./src/js/wordsMain.js",
+    dict: "./src/js/words.js",
+    main: "./src/js/main.js",
+    reactBasics: "./src/js/react-basics.jsx",
+    search: "./src/js/search-vanilla.js",
   },
   output: {
     filename: "[name].js",
@@ -100,14 +105,21 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/articles.html",
       filename: "./articles.html",
-      chunks: ["filterTags"],
+      chunks: ["index", "filterTags"],
     }),
 
     // Словарик "Dictionary"
     new HtmlWebpackPlugin({
       template: "./src/dictionary.html",
       filename: "./dictionary.html",
-      chunks: ["index"],
+      chunks: ["index", "main"],
+    }),
+
+    // Словарик "Dictionary"
+    new HtmlWebpackPlugin({
+      template: "./src/search.html",
+      filename: "./search.html",
+      chunks: ["index", "main", "search"],
     }),
 
     // "About us"
