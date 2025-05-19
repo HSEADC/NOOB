@@ -154,7 +154,7 @@ function popUp() {
       header.innerHTML = "Header";
 
       const description = document.createElement("p");
-      description.classList.add(".A_WordCardDescription");
+      с.classList.add(".A_WordCardDescription");
       description.innerHTML = "Description";
 
       const image = document.createElement("img");
