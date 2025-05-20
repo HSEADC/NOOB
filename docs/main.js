@@ -251,7 +251,7 @@ module.exports = function (moduleId, options) {
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1747128252598
+        // 1747730750091
         var cssReload = __webpack_require__(140)(module.id, {});
         // only invalidate when locals change
         if (
@@ -291,89 +291,73 @@ module.exports = __webpack_require__.p + "images/fdcdc5e7d5df8bb63f35.png";
 
 
 var words = [{
-  word: "байтить",
-  sub: "20-е",
-  img: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__,
-  desc: "копировать чей-либо стиль, подражать кому-то",
-  bigDesc: "сабантуй&nbsp;&mdash; это старинный национальный праздник у&nbsp;тюркоязычных граждан проживающих в&nbsp;районе Поволжья. В&nbsp;современном русском языке обозначает любое застолье."
+  header: "Антиква",
+  description: "шрифт с засечками, пришедший из книжной типографики. Часто выглядит «классически», с разной толщиной линий в буквах.",
+  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
 }, {
-  word: "сабантуй",
-  sub: "80-е",
-  img: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__,
-  desc: "сбор, вечеринка",
-  bigDesc: "сабантуй&nbsp;&mdash; это старинный национальный праздник у&nbsp;тюркоязычных граждан проживающих в&nbsp;районе Поволжья. В&nbsp;современном русском языке обозначает любое застолье."
+  header: "Гротеск",
+  description: "шрифт без засечек, с ровной, строгой геометрией. Например, шрифт Helvetica — это гротеск.",
+  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
 }, {
-  word: "манка",
-  sub: "70-е",
-  img: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__,
-  desc: "толстая каучуковая подошва",
-  bigDesc: "манка (советский сленг)&nbsp;&mdash; в&nbsp;СССР бытовое название толстой каучуковой микропористой подошвы светлого цвета (туфли на&nbsp;манке, сапоги на&nbsp;манке)."
+  header: "Кернинг",
+  description: "расстояние между двумя отдельными буквами. От него зависит, насколько аккуратно выглядит текст.",
+  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
 }, {
-  word: "голбец",
-  sub: "60-е",
-  img: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__,
-  desc: "подполье, подвал в&nbsp;крестьянской избе",
-  bigDesc: "голбец&nbsp;&mdash; отгородка в&nbsp;виде клети, чулана, устраиваемая в&nbsp;жилой избе за&nbsp;русской печью. В&nbsp;деревянных избах&nbsp;&mdash; конструкция при печи для всхода на&nbsp;печь и&nbsp;спуска в&nbsp;подклет."
+  header: "Лидинг",
+  description: "расстояние между строками текста. Влияет на читаемость и восприятие.",
+  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
 }, {
-  word: "эвона как",
-  sub: "60-е",
-  img: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__,
-  desc: "употребляется при выражении сильного удивления",
-  bigDesc: "эвона как&nbsp;&mdash; употребляется при указании на&nbsp;предмет, находящийся в&nbsp;некотором отдалении, а&nbsp;также возглас при выражении различных чувств, душевных переживаний."
+  header: "Гриды",
+  description: " это система модульных сеток, используемая в дизайне для упорядочивания элементов на странице, обеспечивая структурированность и удобочитаемость макета.",
+  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
 }, {
-  word: "лохмы",
-  sub: "60-е",
-  img: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__,
-  desc: "пряди спутанных, всклоченных волос",
-  bigDesc: "лохмы&nbsp;&mdash; пряди спутанных, всклоченных волос, пряди свалявшихся волос у&nbsp;человека или животного."
+  header: "Трекинг",
+  description: "это общий интервал между буквами в слове или строке текста. Он влияет на читаемость и визуальное восприятие: увеличенный трекинг делает текст более воздушным, а уменьшенный — более плотным.",
+  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
 }, {
-  word: "елозить",
-  sub: "70-е",
-  img: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__,
-  desc: "беспокойно двигаться, вертеться",
-  bigDesc: "елозить&nbsp;&mdash; сидя или лёжа, беспокойно двигаться, вертеться, ёрзать."
+  header: "Респонсивность",
+  description: "способность интерфейса адаптироваться под разные экраны: от телефона до ноутбука.",
+  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
 }, {
-  word: "баско",
-  sub: "60-е",
-  img: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__,
-  desc: "Красиво, хорошо, славно",
-  bigDesc: "баско&nbsp;&mdash; хорошо, классно, круто, красиво."
+  header: "Бенчмарк",
+  description: " примеры лучших решений в определённой теме. Дизайнеры собирают бенчмарки, чтобы вдохновиться и понять стандарты.",
+  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
 }, {
-  word: "вошкаться",
-  sub: "60-е",
-  img: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__,
-  desc: "долго возиться, собираться",
-  bigDesc: "вошкаться&nbsp;&mdash; употребляется в&nbsp;значении долго возиться, собираться, делать какую-то работу (действие) не&nbsp;торопясь, порой намеренно, лениво."
+  header: "Маскот",
+  description: "визуальный персонаж проекта или бренда, который создаёт узнаваемость и эмоции (например, мишка в Тинькофф Образовании).",
+  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
 }, {
-  word: "шибко",
-  sub: "60-е",
-  img: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__,
-  desc: "значит то&nbsp;же, что очень",
-  bigDesc: "шибко&nbsp;&mdash; разговорный (иногда грубый) вариант слова &laquo;слишком&raquo;. Используется в&nbsp;том&nbsp;же значении, что и&nbsp;&laquo;очень&raquo;."
+  header: "Фрод-дизайн",
+  description: "плохой, обманчивый дизайн, где, например, кнопка «Отписаться» спрятана или сливается с фоном.",
+  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
 }, {
-  word: "давеча",
-  sub: "60-е",
-  img: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__,
-  desc: "недавно, незадолго до&nbsp;момента разговора",
-  bigDesc: "давеча&nbsp;&mdash; устаревшее народно-разговорное наречие, обозначающее время накануне момента речи, имеет самый широкий спектр вариантов написания."
+  header: "Питч",
+  description: "краткая и убедительная презентация своей идеи. Часто нужен на защите проекта или перед заказчиком.",
+  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
 }, {
-  word: "зенки",
-  sub: "60-е",
-  img: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__,
-  desc: "глаза (орган зрения человека или животного)",
-  bigDesc: "зенки&nbsp;&mdash; глаза. &laquo;Зенками&raquo; называли глаза в&nbsp;тюрьмах, популярны фразы &laquo;вылупить зенки&raquo;, &laquo;залить зенки&raquo;."
+  header: "Бриф",
+  description: "задание от клиента или преподавателя с требованиями, сроками и описанием задачи. Если его нет — велика вероятность делать не то и бесконечно переделывать.",
+  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
 }, {
-  word: "ладом",
-  sub: "60-е",
-  img: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__,
-  desc: "дружно, мирно, по-хорошему, ладком",
-  bigDesc: "ладом&nbsp;&mdash; дружно, мирно, по-хорошему, ладком. Означает хорошие взаимоотношения, согласие, мир, дружбу."
+  header: "Гайдлайн",
+  description: " набор правил по использованию визуального стиля. Чтобы логотип не растягивали и не красили в кислотно-зелёный.",
+  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
 }, {
-  word: "хаять",
-  sub: "60-е",
-  img: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__,
-  desc: "ругать, бранить, порочить",
-  bigDesc: "хаять&nbsp;&mdash; неодобрительно отзываться о&nbsp;ком-либо, чём-либо, порочить кого-либо, что-либо. Выражение открытого презрения, критики и&nbsp;осуждения кого-либо или чего-либо."
+  header: "Онбординг",
+  description: " процесс введения пользователя или сотрудника в продукт или команду. Часто оформляется как интерфейс с подсказками или обучающим сценарием.",
+  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
+}, {
+  header: "ТЗ (техническое задание)",
+  description: " детальный документ с описанием, как всё должно работать. Без него легко упустить важные детали.",
+  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
+}, {
+  header: "Дизайн-система",
+  description: " библиотека повторяющихся компонентов (кнопки, поля, заголовки), которая помогает создавать интерфейсы быстрее и единообразно.",
+  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
+}, {
+  header: "Айдентика",
+  description: " визуальная система бренда: логотип, цвета, шрифты, фирменные элементы. То, что делает бренд узнаваемым.",
+  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
 }];
 
 /***/ }),
@@ -715,7 +699,7 @@ module.exports = function (urlString) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("54488c798fd8d6c56933")
+/******/ 		__webpack_require__.h = () => ("122a6912d0ce6fba8760")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

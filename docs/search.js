@@ -12,7 +12,7 @@ var airtable_umd_default = /*#__PURE__*/__webpack_require__.n(airtable_umd);
 ;// ./src/js/search-data.js
 
 var token = "patDamBuCdI3HBGdA.16caa5fd1b0ef25bbeba20f0d5924e2363f34f4e0a72076c3a455b8f8221502f";
-Airtable.configure({
+airtable_umd_default().configure({
   endpointUrl: "https://api.airtable.com",
   apiKey: token
 });
@@ -3929,7 +3929,7 @@ module.exports = Airtable;
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("54488c798fd8d6c56933")
+/******/ 		__webpack_require__.h = () => ("122a6912d0ce6fba8760")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
