@@ -86,7 +86,7 @@ function SearchContent(requestText) {
     let { title, description, id } = contentItem;
 
     if (requestText.length >= 3) {
-      if (title.includes(requestText) || description.includes(requestText)) {
+      if (title.includes(requestText)) {
         contentItemIds.push(id);
       } else {
         console.log("ids");
@@ -94,8 +94,10 @@ function SearchContent(requestText) {
     }
 
     if (contentItemIds.length > 0) {
+      document.querySelector(".S_Content").innerText = "";
       renderCardsbyIds(container, contentItemIds);
     } else {
+      document.querySelector(".S_Content").innerText = "";
       renderNothingFounded();
     }
   });

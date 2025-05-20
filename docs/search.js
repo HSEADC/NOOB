@@ -111,15 +111,17 @@ function SearchContent(requestText) {
       description = contentItem.description,
       id = contentItem.id;
     if (requestText.length >= 3) {
-      if (title.includes(requestText) || description.includes(requestText)) {
+      if (title.includes(requestText)) {
         contentItemIds.push(id);
       } else {
         console.log("ids");
       }
     }
     if (contentItemIds.length > 0) {
+      document.querySelector(".S_Content").innerText = "";
       renderCardsbyIds(container, contentItemIds);
     } else {
+      document.querySelector(".S_Content").innerText = "";
       renderNothingFounded();
     }
   });
@@ -4020,7 +4022,7 @@ module.exports = Airtable;
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("26630cee4a9067baeca8")
+/******/ 		__webpack_require__.h = () => ("3dc1d3d7844e53788a9d")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
