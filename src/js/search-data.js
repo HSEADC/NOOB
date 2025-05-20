@@ -3,7 +3,7 @@ import airtable from "airtable";
 const token =
   "patDamBuCdI3HBGdA.16caa5fd1b0ef25bbeba20f0d5924e2363f34f4e0a72076c3a455b8f8221502f";
 
-Airtable.configure({
+airtable.configure({
   endpointUrl: "https://api.airtable.com",
   apiKey: token,
 });

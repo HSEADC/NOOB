@@ -130,4 +130,46 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   loadCards();
+
+  popUp();
 });
+
+function popUp() {
+  const cards = document.querySelectorAll(".O_CardDictionari");
+
+  cards.forEach((card) => {
+    card.addEventListener("click", () => {
+      const overlay = document.createElement("div");
+      overlay.classList.add(".W_Overlay");
+      document.querySelector("body").appendChild(overlay);
+
+      const block = document.createElement("div");
+      block.classList.add(".O_WordCard");
+
+      const cross = document.createElement("img");
+      image.classList.add(".A_WordCardcross");
+
+      const header = document.createElement("h3");
+      header.classList.add(".A_WordCardHeader");
+      header.innerHTML = "Header";
+
+      const description = document.createElement("p");
+      с.classList.add(".A_WordCardDescription");
+      description.innerHTML = "Description";
+
+      const image = document.createElement("img");
+      image.classList.add(".A_WordCardImage");
+
+      block.appendChild(cross);
+      block.appendChild(header);
+      block.appendChild(description);
+      block.appendChild(image);
+
+      overlay.appendChild(block);
+
+      overlay.addEventListener("click", () => {
+        overlay.remove();
+      });
+    });
+  });
+}

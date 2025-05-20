@@ -693,3 +693,37 @@ body.S_Dictionary {
     }
   }
 }
+
+.W_Overlay {
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(0.232vw);
+  background: hsla(48, 3%, 71%, 0.46);
+  display: none;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1000;
+}
+
+.O_WordCard {
+  align-items: center;
+  background: #f9f8f7;
+  border-radius: 1vw;
+  box-shadow: 0 0.278vw 0.278vw 0 rgba(0, 0, 0, 0.25);
+  display: flex;
+  display: none;
+  left: 50%;
+  padding: 3vw;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  z-index: 1001;
+}
+
+.A_WordCardHeader {
+  width: 2rem;
+}
