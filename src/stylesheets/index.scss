@@ -727,3 +727,30 @@ body.S_Dictionary {
 .A_WordCardHeader {
   width: 2rem;
 }
+.O_Search {
+  display: flex;
+  margin: 50px auto;
+  align-items: center;
+}
+
+.A_SearchInput {
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 250px;
+  background-color: transparent;
+  padding: 1px 8px;
+
+  &:focus {
+    border-color: inherit;
+    box-shadow: none;
+    outline: none;
+  }
+}
+
+.A_SearchButton {
+  padding: 10px 20px;
+  background-color: lightblue;
+  color: #f9f8f7;
+  cursor: default;
+  border-radius: 30px;
+}

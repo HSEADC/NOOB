@@ -251,7 +251,7 @@ module.exports = function (moduleId, options) {
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1747730750091
+        // 1747741647979
         var cssReload = __webpack_require__(140)(module.id, {});
         // only invalidate when locals change
         if (
@@ -283,9 +283,7 @@ module.exports = __webpack_require__.p + "images/fdcdc5e7d5df8bb63f35.png";
 /***/ 557:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   a: () => (/* binding */ words)
-/* harmony export */ });
+/* unused harmony export words */
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(146);
 /* harmony import */ var _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(185);
 
@@ -414,161 +412,6 @@ function getCardStylesAndTag(card) {
   return styles;
 }
 var A_buttonFollowMain = document.getElementById("A_buttonFollowMain");
-function loadCards() {
-  shuffleArray(_words_js__WEBPACK_IMPORTED_MODULE_1__/* .words */ .a);
-  _words_js__WEBPACK_IMPORTED_MODULE_1__/* .words */ .a.forEach(function (card, index) {
-    var _getCardStylesAndTag = getCardStylesAndTag(card),
-      M_color = _getCardStylesAndTag.M_color,
-      A_ageTag = _getCardStylesAndTag.A_ageTag,
-      A_ageTagText = _getCardStylesAndTag.A_ageTagText,
-      A_nameCard = _getCardStylesAndTag.A_nameCard,
-      A_descCard = _getCardStylesAndTag.A_descCard,
-      tag = _getCardStylesAndTag.tag;
-    wordsGrid.innerHTML += "<div class=\"M_Card ".concat(M_color, "\" data-index=\"").concat(index, "\">\n        <div class=\"W_ageTitle\">\n          <div class=\"A_ageTag ").concat(A_ageTag, "\"><p class='A_ageTagText ").concat(A_ageTagText, "'>").concat(card.sub, "</p></div>  \n          <h4 lang=\"ru\" class='A_nameCard ").concat(A_nameCard, "'>").concat(card.word, "</h4>\n        </div>\n        <p class='A_descCard ").concat(A_descCard, "'>").concat(card.desc, "</p>\n    </div>");
-  });
-}
-document.addEventListener("DOMContentLoaded", function () {
-  var rangeInput = document.getElementsByClassName("C_exectTime")[0];
-  rangeInput.addEventListener("input", function () {
-    var value = this.value;
-    var decade = "";
-    switch (value) {
-      case "1":
-        decade = "60-е";
-        break;
-      case "2":
-        decade = "70-е";
-        break;
-      case "3":
-        decade = "80-е";
-        break;
-      case "4":
-        decade = "90-е";
-        break;
-      case "5":
-        decade = "00-е";
-        break;
-      case "6":
-        decade = "10-е";
-        break;
-      case "7":
-        decade = "20-е";
-        break;
-    }
-    wordsGrid.innerHTML = "";
-    _words_js__WEBPACK_IMPORTED_MODULE_1__/* .words */ .a.filter(function (card) {
-      return card.sub === decade;
-    }).forEach(function (card, index) {
-      var _getCardStylesAndTag2 = getCardStylesAndTag(card),
-        M_color = _getCardStylesAndTag2.M_color,
-        A_ageTag = _getCardStylesAndTag2.A_ageTag,
-        A_ageTagText = _getCardStylesAndTag2.A_ageTagText,
-        A_nameCard = _getCardStylesAndTag2.A_nameCard,
-        A_descCard = _getCardStylesAndTag2.A_descCard,
-        tag = _getCardStylesAndTag2.tag;
-      wordsGrid.innerHTML += "<div class=\"M_Card ".concat(M_color, "\" data-index=\"").concat(index, "\">\n          <div class=\"W_ageTitle\">\n            <div class=\"A_ageTag ").concat(A_ageTag, "\"><p class='A_ageTagText ").concat(A_ageTagText, "'>").concat(card.sub, "</p></div>  \n            <h4 lang=\"ru\" class='A_nameCard ").concat(A_nameCard, "'>").concat(card.word, "</h4>\n          </div>\n          <p class='A_descCard ").concat(A_descCard, "'>").concat(card.desc, "</p>\n      </div>");
-    });
-    document.querySelectorAll(".M_Card").forEach(function (card) {
-      card.addEventListener("click", function () {
-        overlay.style.display = "block";
-        textOverlay.style.display = "flex";
-        document.body.style.overflow = "hidden";
-        var index = parseInt(this.getAttribute("data-index"), 10);
-        var wordInfo = _words_js__WEBPACK_IMPORTED_MODULE_1__/* .words */ .a.filter(function (card) {
-          return card.sub === decade;
-        })[index];
-        textOverlay.innerHTML = "<div class=\"A_imgCard\"><img src=".concat(wordInfo.img, " alt=\"\" /></div> <div class=\"M_mainPlot\"><div class=\"C_headerName\"><h3 class=\"A_tagCard\">").concat(tag, "</h3><h2 class=\"A_cardTitle\" lang=\"ru\">").concat(wordInfo.word, "</h2></div><p class=\"A_Plot\">").concat(wordInfo.bigDesc, "</p></div><img src=\"").concat(_images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_0__, "\" alt=\"\" class=\"A_Cancel\"/>");
-        var cancel = document.getElementsByClassName("A_Cancel")[0];
-        cancel.addEventListener("click", function () {
-          overlay.style.display = "none";
-          textOverlay.style.display = "none";
-          document.body.style.overflow = "auto";
-          document.body.style.overflowX = "hidden";
-        });
-      });
-    });
-  });
-  var overlay = document.getElementsByClassName("A_Overlay")[0];
-  var textOverlay = document.getElementsByClassName("O_cradDescription")[0];
-  document.querySelectorAll(".M_Card").forEach(function (card) {
-    card.addEventListener("click", function () {
-      overlay.style.display = "block";
-      textOverlay.style.display = "flex";
-      document.body.style.overflow = "hidden";
-      var index = parseInt(this.getAttribute("data-index"), 10);
-      var tag2 = document.getElementsByClassName("A_ageTagText")[index].textContent;
-      if (tag2 === "20-е") {
-        tag = "зумерский слэнг";
-      } else if (tag2 === "10-е") {
-        tag = "зумерский слэнг";
-      } else if (tag2 === "90-е") {
-        tag = "сленг 90-х";
-      } else if (tag2 === "80-е") {
-        tag = "сленг 80-х";
-      } else if (tag2 === "70-е") {
-        tag = "сленг 70-х";
-      } else {
-        tag = "сленг 60-х";
-      }
-      var wordInfo = _words_js__WEBPACK_IMPORTED_MODULE_1__/* .words */ .a[index];
-      textOverlay.innerHTML = "<div class=\"A_imgCard\"><img src=".concat(wordInfo.img, " alt=\"\" /></div> <div class=\"M_mainPlot\"><div class=\"C_headerName\"><h3 class=\"A_tagCard\">").concat(tag, "</h3><h2 class=\"A_cardTitle\" lang=\"ru\">").concat(wordInfo.word, "</h2></div><p class=\"A_Plot\">").concat(wordInfo.bigDesc, "</p></div><img src='").concat(_images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_0__, "' alt=\"\" class=\"A_Cancel\"/>");
-      var cancel = document.getElementsByClassName("A_Cancel")[0];
-      cancel.addEventListener("click", function () {
-        overlay.style.display = "none";
-        textOverlay.style.display = "none";
-        document.body.style.overflow = "auto";
-        document.body.style.overflowX = "hidden";
-      });
-    });
-  });
-  overlay.addEventListener("click", function () {
-    this.style.display = "none";
-    textOverlay.style.display = "none";
-    document.body.style.overflow = "auto";
-    document.body.style.overflowX = "hidden";
-  });
-  function searchWord() {
-    var input = document.getElementsByClassName("A_inputTrue")[0].value.toLowerCase();
-    var resultsContainer = document.getElementsByClassName("C_Cards")[0];
-    resultsContainer.innerHTML = "";
-    var filteredWords = _words_js__WEBPACK_IMPORTED_MODULE_1__/* .words */ .a.filter(function (word) {
-      return word.word.toLowerCase().includes(input);
-    });
-    filteredWords.forEach(function (card, index) {
-      var _getCardStylesAndTag3 = getCardStylesAndTag(card),
-        M_color = _getCardStylesAndTag3.M_color,
-        A_ageTag = _getCardStylesAndTag3.A_ageTag,
-        A_ageTagText = _getCardStylesAndTag3.A_ageTagText,
-        A_nameCard = _getCardStylesAndTag3.A_nameCard,
-        A_descCard = _getCardStylesAndTag3.A_descCard,
-        tag = _getCardStylesAndTag3.tag;
-      resultsContainer.innerHTML += "<div class=\"M_Card ".concat(M_color, "\" data-index=\"").concat(index, "\">\n      <div class=\"W_ageTitle\">\n        <div class=\"A_ageTag ").concat(A_ageTag, "\"><p class='A_ageTagText ").concat(A_ageTagText, "'>").concat(card.sub, "</p></div>  \n        <h4 lang=\"ru\" class='A_nameCard ").concat(A_nameCard, "'>").concat(card.word, "</h4>\n      </div>\n      <p class='A_descCard ").concat(A_descCard, "'>").concat(card.desc, "</p>\n  </div>");
-      document.querySelectorAll(".M_Card").forEach(function (card) {
-        card.addEventListener("click", function () {
-          var cardSearch = card.getElementsByClassName("A_nameCard")[0].innerText;
-          overlay.style.display = "block";
-          textOverlay.style.display = "flex";
-          document.body.style.overflow = "hidden";
-          var index = parseInt(this.getAttribute("data-index"), 10);
-          var wordInfo = _words_js__WEBPACK_IMPORTED_MODULE_1__/* .words */ .a.filter(function (card) {
-            return card.word === cardSearch;
-          })[index];
-          textOverlay.innerHTML = "<div class=\"A_imgCard\"><img src=".concat(wordInfo.img, " alt=\"\" /></div> <div class=\"M_mainPlot\"><div class=\"C_headerName\"><h3 class=\"A_tagCard\">").concat(tag, "</h3><h2 class=\"A_cardTitle\" lang=\"ru\">").concat(wordInfo.word, "</h2></div><p class=\"A_Plot\">").concat(wordInfo.bigDesc, "</p></div><img src=\"").concat(_images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_0__, "\" alt=\"\" class=\"A_Cancel\"/>");
-          var cancel = document.getElementsByClassName("A_Cancel")[0];
-          cancel.addEventListener("click", function () {
-            overlay.style.display = "none";
-            textOverlay.style.display = "none";
-            document.body.style.overflow = "auto";
-            document.body.style.overflowX = "hidden";
-          });
-        });
-      });
-    });
-  }
-  var inputSearch2 = document.getElementsByClassName("A_inputTrue")[0];
-  inputSearch2.oninput = searchWord;
-});
-document.onload = loadCards();
 
 /***/ }),
 
@@ -699,7 +542,7 @@ module.exports = function (urlString) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("122a6912d0ce6fba8760")
+/******/ 		__webpack_require__.h = () => ("26630cee4a9067baeca8")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

@@ -38,14 +38,105 @@ function getPostTeasers() {
 }
 
 ;// ./src/js/search-vanilla.js
+function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
+function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
 
-var content = (/* unused pure expression or super */ null && ([]));
+var content = [];
 document.addEventListener("DOMContentLoaded", function () {
   getPostTeasers().then(function (data) {
     content = data;
     initSearch();
   });
 });
+function initSearch() {
+  var O_Search = document.querySelector(".O_Search");
+  var A_SearchInput = O_Search.querySelector(".A_SearchInput");
+  var A_SearchButton = O_Search.querySelector(".A_SearchButton");
+  var requestText = getSearchRequest();
+  if (requestText != undefined) {
+    A_SearchInput.value = requestText;
+    if (content) {
+      SearchContent(requestText);
+    }
+  } else {
+    A_SearchInput.value = "";
+  }
+  A_SearchInput.addEventListener("input", function (e) {
+    requestText = e.target.value;
+    if (requestText.length >= 3) {
+      A_SearchButton.classList.remove("disable");
+    } else {
+      A_SearchButton.classList.add("disable");
+    }
+  });
+  A_SearchInput.addEventListener("keydown", function (e) {
+    requestText = e.target.value;
+    if (e.key == "Enter") {
+      setSearchRequest(requestText);
+      SearchContent(requestText);
+    }
+  });
+  A_SearchButton.addEventListener("click", function (e) {
+    if (!e.target.classList.contains("disable")) {
+      requestText = A_SearchInput.value;
+      setSearchRequest(requestText);
+      SearchContent(requestText);
+    }
+  });
+}
+function getSearchRequest() {
+  var url = new URL(window.location.href);
+  var searchParams = new URLSearchParams(url.search);
+  if (searchParams.has("request")) {
+    return searchParams.get("request");
+  }
+}
+function setSearchRequest(requestText) {
+  var url = window.location.href.split("?")[0];
+  window.location.href = url + "?request=" + requestText;
+}
+function SearchContent(requestText) {
+  var container = document.querySelector(".S_Content");
+  container.innerHTML = "";
+  var contentItemIds = [];
+  console.log(content);
+  content.forEach(function (contentItem) {
+    var nbspRegEx = /[\u202F\u00A0]/gm;
+    var punctuationRegEx = /[.,\/#!$%\^&\*;:{}=\-_`()]/gm;
+    var title = contentItem.title,
+      description = contentItem.description,
+      id = contentItem.id;
+    if (requestText.length >= 3) {
+      if (title.includes(requestText) || description.includes(requestText)) {
+        contentItemIds.push(id);
+      } else {
+        console.log("ids");
+      }
+    }
+    if (contentItemIds.length > 0) {
+      renderCardsbyIds(container, contentItemIds);
+    } else {
+      renderNothingFounded();
+    }
+  });
+}
+function renderNothingFounded() {
+  document.querySelector(".S_Content").innerText = "Ничего не найдено";
+}
+function renderCardsbyIds(container, ids) {
+  ids = _toConsumableArray(new Set(ids));
+  ids.forEach(function (id) {
+    content.forEach(function (item) {
+      if (item.id === id) {
+        container.appendChild(createCard(item));
+      }
+    });
+  });
+}
 function createCard(contentItemData) {
   var container = document.querySelector(".S_Content");
   var contentItem = document.createElement("a");
@@ -3929,7 +4020,7 @@ module.exports = Airtable;
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("122a6912d0ce6fba8760")
+/******/ 		__webpack_require__.h = () => ("26630cee4a9067baeca8")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
