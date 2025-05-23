@@ -732,14 +732,15 @@ body.S_Dictionary {
   display: flex;
   margin: 50px auto;
   align-items: center;
+  gap: 10px;
 }
 
 .A_SearchInput {
   border: 1px solid black;
   border-radius: 30px;
-  width: 250px;
-  background-color: transparent;
-  padding: 1px 8px;
+  width: 15vw;
+  background-color: #f2f8fd;
+  padding: 10px 20px;
 
   &:focus {
     border-color: inherit;
@@ -750,8 +751,149 @@ body.S_Dictionary {
 
 .A_SearchButton {
   padding: 10px 20px;
-  background-color: lightblue;
+  text-decoration: none;
+  background-color: #1a1a1d;
   color: #f9f8f7;
   cursor: default;
   border-radius: 30px;
+}
+
+.S_Content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+  justify-content: center;
+}
+
+.O_ContentItem {
+  background-color: white;
+  border: 1.5px solid black;
+  border-radius: 22px;
+  overflow: hidden;
+  display: flex;
+  height: 100%;
+  min-width: 300px;
+  transition: opacity 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+}
+.A_ContentItemCover {
+  width: 50%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.M_ContentM {
+  padding: 15px 20px 30px 20px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  gap: 0.5vw;
+}
+
+.A_ContentItemTitle {
+  font-family: "Forma DJR Cyrillic Micro", sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  line-height: normal;
+}
+.C_ContentItemTags {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1vw;
+}
+.A_ContentItemTag {
+  font-family: "Forma DJR Cyrillic Micro", sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid black;
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.A_ContentItemTag.is-black {
+  background-color: black;
+  color: white;
+}
+
+.A_ContentItemTag.is-white {
+  background-color: white;
+  color: black;
+  border: 1px solid black; /* если хочешь рамку */
+}
+
+.M_SocialsFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.W_FooterContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: flex-start;
+}
+.M_FooterColumns {
+  display: flex;
+  gap: 30px;
+  margin-left: 60%;
+}
+
+.M_Sections,
+.M_Creators {
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.M_Sections h4,
+.M_Creators h4 {
+  font-size: 18px;
+  color: #f2f8fd;
+  margin-bottom: 12px;
+  font-weight: 700;
+  text-transform: lowercase;
+}
+
+.M_Sections ul,
+.M_Creators ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.M_Sections a {
+  color: white;
+  text-decoration: none;
+}
+
+.M_Sections a:hover {
+  text-decoration: underline;
+}
+
+.A_Credit {
+  font-size: 14px;
+  color: #888;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: right;
+}
+
+.A_BabyImage {
+  width: 22%;
+  position: absolute;
+  margin-top: -5vw;
+  transition: transform 0.3s ease-out;
 }

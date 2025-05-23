@@ -131,6 +131,9 @@ function createCard(contentItemData) {
   contentItemCover.classList.add("A_ContentItemCover");
   contentItemCover.src = contentItemData.image;
 
+  const contentItemM = document.createElement("div");
+  contentItemM.classList.add("M_ContentM");
+
   const contentItemTitle = document.createElement("h3");
   contentItemTitle.classList.add("A_ContentItemTitle");
   contentItemTitle.innerText = contentItemData.title;
@@ -138,16 +141,26 @@ function createCard(contentItemData) {
   const contentItemTags = document.createElement("div");
   contentItemTags.classList.add("C_ContentItemTags");
 
-  contentItemData.tags.forEach((tag) => {
+  contentItemData.tags.forEach((tag, index) => {
     const contentItemTag = document.createElement("div");
     contentItemTag.classList.add("A_ContentItemTag");
+
+    // Добавляем класс в зависимости от позиции
+    if (index === 0) {
+      contentItemTag.classList.add("is-black"); // например, чёрный
+    } else if (index === 1) {
+      contentItemTag.classList.add("is-white"); // белый
+    }
+
     contentItemTag.innerText = tag;
     contentItemTags.appendChild(contentItemTag);
   });
 
   contentItem.appendChild(contentItemCover);
-  contentItem.appendChild(contentItemTags);
-  contentItem.appendChild(contentItemTitle);
+  contentItem.appendChild(contentItemM);
+
+  contentItemM.appendChild(contentItemTitle);
+  contentItemM.appendChild(contentItemTags);
 
   return contentItem;
 }
