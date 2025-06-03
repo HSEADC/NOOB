@@ -148,20 +148,30 @@ function createCard(contentItemData) {
   var contentItemCover = document.createElement("img");
   contentItemCover.classList.add("A_ContentItemCover");
   contentItemCover.src = contentItemData.image;
+  var contentItemM = document.createElement("div");
+  contentItemM.classList.add("M_ContentM");
   var contentItemTitle = document.createElement("h3");
   contentItemTitle.classList.add("A_ContentItemTitle");
   contentItemTitle.innerText = contentItemData.title;
   var contentItemTags = document.createElement("div");
   contentItemTags.classList.add("C_ContentItemTags");
-  contentItemData.tags.forEach(function (tag) {
+  contentItemData.tags.forEach(function (tag, index) {
     var contentItemTag = document.createElement("div");
     contentItemTag.classList.add("A_ContentItemTag");
+
+    // Добавляем класс в зависимости от позиции
+    if (index === 0) {
+      contentItemTag.classList.add("is-black"); // например, чёрный
+    } else if (index === 1) {
+      contentItemTag.classList.add("is-white"); // белый
+    }
     contentItemTag.innerText = tag;
     contentItemTags.appendChild(contentItemTag);
   });
   contentItem.appendChild(contentItemCover);
-  contentItem.appendChild(contentItemTags);
-  contentItem.appendChild(contentItemTitle);
+  contentItem.appendChild(contentItemM);
+  contentItemM.appendChild(contentItemTitle);
+  contentItemM.appendChild(contentItemTags);
   return contentItem;
 }
 
@@ -4022,7 +4032,7 @@ module.exports = Airtable;
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("3dc1d3d7844e53788a9d")
+/******/ 		__webpack_require__.h = () => ("97546d4a263fe071b290")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

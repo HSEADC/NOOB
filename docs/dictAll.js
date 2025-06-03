@@ -251,7 +251,7 @@ module.exports = function (moduleId, options) {
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1747742550624
+        // 1748943125782
         var cssReload = __webpack_require__(140)(module.id, {});
         // only invalidate when locals change
         if (
@@ -273,100 +273,11 @@ module.exports = function (moduleId, options) {
 
 /***/ }),
 
-/***/ 185:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "images/fdcdc5e7d5df8bb63f35.png";
-
-/***/ }),
-
-/***/ 557:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   a: () => (/* binding */ words)
-/* harmony export */ });
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(146);
-/* harmony import */ var _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(185);
-
-
-var words = [{
-  header: "Антиква",
-  description: "шрифт с засечками, пришедший из книжной типографики. Часто выглядит «классически», с разной толщиной линий в буквах.",
-  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
-}, {
-  header: "Гротеск",
-  description: "шрифт без засечек, с ровной, строгой геометрией. Например, шрифт Helvetica — это гротеск.",
-  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
-}, {
-  header: "Кернинг",
-  description: "расстояние между двумя отдельными буквами. От него зависит, насколько аккуратно выглядит текст.",
-  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
-}, {
-  header: "Лидинг",
-  description: "расстояние между строками текста. Влияет на читаемость и восприятие.",
-  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
-}, {
-  header: "Гриды",
-  description: " это система модульных сеток, используемая в дизайне для упорядочивания элементов на странице, обеспечивая структурированность и удобочитаемость макета.",
-  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
-}, {
-  header: "Трекинг",
-  description: "это общий интервал между буквами в слове или строке текста. Он влияет на читаемость и визуальное восприятие: увеличенный трекинг делает текст более воздушным, а уменьшенный — более плотным.",
-  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
-}, {
-  header: "Респонсивность",
-  description: "способность интерфейса адаптироваться под разные экраны: от телефона до ноутбука.",
-  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
-}, {
-  header: "Бенчмарк",
-  description: " примеры лучших решений в определённой теме. Дизайнеры собирают бенчмарки, чтобы вдохновиться и понять стандарты.",
-  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
-}, {
-  header: "Маскот",
-  description: "визуальный персонаж проекта или бренда, который создаёт узнаваемость и эмоции (например, мишка в Тинькофф Образовании).",
-  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
-}, {
-  header: "Фрод-дизайн",
-  description: "плохой, обманчивый дизайн, где, например, кнопка «Отписаться» спрятана или сливается с фоном.",
-  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
-}, {
-  header: "Питч",
-  description: "краткая и убедительная презентация своей идеи. Часто нужен на защите проекта или перед заказчиком.",
-  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
-}, {
-  header: "Бриф",
-  description: "задание от клиента или преподавателя с требованиями, сроками и описанием задачи. Если его нет — велика вероятность делать не то и бесконечно переделывать.",
-  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
-}, {
-  header: "Гайдлайн",
-  description: " набор правил по использованию визуального стиля. Чтобы логотип не растягивали и не красили в кислотно-зелёный.",
-  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
-}, {
-  header: "Онбординг",
-  description: " процесс введения пользователя или сотрудника в продукт или команду. Часто оформляется как интерфейс с подсказками или обучающим сценарием.",
-  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
-}, {
-  header: "ТЗ (техническое задание)",
-  description: " детальный документ с описанием, как всё должно работать. Без него легко упустить важные детали.",
-  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
-}, {
-  header: "Дизайн-система",
-  description: " библиотека повторяющихся компонентов (кнопки, поля, заголовки), которая помогает создавать интерфейсы быстрее и единообразно.",
-  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
-}, {
-  header: "Айдентика",
-  description: " визуальная система бренда: логотип, цвета, шрифты, фирменные элементы. То, что делает бренд узнаваемым.",
-  image: _images_dictionary_img1_png__WEBPACK_IMPORTED_MODULE_1__
-}];
-
-/***/ }),
-
 /***/ 672:
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(146);
-/* harmony import */ var _words_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(557);
+/* harmony import */ var _words_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(757);
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -519,6 +430,94 @@ function popUp() {
 
 /***/ }),
 
+/***/ 757:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  a: () => (/* binding */ words)
+});
+
+// EXTERNAL MODULE: ./src/index.css
+var src = __webpack_require__(146);
+;// ./src/images/dictionary/img1.png
+const img1_namespaceObject = __webpack_require__.p + "images/fdcdc5e7d5df8bb63f35.png";
+;// ./src/js/words.js
+
+
+var words = [{
+  header: "Антиква",
+  description: "шрифт с засечками, пришедший из книжной типографики. Часто выглядит «классически», с разной толщиной линий в буквах.",
+  image: img1_namespaceObject
+}, {
+  header: "Гротеск",
+  description: "шрифт без засечек, с ровной, строгой геометрией. Например, шрифт Helvetica — это гротеск.",
+  image: img1_namespaceObject
+}, {
+  header: "Кернинг",
+  description: "расстояние между двумя отдельными буквами. От него зависит, насколько аккуратно выглядит текст.",
+  image: img1_namespaceObject
+}, {
+  header: "Лидинг",
+  description: "расстояние между строками текста. Влияет на читаемость и восприятие.",
+  image: img1_namespaceObject
+}, {
+  header: "Гриды",
+  description: " это система модульных сеток, используемая в дизайне для упорядочивания элементов на странице, обеспечивая структурированность и удобочитаемость макета.",
+  image: img1_namespaceObject
+}, {
+  header: "Трекинг",
+  description: "это общий интервал между буквами в слове или строке текста. Он влияет на читаемость и визуальное восприятие: увеличенный трекинг делает текст более воздушным, а уменьшенный — более плотным.",
+  image: img1_namespaceObject
+}, {
+  header: "Респонсивность",
+  description: "способность интерфейса адаптироваться под разные экраны: от телефона до ноутбука.",
+  image: img1_namespaceObject
+}, {
+  header: "Бенчмарк",
+  description: " примеры лучших решений в определённой теме. Дизайнеры собирают бенчмарки, чтобы вдохновиться и понять стандарты.",
+  image: img1_namespaceObject
+}, {
+  header: "Маскот",
+  description: "визуальный персонаж проекта или бренда, который создаёт узнаваемость и эмоции (например, мишка в Тинькофф Образовании).",
+  image: img1_namespaceObject
+}, {
+  header: "Фрод-дизайн",
+  description: "плохой, обманчивый дизайн, где, например, кнопка «Отписаться» спрятана или сливается с фоном.",
+  image: img1_namespaceObject
+}, {
+  header: "Питч",
+  description: "краткая и убедительная презентация своей идеи. Часто нужен на защите проекта или перед заказчиком.",
+  image: img1_namespaceObject
+}, {
+  header: "Бриф",
+  description: "задание от клиента или преподавателя с требованиями, сроками и описанием задачи. Если его нет — велика вероятность делать не то и бесконечно переделывать.",
+  image: img1_namespaceObject
+}, {
+  header: "Гайдлайн",
+  description: " набор правил по использованию визуального стиля. Чтобы логотип не растягивали и не красили в кислотно-зелёный.",
+  image: img1_namespaceObject
+}, {
+  header: "Онбординг",
+  description: " процесс введения пользователя или сотрудника в продукт или команду. Часто оформляется как интерфейс с подсказками или обучающим сценарием.",
+  image: img1_namespaceObject
+}, {
+  header: "ТЗ (техническое задание)",
+  description: " детальный документ с описанием, как всё должно работать. Без него легко упустить важные детали.",
+  image: img1_namespaceObject
+}, {
+  header: "Дизайн-система",
+  description: " библиотека повторяющихся компонентов (кнопки, поля, заголовки), которая помогает создавать интерфейсы быстрее и единообразно.",
+  image: img1_namespaceObject
+}, {
+  header: "Айдентика",
+  description: " визуальная система бренда: логотип, цвета, шрифты, фирменные элементы. То, что делает бренд узнаваемым.",
+  image: img1_namespaceObject
+}];
+
+/***/ }),
+
 /***/ 918:
 /***/ ((module) => {
 
@@ -646,7 +645,7 @@ module.exports = function (urlString) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("3dc1d3d7844e53788a9d")
+/******/ 		__webpack_require__.h = () => ("97546d4a263fe071b290")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
