@@ -6,10 +6,35 @@
     <title>Поиск</title>
     <analytics></analytics>
   </head>
-  <body>
-    <div class="O_Search">
-      <input class="A_SearchInput" type="text" placeholder="Найти" />
-      <div class="A_SearchButton disable">Поиск</div>
+ <div class="O_Header">
+      <a class="A_Logo" href="./index.html"
+        ><img class="logoimg" src="./images/logo_eyes.svg" alt=""
+      /></a>
+      <a class="A_HeaderText" href="./articles.html">Статьи</a>
+      <a class="A_HeaderText" href="./dictionary.html">Словарик</a>
+      <a class="A_HeaderText" href="./mini_guide.html">Мини-гид</a>
+      <a class="A_HeaderText" href="./http-codes/404.html">О нас</a>
+      <form class="O_Search" action="search.html" method="get">
+        <input
+          class="A_SearchInput"
+          type="text"
+          name="request"
+          placeholder="Найти статью"
+          minlength="3"
+          required
+        />
+        <button class="A_SearchButton">Поиск</button>
+      </form>
+    </div>
+
+    <div class="S_SectionHeaders HeaderArticles">
+      <h2 class="A_CoverHeader">Статьи</h2>
+      <div class="M_TultipArticle">
+        <img src="./images/articles_img/tul.svg" />
+      </div>
+      <div class="A_SectionMinitext">
+        <p>Эмоция нубика после того, как он прочитал все наши статьи</p>
+      </div>
     </div>
 
     <div class="S_Content"></div>

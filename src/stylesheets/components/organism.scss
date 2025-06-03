@@ -1,13 +1,14 @@
 /* ГЛАВНАЯ */
 
 .O_Header {
-  z-index: 2;
+  z-index: 10000;
   position: fixed;
   top: 5%;
   left: 50%;
+  height: 7vh;
   transform: translate(-50%, -50%);
   gap: 2.5vw;
-  border-radius: 2vw;
+  border-radius: 10vw;
   background-color: white;
   border: 0.09vw solid #000;
   display: flex;
