@@ -2,6 +2,304 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ 26:
+/***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
+
+
+// EXTERNAL MODULE: ./src/index.css
+var src = __webpack_require__(146);
+;// ./src/images/dictionary/img1.png
+const img1_namespaceObject = __webpack_require__.p + "images/9de32235d87a24c8d81e.png";
+;// ./src/images/dictionary/img2.png
+const img2_namespaceObject = __webpack_require__.p + "images/5e320c131c7b4421d4b7.png";
+;// ./src/images/dictionary/img3.png
+const img3_namespaceObject = __webpack_require__.p + "images/7ecd358148c00ba2df1a.png";
+;// ./src/images/dictionary/img4.png
+const img4_namespaceObject = __webpack_require__.p + "images/5ce555218868a8ec8bd6.png";
+;// ./src/images/dictionary/img5.png
+const img5_namespaceObject = __webpack_require__.p + "images/64019e4e32cd04420cd3.png";
+;// ./src/images/dictionary/img6.png
+const img6_namespaceObject = __webpack_require__.p + "images/89c0d1d5e95ba0f175df.png";
+;// ./src/images/dictionary/img7.png
+const img7_namespaceObject = __webpack_require__.p + "images/ad8dae342d469ffb6ab7.png";
+;// ./src/images/dictionary/img8.png
+const img8_namespaceObject = __webpack_require__.p + "images/720c6ff3a5eed4d003d2.png";
+;// ./src/images/dictionary/img9.png
+const img9_namespaceObject = __webpack_require__.p + "images/a4cd4bbd0a4b4680595d.png";
+;// ./src/images/dictionary/img10.png
+const img10_namespaceObject = __webpack_require__.p + "images/a64395b6f3555d85d3da.png";
+;// ./src/images/dictionary/img11.png
+const img11_namespaceObject = __webpack_require__.p + "images/e107de003f51d0068fdc.png";
+;// ./src/images/dictionary/img12.png
+const img12_namespaceObject = __webpack_require__.p + "images/005b971c198cde132754.png";
+;// ./src/images/dictionary/img13.png
+const img13_namespaceObject = __webpack_require__.p + "images/f846d930055c8343d49d.png";
+;// ./src/images/dictionary/img14.png
+const img14_namespaceObject = __webpack_require__.p + "images/6ae75f74ca1170dac1e7.png";
+;// ./src/images/dictionary/img15.png
+const img15_namespaceObject = __webpack_require__.p + "images/32546914484a016523b0.png";
+;// ./src/images/dictionary/img16.png
+const img16_namespaceObject = __webpack_require__.p + "images/03551ef028c80fd97eea.png";
+;// ./src/images/dictionary/img17.png
+const img17_namespaceObject = __webpack_require__.p + "images/8c221559b22c5736dd18.png";
+;// ./src/images/dictionary/img18.png
+const img18_namespaceObject = __webpack_require__.p + "images/37e12268e3092d92a4f5.png";
+;// ./src/images/dictionary/img19.png
+const img19_namespaceObject = __webpack_require__.p + "images/627e2106ed932464d566.png";
+;// ./src/js/words.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var words = [{
+  header: "Антиква",
+  description: "шрифт с засечками, пришедший из книжной типографики. Часто выглядит «классически», с разной толщиной линий в буквах.",
+  image: img1_namespaceObject
+}, {
+  header: "Гротеск",
+  description: "шрифт без засечек, с ровной, строгой геометрией. Например, шрифт Helvetica — это гротеск.",
+  image: img2_namespaceObject
+}, {
+  header: "Кернинг",
+  description: "расстояние между двумя отдельными буквами. От него зависит, насколько аккуратно выглядит текст.",
+  image: img3_namespaceObject
+}, {
+  header: "Лидинг",
+  description: "расстояние между строками текста. Влияет на читаемость и восприятие.",
+  image: img4_namespaceObject
+}, {
+  header: "Гриды",
+  description: " это система модульных сеток, используемая в дизайне для упорядочивания элементов на странице, обеспечивая структурированность и удобочитаемость макета.",
+  image: img5_namespaceObject
+}, {
+  header: "Трекинг",
+  description: "это общий интервал между буквами в слове или строке текста. Он влияет на читаемость и визуальное восприятие: увеличенный трекинг делает текст более воздушным, а уменьшенный — более плотным.",
+  image: img4_namespaceObject
+}, {
+  header: "Респонсивность",
+  description: "способность интерфейса адаптироваться под разные экраны: от телефона до ноутбука.",
+  image: img6_namespaceObject
+}, {
+  header: "Бенчмарк",
+  description: " примеры лучших решений в определённой теме. Дизайнеры собирают бенчмарки, чтобы вдохновиться и понять стандарты.",
+  image: img7_namespaceObject
+}, {
+  header: "Маскот",
+  description: "визуальный персонаж проекта или бренда, который создаёт узнаваемость и эмоции (например, мишка в Тинькофф Образовании).",
+  image: img8_namespaceObject
+}, {
+  header: "Фрод-дизайн",
+  description: "плохой, обманчивый дизайн, где, например, кнопка «Отписаться» спрятана или сливается с фоном.",
+  image: img9_namespaceObject
+}, {
+  header: "Питч",
+  description: "краткая и убедительная презентация своей идеи. Часто нужен на защите проекта или перед заказчиком.",
+  image: img10_namespaceObject
+}, {
+  header: "Бриф",
+  description: "задание от клиента или преподавателя с требованиями, сроками и описанием задачи. Если его нет — велика вероятность делать не то и бесконечно переделывать.",
+  image: img11_namespaceObject
+}, {
+  header: "Гайдлайн",
+  description: " набор правил по использованию визуального стиля. Чтобы логотип не растягивали и не красили в кислотно-зелёный.",
+  image: img12_namespaceObject
+}, {
+  header: "Онбординг",
+  description: " процесс введения пользователя или сотрудника в продукт или команду. Часто оформляется как интерфейс с подсказками или обучающим сценарием.",
+  image: img13_namespaceObject
+}, {
+  header: "ТЗ (техническое задание)",
+  description: " детальный документ с описанием, как всё должно работать. Без него легко упустить важные детали.",
+  image: img14_namespaceObject
+}, {
+  header: "Дизайн-система",
+  description: " библиотека повторяющихся компонентов (кнопки, поля, заголовки), которая помогает создавать интерфейсы быстрее и единообразно.",
+  image: img15_namespaceObject
+}, {
+  header: "Айдентика",
+  description: " визуальная система бренда: логотип, цвета, шрифты, фирменные элементы. То, что делает бренд узнаваемым.",
+  image: img16_namespaceObject
+}, {
+  header: "Юзабилити",
+  description: " удобство использования интерфейса. Если сайт красивый, но непонятно, куда жать — с юзабилити проблемы",
+  image: img17_namespaceObject
+}, {
+  header: "Tone of Voice",
+  description: " характер общения бренда: он может быть дружелюбным, строгим, дерзким или заботливым",
+  image: img18_namespaceObject
+}, {
+  header: "Контраст",
+  description: " различие между элементами (цвет, размер, шрифт), которое помогает акцентировать внимание и упорядочить визуальную иерархию.",
+  image: img19_namespaceObject
+}];
+
+;// ./src/js/wordsMain.js
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var _ref = [array[j], array[i]];
+      array[i] = _ref[0];
+      array[j] = _ref[1];
+    }
+  }
+  var wordsGrid = document.getElementsByClassName("C_Cards")[0];
+  var M_color = "";
+  var A_ageTag = "";
+  var A_ageTagText = "";
+  var A_nameCard = "";
+  var A_descCard = "";
+  var tag = "";
+  function loadCards() {
+    shuffleArray(words);
+    if (window.innerWidth > 361 & window.innerWidth < 1024) {
+      words.slice(0, 8).forEach(function (card, index) {
+        if (card["sub"] === "20-е") {
+          M_color = "M_20";
+          A_ageTag = "A_ageTagBlack";
+          A_ageTagText = "A_ageTagTextBlack";
+          A_nameCard = "A_ageTagTextBlack";
+          A_descCard = "A_ageTagTextBlack";
+          tag = "зумерский слэнг";
+        } else if (card["sub"] === "10-е") {
+          M_color = "M_10";
+          A_ageTag = "A_ageTagBlack";
+          A_ageTagText = "A_ageTagTextBlack";
+          A_nameCard = "A_ageTagTextBlack";
+          A_descCard = "A_ageTagTextBlack";
+          tag = "зумерский слэнг";
+        } else if (card["sub"] === "90-е") {
+          M_color = "M_90";
+          A_ageTag = "A_ageTagBlack";
+          A_ageTagText = "A_ageTagTextBlack";
+          A_nameCard = "A_ageTagTextBlack";
+          A_descCard = "A_ageTagTextBlack";
+          tag = "сленг 90-х";
+        } else if (card["sub"] === "80-е") {
+          M_color = "M_80";
+          A_ageTag = "A_ageTagWhite";
+          A_ageTagText = "A_ageTagTextWhite";
+          A_nameCard = "A_ageTagTextWhite";
+          A_descCard = "A_ageTagTextWhite";
+          tag = "сленг 80-х";
+        } else if (card["sub"] === "70-е") {
+          M_color = "M_60";
+          A_ageTag = "A_ageTagWhite";
+          A_ageTagText = "A_ageTagTextWhite";
+          A_nameCard = "A_ageTagTextWhite";
+          A_descCard = "A_ageTagTextWhite";
+          tag = "сленг 70-х";
+        } else {
+          M_color = "M_60";
+          A_ageTag = "A_ageTagWhite";
+          A_ageTagText = "A_ageTagTextWhite";
+          A_nameCard = "A_ageTagTextWhite";
+          A_descCard = "A_ageTagTextWhite";
+          tag = "сленг 60-х";
+        }
+        wordsGrid.innerHTML += "<div class=\"M_Card ".concat(M_color, "\" data-index=\"").concat(index, "\">\n          <div class=\"W_ageTitle\">\n            <div class=\"A_ageTag ").concat(A_ageTag, "\"><p class='A_ageTagText ").concat(A_ageTagText, "'>").concat(card.sub, "</p></div>  \n            <h4 lang=\"ru\" class='A_nameCard ").concat(A_nameCard, "'>").concat(card.word, "</h4>\n          </div>\n          <p class='A_descCard ").concat(A_descCard, "'>").concat(card.desc, "</p>\n      </div>");
+      });
+    } else {
+      words.slice(0, 12).forEach(function (card, index) {
+        if (card["sub"] === "20-е") {
+          M_color = "M_20";
+          A_ageTag = "A_ageTagBlack";
+          A_ageTagText = "A_ageTagTextBlack";
+          A_nameCard = "A_ageTagTextBlack";
+          A_descCard = "A_ageTagTextBlack";
+          tag = "зумерский слэнг";
+        } else if (card["sub"] === "10-е") {
+          M_color = "M_10";
+          A_ageTag = "A_ageTagBlack";
+          A_ageTagText = "A_ageTagTextBlack";
+          A_nameCard = "A_ageTagTextBlack";
+          A_descCard = "A_ageTagTextBlack";
+          tag = "зумерский слэнг";
+        } else if (card["sub"] === "90-е") {
+          M_color = "M_90";
+          A_ageTag = "A_ageTagBlack";
+          A_ageTagText = "A_ageTagTextBlack";
+          A_nameCard = "A_ageTagTextBlack";
+          A_descCard = "A_ageTagTextBlack";
+          tag = "сленг 90-х";
+        } else if (card["sub"] === "80-е") {
+          M_color = "M_80";
+          A_ageTag = "A_ageTagWhite";
+          A_ageTagText = "A_ageTagTextWhite";
+          A_nameCard = "A_ageTagTextWhite";
+          A_descCard = "A_ageTagTextWhite";
+          tag = "сленг 80-х";
+        } else if (card["sub"] === "70-е") {
+          M_color = "M_60";
+          A_ageTag = "A_ageTagWhite";
+          A_ageTagText = "A_ageTagTextWhite";
+          A_nameCard = "A_ageTagTextWhite";
+          A_descCard = "A_ageTagTextWhite";
+          tag = "сленг 70-х";
+        } else {
+          M_color = "M_60";
+          A_ageTag = "A_ageTagWhite";
+          A_ageTagText = "A_ageTagTextWhite";
+          A_nameCard = "A_ageTagTextWhite";
+          A_descCard = "A_ageTagTextWhite";
+          tag = "сленг 60-х";
+        }
+        wordsGrid.innerHTML += "<div class=\"M_Card ".concat(M_color, "\" data-index=\"").concat(index, "\">\n        <div class=\"W_ageTitle\">\n          <div class=\"A_ageTag ").concat(A_ageTag, "\"><p class='A_ageTagText ").concat(A_ageTagText, "'>").concat(card.sub, "</p></div>  \n          <h4 lang=\"ru\" class='A_nameCard ").concat(A_nameCard, "'>").concat(card.word, "</h4>\n        </div>\n        <p class='A_descCard ").concat(A_descCard, "'>").concat(card.desc, "</p>\n    </div>");
+      });
+    }
+  }
+  loadCards();
+  popUp();
+});
+function popUp() {
+  var cards = document.querySelectorAll(".O_CardDictionari");
+  cards.forEach(function (card) {
+    card.addEventListener("click", function () {
+      var overlay = document.createElement("div");
+      overlay.classList.add("W_Overlay");
+      document.querySelector("body").appendChild(overlay);
+      var block = document.createElement("div");
+      block.classList.add("O_WordCard");
+      var header = document.createElement("h3");
+      header.classList.add("A_WordCardHeader");
+      header.innerHTML = "Header";
+      var description = document.createElement("p");
+      с.classList.add("A_WordCardDescription");
+      description.innerHTML = "Description";
+      var image = document.createElement("img");
+      image.classList.add("A_WordCardImage");
+      block.appendChild(header);
+      block.appendChild(description);
+      block.appendChild(article);
+      block.appendChild(image);
+      overlay.appendChild(block);
+      overlay.addEventListener("click", function () {
+        overlay.remove();
+      });
+    });
+  });
+}
+
+/***/ }),
+
 /***/ 140:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -251,7 +549,7 @@ module.exports = function (moduleId, options) {
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1748943125782
+        // 1749046033831
         var cssReload = __webpack_require__(140)(module.id, {});
         // only invalidate when locals change
         if (
@@ -270,251 +568,6 @@ module.exports = function (moduleId, options) {
       })();
     }
   
-
-/***/ }),
-
-/***/ 672:
-/***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
-
-/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(146);
-/* harmony import */ var _words_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(757);
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  function shuffleArray(array) {
-    for (var i = array.length - 1; i > 0; i--) {
-      var j = Math.floor(Math.random() * (i + 1));
-      var _ref = [array[j], array[i]];
-      array[i] = _ref[0];
-      array[j] = _ref[1];
-    }
-  }
-  var wordsGrid = document.getElementsByClassName("C_Cards")[0];
-  var M_color = "";
-  var A_ageTag = "";
-  var A_ageTagText = "";
-  var A_nameCard = "";
-  var A_descCard = "";
-  var tag = "";
-  function loadCards() {
-    shuffleArray(_words_js__WEBPACK_IMPORTED_MODULE_1__/* .words */ .a);
-    if (window.innerWidth > 361 & window.innerWidth < 1024) {
-      _words_js__WEBPACK_IMPORTED_MODULE_1__/* .words */ .a.slice(0, 8).forEach(function (card, index) {
-        if (card["sub"] === "20-е") {
-          M_color = "M_20";
-          A_ageTag = "A_ageTagBlack";
-          A_ageTagText = "A_ageTagTextBlack";
-          A_nameCard = "A_ageTagTextBlack";
-          A_descCard = "A_ageTagTextBlack";
-          tag = "зумерский слэнг";
-        } else if (card["sub"] === "10-е") {
-          M_color = "M_10";
-          A_ageTag = "A_ageTagBlack";
-          A_ageTagText = "A_ageTagTextBlack";
-          A_nameCard = "A_ageTagTextBlack";
-          A_descCard = "A_ageTagTextBlack";
-          tag = "зумерский слэнг";
-        } else if (card["sub"] === "90-е") {
-          M_color = "M_90";
-          A_ageTag = "A_ageTagBlack";
-          A_ageTagText = "A_ageTagTextBlack";
-          A_nameCard = "A_ageTagTextBlack";
-          A_descCard = "A_ageTagTextBlack";
-          tag = "сленг 90-х";
-        } else if (card["sub"] === "80-е") {
-          M_color = "M_80";
-          A_ageTag = "A_ageTagWhite";
-          A_ageTagText = "A_ageTagTextWhite";
-          A_nameCard = "A_ageTagTextWhite";
-          A_descCard = "A_ageTagTextWhite";
-          tag = "сленг 80-х";
-        } else if (card["sub"] === "70-е") {
-          M_color = "M_60";
-          A_ageTag = "A_ageTagWhite";
-          A_ageTagText = "A_ageTagTextWhite";
-          A_nameCard = "A_ageTagTextWhite";
-          A_descCard = "A_ageTagTextWhite";
-          tag = "сленг 70-х";
-        } else {
-          M_color = "M_60";
-          A_ageTag = "A_ageTagWhite";
-          A_ageTagText = "A_ageTagTextWhite";
-          A_nameCard = "A_ageTagTextWhite";
-          A_descCard = "A_ageTagTextWhite";
-          tag = "сленг 60-х";
-        }
-        wordsGrid.innerHTML += "<div class=\"M_Card ".concat(M_color, "\" data-index=\"").concat(index, "\">\n          <div class=\"W_ageTitle\">\n            <div class=\"A_ageTag ").concat(A_ageTag, "\"><p class='A_ageTagText ").concat(A_ageTagText, "'>").concat(card.sub, "</p></div>  \n            <h4 lang=\"ru\" class='A_nameCard ").concat(A_nameCard, "'>").concat(card.word, "</h4>\n          </div>\n          <p class='A_descCard ").concat(A_descCard, "'>").concat(card.desc, "</p>\n      </div>");
-      });
-    } else {
-      _words_js__WEBPACK_IMPORTED_MODULE_1__/* .words */ .a.slice(0, 12).forEach(function (card, index) {
-        if (card["sub"] === "20-е") {
-          M_color = "M_20";
-          A_ageTag = "A_ageTagBlack";
-          A_ageTagText = "A_ageTagTextBlack";
-          A_nameCard = "A_ageTagTextBlack";
-          A_descCard = "A_ageTagTextBlack";
-          tag = "зумерский слэнг";
-        } else if (card["sub"] === "10-е") {
-          M_color = "M_10";
-          A_ageTag = "A_ageTagBlack";
-          A_ageTagText = "A_ageTagTextBlack";
-          A_nameCard = "A_ageTagTextBlack";
-          A_descCard = "A_ageTagTextBlack";
-          tag = "зумерский слэнг";
-        } else if (card["sub"] === "90-е") {
-          M_color = "M_90";
-          A_ageTag = "A_ageTagBlack";
-          A_ageTagText = "A_ageTagTextBlack";
-          A_nameCard = "A_ageTagTextBlack";
-          A_descCard = "A_ageTagTextBlack";
-          tag = "сленг 90-х";
-        } else if (card["sub"] === "80-е") {
-          M_color = "M_80";
-          A_ageTag = "A_ageTagWhite";
-          A_ageTagText = "A_ageTagTextWhite";
-          A_nameCard = "A_ageTagTextWhite";
-          A_descCard = "A_ageTagTextWhite";
-          tag = "сленг 80-х";
-        } else if (card["sub"] === "70-е") {
-          M_color = "M_60";
-          A_ageTag = "A_ageTagWhite";
-          A_ageTagText = "A_ageTagTextWhite";
-          A_nameCard = "A_ageTagTextWhite";
-          A_descCard = "A_ageTagTextWhite";
-          tag = "сленг 70-х";
-        } else {
-          M_color = "M_60";
-          A_ageTag = "A_ageTagWhite";
-          A_ageTagText = "A_ageTagTextWhite";
-          A_nameCard = "A_ageTagTextWhite";
-          A_descCard = "A_ageTagTextWhite";
-          tag = "сленг 60-х";
-        }
-        wordsGrid.innerHTML += "<div class=\"M_Card ".concat(M_color, "\" data-index=\"").concat(index, "\">\n        <div class=\"W_ageTitle\">\n          <div class=\"A_ageTag ").concat(A_ageTag, "\"><p class='A_ageTagText ").concat(A_ageTagText, "'>").concat(card.sub, "</p></div>  \n          <h4 lang=\"ru\" class='A_nameCard ").concat(A_nameCard, "'>").concat(card.word, "</h4>\n        </div>\n        <p class='A_descCard ").concat(A_descCard, "'>").concat(card.desc, "</p>\n    </div>");
-      });
-    }
-  }
-  loadCards();
-  popUp();
-});
-function popUp() {
-  var cards = document.querySelectorAll(".O_CardDictionari");
-  cards.forEach(function (card) {
-    card.addEventListener("click", function () {
-      var overlay = document.createElement("div");
-      overlay.classList.add(".W_Overlay");
-      document.querySelector("body").appendChild(overlay);
-      var block = document.createElement("div");
-      block.classList.add(".O_WordCard");
-      var cross = document.createElement("img");
-      image.classList.add(".A_WordCardcross");
-      var header = document.createElement("h3");
-      header.classList.add(".A_WordCardHeader");
-      header.innerHTML = "Header";
-      var description = document.createElement("p");
-      с.classList.add(".A_WordCardDescription");
-      description.innerHTML = "Description";
-      var image = document.createElement("img");
-      image.classList.add(".A_WordCardImage");
-      block.appendChild(cross);
-      block.appendChild(header);
-      block.appendChild(description);
-      block.appendChild(image);
-      overlay.appendChild(block);
-      overlay.addEventListener("click", function () {
-        overlay.remove();
-      });
-    });
-  });
-}
-
-/***/ }),
-
-/***/ 757:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  a: () => (/* binding */ words)
-});
-
-// EXTERNAL MODULE: ./src/index.css
-var src = __webpack_require__(146);
-;// ./src/images/dictionary/img1.png
-const img1_namespaceObject = __webpack_require__.p + "images/fdcdc5e7d5df8bb63f35.png";
-;// ./src/js/words.js
-
-
-var words = [{
-  header: "Антиква",
-  description: "шрифт с засечками, пришедший из книжной типографики. Часто выглядит «классически», с разной толщиной линий в буквах.",
-  image: img1_namespaceObject
-}, {
-  header: "Гротеск",
-  description: "шрифт без засечек, с ровной, строгой геометрией. Например, шрифт Helvetica — это гротеск.",
-  image: img1_namespaceObject
-}, {
-  header: "Кернинг",
-  description: "расстояние между двумя отдельными буквами. От него зависит, насколько аккуратно выглядит текст.",
-  image: img1_namespaceObject
-}, {
-  header: "Лидинг",
-  description: "расстояние между строками текста. Влияет на читаемость и восприятие.",
-  image: img1_namespaceObject
-}, {
-  header: "Гриды",
-  description: " это система модульных сеток, используемая в дизайне для упорядочивания элементов на странице, обеспечивая структурированность и удобочитаемость макета.",
-  image: img1_namespaceObject
-}, {
-  header: "Трекинг",
-  description: "это общий интервал между буквами в слове или строке текста. Он влияет на читаемость и визуальное восприятие: увеличенный трекинг делает текст более воздушным, а уменьшенный — более плотным.",
-  image: img1_namespaceObject
-}, {
-  header: "Респонсивность",
-  description: "способность интерфейса адаптироваться под разные экраны: от телефона до ноутбука.",
-  image: img1_namespaceObject
-}, {
-  header: "Бенчмарк",
-  description: " примеры лучших решений в определённой теме. Дизайнеры собирают бенчмарки, чтобы вдохновиться и понять стандарты.",
-  image: img1_namespaceObject
-}, {
-  header: "Маскот",
-  description: "визуальный персонаж проекта или бренда, который создаёт узнаваемость и эмоции (например, мишка в Тинькофф Образовании).",
-  image: img1_namespaceObject
-}, {
-  header: "Фрод-дизайн",
-  description: "плохой, обманчивый дизайн, где, например, кнопка «Отписаться» спрятана или сливается с фоном.",
-  image: img1_namespaceObject
-}, {
-  header: "Питч",
-  description: "краткая и убедительная презентация своей идеи. Часто нужен на защите проекта или перед заказчиком.",
-  image: img1_namespaceObject
-}, {
-  header: "Бриф",
-  description: "задание от клиента или преподавателя с требованиями, сроками и описанием задачи. Если его нет — велика вероятность делать не то и бесконечно переделывать.",
-  image: img1_namespaceObject
-}, {
-  header: "Гайдлайн",
-  description: " набор правил по использованию визуального стиля. Чтобы логотип не растягивали и не красили в кислотно-зелёный.",
-  image: img1_namespaceObject
-}, {
-  header: "Онбординг",
-  description: " процесс введения пользователя или сотрудника в продукт или команду. Часто оформляется как интерфейс с подсказками или обучающим сценарием.",
-  image: img1_namespaceObject
-}, {
-  header: "ТЗ (техническое задание)",
-  description: " детальный документ с описанием, как всё должно работать. Без него легко упустить важные детали.",
-  image: img1_namespaceObject
-}, {
-  header: "Дизайн-система",
-  description: " библиотека повторяющихся компонентов (кнопки, поля, заголовки), которая помогает создавать интерфейсы быстрее и единообразно.",
-  image: img1_namespaceObject
-}, {
-  header: "Айдентика",
-  description: " визуальная система бренда: логотип, цвета, шрифты, фирменные элементы. То, что делает бренд узнаваемым.",
-  image: img1_namespaceObject
-}];
 
 /***/ }),
 
@@ -608,18 +661,6 @@ module.exports = function (urlString) {
 /******/ 	__webpack_require__.i = [];
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
-/******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
-/******/ 			for(var key in definition) {
-/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
-/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-/******/ 				}
-/******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/get javascript update chunk filename */
 /******/ 	(() => {
 /******/ 		// This function allow to reference all chunks
@@ -645,7 +686,7 @@ module.exports = function (urlString) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("97546d4a263fe071b290")
+/******/ 		__webpack_require__.h = () => ("781a7d1317a137c5f076")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -1234,8 +1275,7 @@ module.exports = function (urlString) {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = __webpack_require__.hmrS_jsonp = __webpack_require__.hmrS_jsonp || {
-/******/ 			72: 0,
-/******/ 			531: 0
+/******/ 			72: 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -1744,7 +1784,7 @@ module.exports = function (urlString) {
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__(672);
+/******/ 	var __webpack_exports__ = __webpack_require__(26);
 /******/ 	
 /******/ })()
 ;

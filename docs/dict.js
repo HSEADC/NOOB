@@ -251,7 +251,7 @@ module.exports = function (moduleId, options) {
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1748943125782
+        // 1749046033831
         var cssReload = __webpack_require__(140)(module.id, {});
         // only invalidate when locals change
         if (
@@ -273,17 +273,69 @@ module.exports = function (moduleId, options) {
 
 /***/ }),
 
-/***/ 757:
+/***/ 891:
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
-
-// UNUSED EXPORTS: words
 
 // EXTERNAL MODULE: ./src/index.css
 var src = __webpack_require__(146);
 ;// ./src/images/dictionary/img1.png
-const img1_namespaceObject = __webpack_require__.p + "images/fdcdc5e7d5df8bb63f35.png";
+const img1_namespaceObject = __webpack_require__.p + "images/9de32235d87a24c8d81e.png";
+;// ./src/images/dictionary/img2.png
+const img2_namespaceObject = __webpack_require__.p + "images/5e320c131c7b4421d4b7.png";
+;// ./src/images/dictionary/img3.png
+const img3_namespaceObject = __webpack_require__.p + "images/7ecd358148c00ba2df1a.png";
+;// ./src/images/dictionary/img4.png
+const img4_namespaceObject = __webpack_require__.p + "images/5ce555218868a8ec8bd6.png";
+;// ./src/images/dictionary/img5.png
+const img5_namespaceObject = __webpack_require__.p + "images/64019e4e32cd04420cd3.png";
+;// ./src/images/dictionary/img6.png
+const img6_namespaceObject = __webpack_require__.p + "images/89c0d1d5e95ba0f175df.png";
+;// ./src/images/dictionary/img7.png
+const img7_namespaceObject = __webpack_require__.p + "images/ad8dae342d469ffb6ab7.png";
+;// ./src/images/dictionary/img8.png
+const img8_namespaceObject = __webpack_require__.p + "images/720c6ff3a5eed4d003d2.png";
+;// ./src/images/dictionary/img9.png
+const img9_namespaceObject = __webpack_require__.p + "images/a4cd4bbd0a4b4680595d.png";
+;// ./src/images/dictionary/img10.png
+const img10_namespaceObject = __webpack_require__.p + "images/a64395b6f3555d85d3da.png";
+;// ./src/images/dictionary/img11.png
+const img11_namespaceObject = __webpack_require__.p + "images/e107de003f51d0068fdc.png";
+;// ./src/images/dictionary/img12.png
+const img12_namespaceObject = __webpack_require__.p + "images/005b971c198cde132754.png";
+;// ./src/images/dictionary/img13.png
+const img13_namespaceObject = __webpack_require__.p + "images/f846d930055c8343d49d.png";
+;// ./src/images/dictionary/img14.png
+const img14_namespaceObject = __webpack_require__.p + "images/6ae75f74ca1170dac1e7.png";
+;// ./src/images/dictionary/img15.png
+const img15_namespaceObject = __webpack_require__.p + "images/32546914484a016523b0.png";
+;// ./src/images/dictionary/img16.png
+const img16_namespaceObject = __webpack_require__.p + "images/03551ef028c80fd97eea.png";
+;// ./src/images/dictionary/img17.png
+const img17_namespaceObject = __webpack_require__.p + "images/8c221559b22c5736dd18.png";
+;// ./src/images/dictionary/img18.png
+const img18_namespaceObject = __webpack_require__.p + "images/37e12268e3092d92a4f5.png";
+;// ./src/images/dictionary/img19.png
+const img19_namespaceObject = __webpack_require__.p + "images/627e2106ed932464d566.png";
 ;// ./src/js/words.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 var words = [{
@@ -293,68 +345,131 @@ var words = [{
 }, {
   header: "Гротеск",
   description: "шрифт без засечек, с ровной, строгой геометрией. Например, шрифт Helvetica — это гротеск.",
-  image: img1_namespaceObject
+  image: img2_namespaceObject
 }, {
   header: "Кернинг",
   description: "расстояние между двумя отдельными буквами. От него зависит, насколько аккуратно выглядит текст.",
-  image: img1_namespaceObject
+  image: img3_namespaceObject
 }, {
   header: "Лидинг",
   description: "расстояние между строками текста. Влияет на читаемость и восприятие.",
-  image: img1_namespaceObject
+  image: img4_namespaceObject
 }, {
   header: "Гриды",
   description: " это система модульных сеток, используемая в дизайне для упорядочивания элементов на странице, обеспечивая структурированность и удобочитаемость макета.",
-  image: img1_namespaceObject
+  image: img5_namespaceObject
 }, {
   header: "Трекинг",
   description: "это общий интервал между буквами в слове или строке текста. Он влияет на читаемость и визуальное восприятие: увеличенный трекинг делает текст более воздушным, а уменьшенный — более плотным.",
-  image: img1_namespaceObject
+  image: img4_namespaceObject
 }, {
   header: "Респонсивность",
   description: "способность интерфейса адаптироваться под разные экраны: от телефона до ноутбука.",
-  image: img1_namespaceObject
+  image: img6_namespaceObject
 }, {
   header: "Бенчмарк",
   description: " примеры лучших решений в определённой теме. Дизайнеры собирают бенчмарки, чтобы вдохновиться и понять стандарты.",
-  image: img1_namespaceObject
+  image: img7_namespaceObject
 }, {
   header: "Маскот",
   description: "визуальный персонаж проекта или бренда, который создаёт узнаваемость и эмоции (например, мишка в Тинькофф Образовании).",
-  image: img1_namespaceObject
+  image: img8_namespaceObject
 }, {
   header: "Фрод-дизайн",
   description: "плохой, обманчивый дизайн, где, например, кнопка «Отписаться» спрятана или сливается с фоном.",
-  image: img1_namespaceObject
+  image: img9_namespaceObject
 }, {
   header: "Питч",
   description: "краткая и убедительная презентация своей идеи. Часто нужен на защите проекта или перед заказчиком.",
-  image: img1_namespaceObject
+  image: img10_namespaceObject
 }, {
   header: "Бриф",
   description: "задание от клиента или преподавателя с требованиями, сроками и описанием задачи. Если его нет — велика вероятность делать не то и бесконечно переделывать.",
-  image: img1_namespaceObject
+  image: img11_namespaceObject
 }, {
   header: "Гайдлайн",
   description: " набор правил по использованию визуального стиля. Чтобы логотип не растягивали и не красили в кислотно-зелёный.",
-  image: img1_namespaceObject
+  image: img12_namespaceObject
 }, {
   header: "Онбординг",
   description: " процесс введения пользователя или сотрудника в продукт или команду. Часто оформляется как интерфейс с подсказками или обучающим сценарием.",
-  image: img1_namespaceObject
+  image: img13_namespaceObject
 }, {
   header: "ТЗ (техническое задание)",
   description: " детальный документ с описанием, как всё должно работать. Без него легко упустить важные детали.",
-  image: img1_namespaceObject
+  image: img14_namespaceObject
 }, {
   header: "Дизайн-система",
   description: " библиотека повторяющихся компонентов (кнопки, поля, заголовки), которая помогает создавать интерфейсы быстрее и единообразно.",
-  image: img1_namespaceObject
+  image: img15_namespaceObject
 }, {
   header: "Айдентика",
   description: " визуальная система бренда: логотип, цвета, шрифты, фирменные элементы. То, что делает бренд узнаваемым.",
-  image: img1_namespaceObject
+  image: img16_namespaceObject
+}, {
+  header: "Юзабилити",
+  description: " удобство использования интерфейса. Если сайт красивый, но непонятно, куда жать — с юзабилити проблемы",
+  image: img17_namespaceObject
+}, {
+  header: "Tone of Voice",
+  description: " характер общения бренда: он может быть дружелюбным, строгим, дерзким или заботливым",
+  image: img18_namespaceObject
+}, {
+  header: "Контраст",
+  description: " различие между элементами (цвет, размер, шрифт), которое помогает акцентировать внимание и упорядочить визуальную иерархию.",
+  image: img19_namespaceObject
 }];
+
+;// ./src/js/dictionary.js
+
+document.addEventListener('DOMContentLoaded', function () {
+  popUp();
+});
+function popUp() {
+  var cards = document.querySelectorAll('.O_CardDictionari');
+  cards.forEach(function (card) {
+    card.addEventListener('click', function () {
+      var overlay = document.createElement('div');
+      overlay.classList.add('W_Overlay');
+      document.querySelector('body').appendChild(overlay);
+      var block = document.createElement('div');
+      block.classList.add('O_WordCard');
+      var cross = document.createElement('img');
+      cross.classList.add('A_WordCardcross');
+      var header = document.createElement('h3');
+      header.classList.add('A_WordCardHeader');
+      var description = document.createElement('p');
+      description.classList.add('A_WordCardDescription');
+      var image = document.createElement('img');
+      image.classList.add('A_WordCardImage');
+      var cardHeader = card.querySelector('h4').innerText;
+      console.log(cardHeader);
+      words.forEach(function (word) {
+        if (word.header == cardHeader) {
+          header.innerHTML = word.header;
+          description.innerHTML = word.description;
+          image.src = word.image;
+        }
+      });
+      block.appendChild(cross);
+      block.appendChild(header);
+      block.appendChild(description);
+      block.appendChild(image);
+      overlay.appendChild(block);
+      overlay.addEventListener('click', function () {
+        overlay.remove();
+      });
+    });
+  });
+  var body = document.querySelector('body');
+  setInterval(function () {
+    if (body.querySelector('.W_Overlay')) {
+      body.style.overflow = 'hidden';
+    } else {
+      body.style.overflow = 'scroll';
+    }
+  }, 1000);
+}
 
 /***/ }),
 
@@ -473,7 +588,7 @@ module.exports = function (urlString) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("97546d4a263fe071b290")
+/******/ 		__webpack_require__.h = () => ("781a7d1317a137c5f076")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -1571,7 +1686,7 @@ module.exports = function (urlString) {
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__(757);
+/******/ 	var __webpack_exports__ = __webpack_require__(891);
 /******/ 	
 /******/ })()
 ;
