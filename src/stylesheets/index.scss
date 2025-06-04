@@ -11,7 +11,7 @@ body {
   height: 100%;
 }
 body {
-  font-family: 'Forma DJR Cyrillic Micro', 'Forma DJR Cyrillic Display';
+  font-family: "Forma DJR Cyrillic Micro", "Forma DJR Cyrillic Display";
   font-weight: 400;
 }
 /* Шрифты */
@@ -19,7 +19,7 @@ body {
 h2 {
   font-size: 7rem;
   margin-bottom: 10px;
-  font-family: 'SFT-Schrifted-Serif-T';
+  font-family: "SFT-Schrifted-Serif-T";
 
   line-height: 90%;
 }
@@ -27,7 +27,7 @@ h2 {
 h4 {
   color: #050505;
   text-align: center;
-  font-family: 'Forma DJR Cyrillic Display';
+  font-family: "Forma DJR Cyrillic Display";
   font-size: 1.75rem;
   font-weight: 700;
   line-height: 1.8rem;
@@ -35,7 +35,7 @@ h4 {
 
 h5 {
   color: #050505;
-  font-family: 'Forma DJR Cyrillic Display';
+  font-family: "Forma DJR Cyrillic Display";
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.8rem;
@@ -44,7 +44,7 @@ h5 {
 h6 {
   color: var(--BLACK, #050505);
   text-align: center;
-  font-family: 'SFT Schrifted Serif TRIAL T';
+  font-family: "SFT Schrifted Serif TRIAL T";
   font-size: 4.5rem;
   font-style: italic;
   font-weight: 500;
@@ -53,7 +53,7 @@ h6 {
 }
 
 p {
-  font-family: 'Forma DJR Cyrillic Micro';
+  font-family: "Forma DJR Cyrillic Micro";
   font-size: 1.2rem;
   line-height: 130%;
 }
@@ -84,7 +84,7 @@ a {
     }
     .text {
       color: var(--GRAY, #787878);
-      font-family: 'Forma DJR Cyrillic Micro';
+      font-family: "Forma DJR Cyrillic Micro";
       font-size: 1.2vw;
       margin-top: 2vw;
     }
@@ -113,7 +113,7 @@ a {
       justify-content: center;
       align-items: center;
 
-      font-family: 'Forma DJR Cyrillic Display';
+      font-family: "Forma DJR Cyrillic Display";
       font-size: 1.5vw;
       letter-spacing: 0.05em;
       border-radius: 2vw;
@@ -128,7 +128,7 @@ a {
       height: 3vw;
       background-color: white;
       color: white;
-      font-family: 'Forma DJR Cyrillic Micro';
+      font-family: "Forma DJR Cyrillic Micro";
       font-size: 1vw;
     }
   }
@@ -185,7 +185,7 @@ a {
           }
           .txt1 {
             color: var(--GRAY, #787878);
-            font-family: 'Forma DJR Cyrillic Micro';
+            font-family: "Forma DJR Cyrillic Micro";
             font-size: 1.2vw;
             margin-top: 1vw;
           }
@@ -216,7 +216,7 @@ a {
           }
           .txt1 {
             color: var(--GRAY, #787878);
-            font-family: 'Forma DJR Cyrillic Micro';
+            font-family: "Forma DJR Cyrillic Micro";
             font-size: 1.2vw;
             margin-top: 1vw;
           }
@@ -282,13 +282,13 @@ a {
   gap: 4vw;
 
   .statiahead {
-    font-family: 'Forma DJR Cyrillic Display';
+    font-family: "Forma DJR Cyrillic Display";
     font-size: 2vw;
     letter-spacing: 0.05em;
   }
   .statiatxt {
     color: var(--GRAY, #787878);
-    font-family: 'Forma DJR Cyrillic Micro';
+    font-family: "Forma DJR Cyrillic Micro";
     font-size: 1.5vw;
     margin-top: 1vw;
   }
@@ -313,7 +313,7 @@ a {
     justify-content: center;
     align-items: center;
 
-    font-family: 'Forma DJR Cyrillic Display';
+    font-family: "Forma DJR Cyrillic Display";
     font-size: 1.5vw;
     letter-spacing: 0.05em;
     border-radius: 2vw;
@@ -328,7 +328,7 @@ a {
     height: 3vw;
     background-color: white;
     color: white;
-    font-family: 'Forma DJR Cyrillic Micro';
+    font-family: "Forma DJR Cyrillic Micro";
     font-size: 1vw;
   }
 }
@@ -344,7 +344,7 @@ a {
   gap: 2vw;
 
   .statiaheaditog {
-    font-family: 'Forma DJR Cyrillic Display';
+    font-family: "Forma DJR Cyrillic Display";
     font-size: 2vw;
     letter-spacing: 0.05em;
     margin: 2vw 15vw;
@@ -389,7 +389,7 @@ html.S_Dictionary {
 
 body.S_Dictionary {
   background: #f4f3ef;
-  font-family: 'PP Radio Grotesk';
+  font-family: "PP Radio Grotesk";
   overflow-x: hidden;
 
   .A_Logo {
@@ -712,19 +712,39 @@ body.S_Dictionary {
 
 .O_WordCard {
   align-items: center;
-  background: #f9f8f7;
-  border-radius: 1vw;
+  background: #ffffff;
+  border-radius: 2vw;
   box-shadow: 0 0.278vw 0.278vw 0 rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
-  left: 50%;
-  padding: 3vw;
+  gap: 0.8rem;
+  padding: 1.5vw 3vw 4vw;
   position: fixed;
   top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 50vw;
   min-height: 20vh;
   z-index: 1001;
+
+  .A_WordCardHeader {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-family: "SFT-Schrifted-Serif-T";
+    width: 100%;
+  }
+
+  .A_WordCardDescription {
+    font-size: 1rem;
+    color: #444;
+  }
+
+  .A_WordCardImage {
+    border-radius: 1vw;
+    width: 220px;
+  }
 }
 
 .A_WordCardHeader {
@@ -798,7 +818,7 @@ body.S_Dictionary {
 }
 
 .A_ContentItemTitle {
-  font-family: 'Forma DJR Cyrillic Micro', sans-serif;
+  font-family: "Forma DJR Cyrillic Micro", sans-serif;
   font-size: 1.4rem;
   margin-bottom: 10px;
   line-height: normal;
@@ -809,7 +829,7 @@ body.S_Dictionary {
   gap: 1vw;
 }
 .A_ContentItemTag {
-  font-family: 'Forma DJR Cyrillic Micro', sans-serif;
+  font-family: "Forma DJR Cyrillic Micro", sans-serif;
   background-color: #ffffff;
   color: #333;
   border: 1px solid black;

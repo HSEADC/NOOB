@@ -140,29 +140,26 @@ function popUp() {
   cards.forEach((card) => {
     card.addEventListener("click", () => {
       const overlay = document.createElement("div");
-      overlay.classList.add(".W_Overlay");
+      overlay.classList.add("W_Overlay");
       document.querySelector("body").appendChild(overlay);
 
       const block = document.createElement("div");
-      block.classList.add(".O_WordCard");
-
-      const cross = document.createElement("img");
-      image.classList.add(".A_WordCardcross");
+      block.classList.add("O_WordCard");
 
       const header = document.createElement("h3");
-      header.classList.add(".A_WordCardHeader");
+      header.classList.add("A_WordCardHeader");
       header.innerHTML = "Header";
 
       const description = document.createElement("p");
-      с.classList.add(".A_WordCardDescription");
+      с.classList.add("A_WordCardDescription");
       description.innerHTML = "Description";
 
       const image = document.createElement("img");
-      image.classList.add(".A_WordCardImage");
+      image.classList.add("A_WordCardImage");
 
-      block.appendChild(cross);
       block.appendChild(header);
       block.appendChild(description);
+      block.appendChild(article);
       block.appendChild(image);
 
       overlay.appendChild(block);
