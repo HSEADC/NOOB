@@ -695,33 +695,55 @@ body.S_Dictionary {
 }
 
 .W_Overlay {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   backdrop-filter: blur(0.232vw);
   background: hsla(48, 3%, 71%, 0.46);
-  display: none;
-  height: 100vh;
-  left: 0;
+
   position: fixed;
+  overflow-y: hidden;
+  left: 0;
   top: 0;
-  width: 100vw;
   z-index: 1000;
 }
 
 .O_WordCard {
   align-items: center;
-  background: #f9f8f7;
-  border-radius: 1vw;
+  background: #ffffff;
+  border-radius: 2vw;
   box-shadow: 0 0.278vw 0.278vw 0 rgba(0, 0, 0, 0.25);
   display: flex;
-  display: none;
-  left: 50%;
-  padding: 3vw;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1.5vw 3vw 4vw;
   position: fixed;
   top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 50vw;
+  min-height: 20vh;
   z-index: 1001;
+
+  .A_WordCardHeader {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-family: "SFT-Schrifted-Serif-T";
+    width: 100%;
+  }
+
+  .A_WordCardDescription {
+    font-size: 1rem;
+    color: #444;
+  }
+
+  .A_WordCardImage {
+    border-radius: 1vw;
+    width: 220px;
+  }
 }
 
 .A_WordCardHeader {

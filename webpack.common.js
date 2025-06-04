@@ -17,9 +17,7 @@ module.exports = {
     filterTags: "./src/js/articleTags.js",
     filterTagsMini: "./src/js/miniguidTags.js",
     dictAll: "./src/js/wordsMain.js",
-    dict: "./src/js/words.js",
-    main: "./src/js/main.js",
-    reactBasics: "./src/js/react-basics.jsx",
+    dict: "./src/js/dictionary.js",
     search: "./src/js/search-vanilla.js",
   },
   output: {
@@ -112,7 +110,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/dictionary.html",
       filename: "./dictionary.html",
-      chunks: ["index", "main"],
+      chunks: ["index", "main", "dict"],
     }),
 
     // Словарик "Dictionary"
