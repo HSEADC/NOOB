@@ -92,7 +92,7 @@ var words = [{
   description: "это общий интервал между буквами в слове или строке текста. Он влияет на читаемость и визуальное восприятие: увеличенный трекинг делает текст более воздушным, а уменьшенный — более плотным.",
   image: img4_namespaceObject
 }, {
-  header: "Респонсивность",
+  header: "Респонсив",
   description: "способность интерфейса адаптироваться под разные экраны: от телефона до ноутбука.",
   image: img6_namespaceObject
 }, {
@@ -549,7 +549,7 @@ module.exports = function (moduleId, options) {
     if(true) {
       (function() {
         var localsJsonString = undefined;
-        // 1749046033831
+        // 1750634095718
         var cssReload = __webpack_require__(140)(module.id, {});
         // only invalidate when locals change
         if (
@@ -686,7 +686,7 @@ module.exports = function (urlString) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("781a7d1317a137c5f076")
+/******/ 		__webpack_require__.h = () => ("58f8819246ae042d590b")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
