@@ -773,6 +773,10 @@ body.S_Dictionary {
 
 .A_SearchButton {
   padding: 10px 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
   text-decoration: none;
   background-color: #1a1a1d;
   color: #f9f8f7;
@@ -849,25 +853,128 @@ body.S_Dictionary {
   border: 1px solid black; /* если хочешь рамку */
 }
 
+.O_Footer {
+  background-color: #1a1a1d;
+  padding: 60px 40px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  color: white;
+  font-family: "Helvetica", sans-serif;
+}
+
+.W_FooterContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  position: relative;
+}
+
+.M_FooterCharacter {
+  position: relative;
+  flex-shrink: 0;
+  width: 180px;
+}
+
+.A_BabyImage {
+  width: 100%;
+}
+
+.A_SpeechBubble {
+  position: absolute;
+  top: -30px;
+  left: -10px;
+  background: white;
+  color: black;
+  padding: 10px 14px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 12px;
+  border: 2px solid black;
+  transform: rotate(-3deg);
+  max-width: 160px;
+  text-align: center;
+  box-shadow: 2px 2px 0 black;
+}
+
+.W_FooterColumns {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.M_Sections,
+.M_Creators {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 160px;
+}
+
+.M_Sections h4,
+.M_Creators h4 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: lowercase;
+  margin-bottom: 8px;
+}
+
+.M_Sections ul,
+.M_Creators ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.M_Sections a {
+  color: white;
+  text-decoration: none;
+}
+
+.M_Sections a:hover {
+  text-decoration: underline;
+}
+
 .M_SocialsFooter {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: space-between;
-  gap: 12px;
+  gap: 16px;
+  min-width: 180px;
 }
 
-.W_FooterContent {
+.A_SocialIcons img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding: 6px;
+}
+
+.A_Credit {
+  font-size: 14px;
+  color: #ccc;
+  text-align: right;
+  line-height: 1.4;
+}
+.W_FooterColumns {
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.W_SectionsCreators {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  gap: 40px;
-  align-items: flex-start;
-}
-.M_FooterColumns {
-  display: flex;
-  gap: 30px;
-  margin-left: 60%;
+  gap: 24px;
 }
 
 .M_Sections,
@@ -914,8 +1021,9 @@ body.S_Dictionary {
 }
 
 .A_BabyImage {
-  width: 22%;
+  width: 160%;
   position: absolute;
   margin-top: -5vw;
+  margin-left: -6vw;
   transition: transform 0.3s ease-out;
 }

@@ -38,8 +38,7 @@
     <analytics></analytics>
   </head>
 
-  <body>
-    <div class="O_Header">
+  <div class="O_Header">
       <a class="A_Logo" href="../index.html"
         ><img class="logoimg" src="../images/logo_eyes.svg" alt=""
       /></a>
@@ -47,6 +46,17 @@
       <a class="A_HeaderText" href="../dictionary.html">Словарик</a>
       <a class="A_HeaderText" href="../mini_guide.html">Мини-гид</a>
       <a class="A_HeaderText" href="../http-codes/404.html">О нас</a>
+      <form class="O_Search" action="search.html" method="get">
+        <input
+          class="A_SearchInput"
+          type="text"
+          name="request"
+          placeholder="Найти статью"
+          minlength="3"
+          required
+        />
+        <button class="A_SearchButton">Поиск</button>
+      </form>
     </div>
 
     <div class="W_ArticleHeader">
@@ -217,7 +227,7 @@
           </div>
           <div class="A_Name">
             <div class="A_NameBig">Юлун Элина</div>
-            <div class="A_Profession">Кодер</div>
+            <div class="A_Profession">Дизайнер-кодер</div>
           </div>
         </div>
         <div class="M_NameAuthors">
@@ -226,7 +236,7 @@
           </div>
           <div class="A_Name">
             <div class="A_NameBig">Бадмаева Айса</div>
-            <div class="A_Profession">Дизайнер</div>
+            <div class="A_Profession">Дизайнер-SMM</div>
           </div>
         </div>
         <div class="M_NameAuthors">
@@ -238,7 +248,7 @@
           </div>
           <div class="A_Name">
             <div class="A_NameBig">Юдинцева Вероника</div>
-            <div class="A_Profession">Копирайтер</div>
+            <div class="A_Profession">Дизайнер-копирайтер</div>
           </div>
         </div>
       </div>
@@ -246,7 +256,7 @@
     <div class="S_Recomendation">
       <div class="A_ArticleText">Похожие статьи</div>
       <div class="C_Cards C_CardsArticle">
-        <a href="../http-codes/404.html" class="O_CardArticles progress all">
+        <a href="./social_media.html" class="O_CardArticles progress all">
           <div>
             <img
               src="../images/articles_img/iphone.svg"
@@ -262,7 +272,7 @@
           </div>
         </a>
 
-        <a href="../http-codes/404.html" class="O_CardArticles work all">
+        <a href="./design_case.html" class="O_CardArticles work all">
           <div>
             <img
               src="../images/articles_img/woman.svg"
@@ -278,7 +288,7 @@
           </div>
         </a>
 
-        <a href="../http-codes/404.html" class="O_CardArticles psicologi all">
+        <a href="./how_not_to_get_tired.html" class="O_CardArticles psicologi all">
           <div>
             <img
               src="../images/articles_img/help_gay.svg"
@@ -294,7 +304,7 @@
           </div>
         </a>
 
-        <a href="../http-codes/404.html" class="O_CardArticles work all">
+        <a href="./freelance_place.html" class="O_CardArticles work all">
           <div>
             <img
               src="../images/articles_img/covork.svg"
@@ -312,35 +322,52 @@
       </div>
     </div>
 
-    <footer>
-      <div class="M_SocialsFooter">
-        <div class="A_FuterHeader">Подписывайся на соц.сети нуба!</div>
-        <div class="icon">
-          <a href="#" aria-label="VK">
-            <img src="../images/main_img/vk.svg" alt="VK" />
-          </a>
-          <a href="#" aria-label="Telegram">
-            <img src="../images/main_img/tg.svg" alt="Telegram" />
-          </a>
+    <footer class="O_Footer">
+      <div class="W_FooterContent">
+        <div class="M_FooterCharacter">
+          <img
+            src="../images/main_img/baby.svg"
+            alt="kewpie doll"
+            class="A_BabyImage"
+          />
         </div>
-      </div>
-      <div class="M_InformationFooter">
-        <div class="M_Creators">
-          <h4>Создатели</h4>
-          <ul>
-            <li>Бадмаева Айса</li>
-            <li>Юлун Элина</li>
-            <li>Юдинчева Вероника</li>
-          </ul>
-        </div>
-        <div class="M_Sections">
-          <h4>Разделы</h4>
-          <ul>
-            <li><a href="../articles.html">Статьи</a></li>
-            <li><a href="../dictionary.html">Словарь</a></li>
-            <li><a href="../archive.html">Архив</a></li>
-            <li><a href="../about.html">О нас</a></li>
-          </ul>
+
+        <div class="W_FooterColumns">
+          <div class="W_SectionsCreators">
+            <div class="M_Sections">
+              <h4>разделы</h4>
+              <ul>
+                <li><a href="../articles.html">Статьи</a></li>
+                <li><a href="../mini_guide.html">Мини-гид</a></li>
+                <li><a href="../dictionary.html">Словарь</a></li>
+                <li><a href="../styleguide.html">Стайлгайд</a></li>
+              </ul>
+            </div>
+
+            <div class="M_Creators">
+              <h4>создатели</h4>
+              <ul>
+                <li>Бадмаева Айса</li>
+                <li>Юлун Элина</li>
+                <li>Юдинцева Вероника</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="M_SocialsFooter">
+            <div class="A_SocialIcons">
+              <a href="https://t.me/noob_media" aria-label="Telegram">
+                <img src="../images/main_img/tg.svg" alt="Telegram" />
+              </a>
+              <a href="#" aria-label="VK">
+                <img src="../images/main_img/vk.svg" alt="VK" />
+              </a>
+            </div>
+            <div class="A_Credit">
+              <span>Куратор: Ксения Швецова</span>
+              <span>Код: Анна Комкова</span>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

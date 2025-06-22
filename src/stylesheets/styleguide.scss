@@ -322,7 +322,6 @@ nav {
   }
   .place_setka2 {
     width: 300px;
-    height: 650px;
     padding: 20px 0 0;
   }
   .place_post {
@@ -345,4 +344,19 @@ nav {
     width: 40vw;
     min-width: 300px;
   }
+}
+
+.merch {
+  width: 94%;
+  padding: 20px 0 0;
+}
+
+.merch2 {
+  width: 46%;
+}
+
+.merch_two {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0 0;
 }
