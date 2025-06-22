@@ -336,13 +336,6 @@ module.exports = {
       chunks: ["index"],
     }),
 
-    // Публикации в разделе словарик "dictionary"
-    new HtmlWebpackPlugin({
-      template: "./src/dictionary/word1.html",
-      filename: "./dictionary/word1.html",
-      chunks: ["index"],
-    }),
-
     // Страницы ошибки
     new HtmlWebpackPlugin({
       template: "./src/http-codes/404.html",
